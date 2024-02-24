@@ -1,0 +1,102 @@
+<app-header/>
+<section class="container-banner-page">
+    <div class="overlay-container"></div>
+    <div class="container-center-items">
+        <div class="wrapper-items">
+            <h1>{{objCareer.title}}
+            </h1>
+            <p>
+                ¡Ahora tu carrera profesional en 2 años! ¡Podrás ingresar con más rapidez al mercado laboral! Menos tiempo, más oportunidades
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="container-little-title">
+    <div class="container-center flex items-end gap-1">
+        <span>
+            <a  [routerLink]="['']">
+                <img src="../../../assets/house-logo.svg" alt="house logo">
+            </a>
+            <i>
+                <img src="../../../assets/arrow-to-right.png" alt="arrow to right">
+            </i>
+        </span>
+        <span class="flex items-center">
+            <span class="little-title" >Carreras</span>
+            <i>
+                <img src="../../../assets/arrow-to-right.png" alt="arrow to right">
+            </i>
+        </span>
+        <span class="flex items-center">
+            <span class="little-title">{{objCareer.title}}</span>
+        </span>
+    </div>
+</section>
+
+<section class="content ">
+    <div class="container center-container pb-[80px]">
+        <section class="section tabs1">
+            <div class="tab1-column">
+                <div class="column">
+                    <h2 class="subtitle">¿Qué es {{objCareer.careerName}} en 2 años?</h2>
+                    @for (elemt of objCareer.content.description; track $index) {
+                        <p>{{elemt}}</p>
+                    }
+                </div>
+            </div>
+            <div class="tab2-column">
+                <div class="column">
+                    <h2 class="subtitle">¿QUÉ ES LO QUE HACE UN {{objCareer.professional}}?</h2>
+                    <div>
+                        @for (elemt of objCareer.content.whatToDo; track $index) {
+                            <p>{{elemt}}</p>
+                        }
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <section class="section tabs2">
+            <h2 class="subtitle">CAMPO LABORAL</h2>
+            <div class="columns">
+                <div class="column-1">
+                    <p>{{objCareer.content.work.descrip}}</p>
+                </div>
+                <div class="column-2">
+                    <div class="roles-list">
+                        <ul>
+                            @for ( role of objCareer.content.work.roles ; track $index) {
+                                <li class="flex items-start mb-[4px]"><img src="../../../assets/check.svg" alt=""><span>{{role}}</span></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="content-courses bg-blue white"> 
+        <div class="container  center-container">
+            <div class="study-planes">
+                <div class="columns  courses">
+                    <div class="column pb-[30px]">
+                        <h2 class="subtitle">¿QUÉ SE ESTUDIA EN {{objCareer.careerName}} DE 2 AÑOS?</h2>
+                        <p>{{objCareer.content.courses.text}}</p>
+                        <div class="container-brochure-btn">
+                            <a href="{{objCareer.content.courses.brochure}}" target="_blank">
+                                <img src="../../../assets/archivo.svg" alt="archivo imagen">DESCARGAR LA LISTA DE CURSOS
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="{{objCareer.img}}" class="img-courses" width="497" height="331" alt="image-about-{{objCareer.title}}">
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+
+<app-footer/>

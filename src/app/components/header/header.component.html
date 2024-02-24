@@ -1,0 +1,204 @@
+@if (size == "Small" || size == "XSmall") {
+<div class="header-phone scrolled ">
+    <div class="container-header-phone ">
+        <a [routerLink]="['']" class="logo-header-phone">
+            <img src="../../../assets/logo-cibertec.svg" width="120" height="30" alt="logo intituto">
+        </a>
+        <div class="iconos-header-phone">
+
+            <div class="nav-header-phone" (click)="toggleMenuPhone()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="btn-search">
+                <img src="../../../assets/search.svg" height="24" width="24" alt="">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="phone">
+    <div class="container-nav-movil">
+        <div class="nav-level-1">
+            <!-- <div class="block-1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>-->
+            <div class="block-2">
+                <ul>
+                    <li class="li_acordion"><a [routerLink]="['/carreras']" class="btn-header-phone">CARRERAS</a></li>
+                    <li class="li_acordion"><a [routerLink]="['/carreras']" class="btn-header-phone">GESTION
+                            ADMINISTRATIVA</a></li>
+                    <li class="li_acordion"><a [routerLink]="['/carreras']" class="btn-header-phone">GESTION
+                            ACADEMICA</a></li>
+                </ul>
+            </div>
+            <div class="block-3">
+                <a href="https://api.whatsapp.com/send/?phone=51966949545" target="_blank"
+                    class="btn-phone-suscribe">INSCRÍBETE</a>
+            </div>
+            <div class="block-4">
+                <div class="list-phone">
+                    <div class="list-menu-phone">
+                        <ul class="nav-menu-phone">
+                            <li class="item-menu-nav-phone">
+                                <a href="">Servicios al estudiante</a>
+                            </li>
+                            <!--<li class="item-menu-nav-phone">
+                                <a href="">Para empresas</a>
+                            </li>
+                            <li class="item-menu-nav-phone">
+                                <a href="">Para colegios</a>
+                            </li>
+                            <li class="item-menu-nav-phone">
+                                <a href="">Egresados</a>
+                            </li>-->
+                            <li class="item-menu-nav-phone">
+                                <a href="">Contactanos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="block-5">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="../../../assets/logo-face-with-bg.png" alt="imagen logo facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../../../assets/logo-face-with-bg.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../../../assets/logo-face-with-bg.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../../../assets/logo-face-with-bg.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+}@else {
+<header class=" max-w-[100%] header-wrapper ">
+    <div class="my-container">
+        <nav class=" nav-header-wrapper nav-top">
+            <div class="flex justify-between items-center ">
+                <div>
+                    <ul class="flex gap-[1.4rem] ">
+                        <li><a href="#">Servicios al Estudiante</a></li>
+                       <!--<li class="item-menu-nav-phone">
+                                <a href="">Para empresas</a>
+                            </li>
+                            <li class="item-menu-nav-phone">
+                                <a href="">Para colegios</a>
+                            </li>
+                            <li class="item-menu-nav-phone">
+                                <a href="">Egresados</a>
+                            </li>-->
+                        <li><a href="#">Contactanos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="flex gap-[2rem]">
+                        <li><a href="#">Mi intranet</a></li> |
+                        <li><a href="#">Portal laboral</a></li> |
+                        <li><a href="#">Área virtual</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="h-[100px]">
+        <div class="flex justify-between items-center max-w-[1090px]  submenu-wrapper">
+            <a [routerLink]="['']" class="flex justify-start">
+                <img src="../../../assets/logo-cibertec.svg" width="200" height="50" alt="logo-instituto">
+            </a>
+            <div class="max-w-[800px] h-[100%]">
+                <ul class="flex gap-[60px] h-[100%] mb-0">
+                    <!--
+                        <div class="flex items-center text-center btn-menu-hover p-[12px]">
+                        Carreras<span class="material-symbols-outlined">expand_more</span>
+                        <div class="wrapper-hover-menu"></div>
+                        <ul class="wrapper-hover-menu-submenu  pl-0 ">
+                            @for (link of links; track $index) {
+                            <a class="item-submenu">
+                                <div class="submenu-header">
+                                    <img src="{{link.img}}" alt="">
+                                    <p>{{link.title}}</p>
+                                </div>
+                                <ul></ul>
+                            </a>
+                            }
+                        </ul>
+                    </div>
+                    -->
+                    <div class="flex items-center text-center btn-menu-hover p-[12px]">Gestion Administrativa <span
+                            class="material-symbols-outlined">expand_more</span>
+                        <div class="wrapper-hover-menu"></div>
+                        <ul class="wrapper-hover-menu-submenu  pl-0 ">
+                            @for (link of links; track $index) {
+                            <a class="item-submenu">
+                                <div class="submenu-header">
+                                    <img src="{{link.img}}" alt="">
+                                    <p>{{link.title}}</p>
+                                </div>
+                                <ul></ul>
+                            </a>
+                            }
+                        </ul>
+                    </div>
+                    <div class="flex items-center text-center btn-menu-hover p-[12px]">Gestion Academica <span
+                            class="material-symbols-outlined ">expand_more</span>
+                        <div class="wrapper-hover-menu"></div>
+                        <ul class="wrapper-hover-menu-submenu  pl-0 ">
+                            @for (link of links; track $index) {
+                            <a class="item-submenu">
+                                <div class="submenu-header">
+                                    <img src="{{link.img}}" alt="">
+                                    <p>{{link.title}}</p>
+                                </div>
+                                <ul></ul>
+                            </a>
+                            }
+                        </ul>
+                    </div>
+                    <div class="flex items-center hover:cursor-pointer">
+                        <a href="https://api.whatsapp.com/send/?phone=51966949545" target="_blank"
+                            class="joinus-button">
+                            INSCRIBETE
+                        </a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+}

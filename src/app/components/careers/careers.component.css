@@ -1,0 +1,278 @@
+.container-banner-page {
+    height: 490px;
+    background: url(https://www.cibertec.edu.pe/wp-content/uploads/2019/07/faq.jpg);
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay-container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .18) 15%, #1f1f1f 100%);
+    position: absolute;
+    top: 0;
+}
+
+.container-center-items {
+    width: 70%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrapper-items {
+    max-width: 520px;
+}
+
+.wrapper-items h1 {
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 45px;
+    margin-right: 20px;
+}
+
+.wrapper-items p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 26px;
+    margin-top: 11px;
+}
+
+/**Mini titulo*/
+.container-little-title {
+    padding: 20px 0;
+    border-bottom: solid rgba(74, 74, 74, .1) 1px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-center {
+    width: 90%;
+    max-width: 1164px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container-little-title span {
+    font-size: 12px;
+    font-weight: bold666;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.container-little-title span:first-child {
+    display: flex;
+    align-items: center;
+}
+
+
+.little-title {
+    font-weight: 700;
+}
+
+.container-little-title a {
+    font-size: 12px;
+    font-weight: 400;
+    color: #4A4A4A;
+}
+/*MINI TITULO FIN*/
+
+
+
+/*
+    Carreras
+*/
+
+.my-container{
+    width: 70%;
+}
+
+.title-career {
+    color: #002C44;
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.125;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title-career::after{
+    content: '';
+    background-color: #69BE28;
+    border: solid #69BE28 1px;
+    border-radius: 7px;
+    display: block;
+    height: 14px;
+    margin: 30px auto 0;
+    width: 40px;
+}
+
+.title-career-little {
+    color: #002C44;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.125;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cont-cards-career {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+
+.card-career {
+    position: relative;
+    height: 275.078px;
+    border-radius: 10px;
+    width: 32%;
+    max-height: 245px;
+}
+
+.card-career img {
+    border-radius: 10px;
+}
+
+
+
+.info-career {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(28, 28, 28, 0) 1%, #1f1f1f 100%);
+    border-radius: 10px;
+}
+
+.info-career a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.info-career h2 {
+    line-height: 0.8;
+    margin-bottom: 20px;
+}
+
+.info-explore-career {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding-block: 20px;
+    padding-inline: 70px;
+    width: 100%;
+    height: 35px;
+    transition: all 0.2s ease-in-out;
+}
+
+.info-explore-career:hover {
+    background-color: #009AA6;
+    border: 1px solid #009AA6;
+}
+
+.btn-see-all {
+    text-decoration: none;
+    align-items: center;
+    color: #002C44;
+    border: 2px solid #002C44;
+    border-radius: 30px;
+    display: flex;
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding-inline: 50px;
+    height: 48px;
+    justify-content: center;
+    text-align: center;
+    max-width: 285px;
+    min-width: 150px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-see-all:hover{
+    background-color: #002C44;
+    color: #fff;
+}
+/*TERMINA CARRERAS*/
+
+/*MEDIA QUERYS*/
+@media only screen and (max-width: 1200px){
+
+    .wrapper-items h1 {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 45px;
+        margin-right: 20px;
+    }
+
+    .my-container{
+        width: 90%;
+    }
+
+    
+.my-container-carousel{
+    width: 80%;
+}
+}
+
+
+@media only screen and (max-width: 800px){
+    .cont-cards-career{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 50%  50%;
+    }
+
+    .card-career{
+        width: 100%;
+    }
+
+    .main-home-container > div {
+        max-width: 95%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+
+    .info-career{
+        padding-block: 10px;
+        padding-inline: 20px;
+
+    }
+
+    .info-career a{
+        font-size: 12px !important;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+    }
+    .info-explore-career {
+        padding-inline: 0;
+        font-size: 12px;
+    }
+
+   
+}

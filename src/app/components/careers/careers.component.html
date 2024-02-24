@@ -1,0 +1,55 @@
+<app-header/>
+
+<section class="container-banner-page">
+    <div class="overlay-container"></div>
+    <div class="container-center-items">
+        <div class="wrapper-items">
+            <h1>CARRERAS PROFESIONALES
+            </h1>
+            <p>
+                Nuestra visión es ser la institución líder de educación superior técnica, con alcance nacional y con las mejores carreras profesionales en el Perú
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="container-little-title">
+    <div class="container-center flex items-end gap-1">
+        <span>
+            <a  [routerLink]="['']">
+                <img src="../../../assets/house-logo.svg" alt="house logo">
+            </a>
+            <i>
+                <img src="../../../assets/arrow-to-right.png" alt="arrow to right">
+            </i>
+        </span>
+        <span>
+            <span class="little-title">Carreras</span>
+        </span>
+    </div>
+</section>
+
+<div class=" max-w-[100%] main-home-container ">
+    <div class="my-container mr-auto ml-auto py-[3rem] ">
+        <section class="flex flex-col">
+            <div class="flex justify-center">
+                <div>
+                    <h1 class="title-career">CARRERAS</h1>
+                    <h2 class="title-career-little mt-[75px] mb-[65px]">Elige la profesion de tus sueños</h2>
+                </div>
+            </div>
+            <div class="cont-cards-career">
+                 @for (career of careers; track $index) {
+                <div class="card-career" style="background-image: url({{career.img}}); background-size: cover;">
+                    <div class="info-career">
+                        <h2 class="info-title-career"><a href="#">{{career.title}}</a></h2>
+                        <a class="info-explore-career" [routerLink]="['/sobre-la-carrera', career.title]"><span>DESCUBRIR</span></a>
+                    </div>
+                </div>
+                }
+            </div>
+        </section>
+    </div>
+</div>
+
+<app-footer/>

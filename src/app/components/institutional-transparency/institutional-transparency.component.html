@@ -1,0 +1,103 @@
+<app-header />
+
+<section class="container-banner-page">
+    <div class="overlay-container"></div>
+    <div class="container-center-items">
+        <div class="wrapper-items">
+            <h1>Transparencia Institucional</h1>
+            <p>
+                Nuestra Visión es ser la institución líder de educación superior técnica en el Perú con alcance a nivel
+                nacional.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="container-little-title">
+    <div class="container-center flex items-end gap-1">
+        <span>
+            <a  [routerLink]="['']">
+                <img src="../../../assets/house-logo.svg" alt="house logo">
+            </a>
+            <i>
+                <img src="../../../assets/arrow-to-right.png" alt="arrow to right">
+            </i>
+        </span>
+        <span>
+            <span class="little-title">Transparencia Institucional</span>
+        </span>
+    </div>
+</section>
+
+<div class="container-main-transparency">
+    <main class="main-container-items">
+        <div class="transparency-documents">
+            <ul class="wrapper-card-documents pl-0">
+               <!-- @for (document of documents_card; track document.id) {
+                    <li id='{{document.id}}' (click)="handleClick('{{document.id}}')" class="card-document">
+                        <a>
+                            <h3>{{document.title}}</h3>
+                        </a>
+                    </li>
+                    <div class="menu-hover-container">
+                        <div class="document-container">
+                            <iframe class="iframe-hover" src='../../../assets/documents/"{{document.doc}}"'
+                                width="100%" height="600px" frameborder="0"></iframe>
+                        </div>
+                    </div>
+    
+                }     -->
+                <li  id='doc-reglamento'  class="card-document">
+                    <a>
+                        <h3>REGLAMENTO INSTITUCIONAL CIBERTEC</h3>
+                    </a>
+                </li>
+                <div id='doc-reglamento-hover' class="menu-hover-container">
+                    <div class="document-container">
+                        <iframe class="iframe-hover" src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
+                            width="100%" height="600" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <li  id='doc-reglamento'  class="card-document">
+                    <a>
+                        <h3>REGLAMENTO INSTITUCIONAL CIBERTEC</h3>
+                    </a>
+                </li>
+                <div id='doc-reglamento-hover' class="menu-hover-container">
+                    <div class="document-container">
+                        <iframe class="iframe-hover" src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
+                            width="100%" height="600" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <li  id='doc-reglamento'  class="card-document">
+                    <a>
+                        <h3>REGLAMENTO INSTITUCIONAL CIBERTEC</h3>
+                    </a>
+                </li>
+                <div id='doc-reglamento-hover' class="menu-hover-container">
+                    <div class="document-container">
+                        <iframe class="iframe-hover" src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
+                            width="100%" height="600" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <li  id='doc-reglamento'  class="card-document">
+                    <a>
+                        <h3>REGLAMENTO INSTITUCIONAL CIBERTEC</h3>
+                    </a>
+                </li>
+                <div id='doc-reglamento-hover' class="menu-hover-container">
+                    <div class="document-container">
+                        <iframe class="iframe-hover" src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
+                            width="100%" height="600" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </main>
+</div>
+
+
+<app-footer />
+<!--(click)="toggleMenuTransparency($event)"-->

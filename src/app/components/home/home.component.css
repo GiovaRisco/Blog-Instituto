@@ -1,0 +1,361 @@
+
+.my-container{
+    width: 70%;
+}
+
+.my-container-carousel{
+    width: 70%;
+}
+/*CAROUSEL - INICIO*/
+.carrusel-btn-right {
+    justify-content: flex-start;
+    align-items: self-end;
+    right: 30%;
+    padding-bottom: 50px;
+}
+
+.carrusel-btn-left {
+    justify-content: flex-end;
+    align-items: self-end;
+    left: 30%;
+    padding-bottom: 50px;
+}
+
+.btn-info a {
+    text-decoration: none;
+    z-index: 100;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+
+.btn-more-info {
+    background: #009AA6;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: -.1px;
+    color: #fff;
+    line-height: 25px;
+    padding: 10px 60px;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: table;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-more-info:hover{
+    background: #fff;
+    color: #002C44;
+}
+
+/*CAROUSEL - FIN*/
+
+/*IMPORTANT SECTION - INICIO*/
+.section-important .info-career h2 a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.section-important .info-career h2 a img{
+    height: 50px;
+}
+.section-important .info-career h2 a span{
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+/*IMPORTANT SECTION - FIN*/
+/*MAIN - CARRERAS -INICIO*/
+.title-career {
+    color: #002C44;
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.125;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title-career::after{
+    content: '';
+    background-color: #69BE28;
+    border: solid #69BE28 1px;
+    border-radius: 7px;
+    display: block;
+    height: 14px;
+    margin: 30px auto 0;
+    width: 40px;
+}
+
+.title-career-little {
+    color: #002C44;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.125;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cont-cards-career {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+
+.card-career {
+    position: relative;
+    height: 275.078px;
+    border-radius: 10px;
+    width: 32%;
+    max-height: 245px;
+}
+
+.card-career img {
+    border-radius: 10px;
+}
+
+
+
+.info-career {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(28, 28, 28, 0) 1%, #1f1f1f 100%);
+    border-radius: 10px;
+}
+
+.info-career a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.info-career h2 {
+    line-height: 0.8;
+    margin-bottom: 20px;
+}
+
+.info-explore-career {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding-block: 20px;
+    padding-inline: 70px;
+    width: 100%;
+    height: 35px;
+    transition: all 0.2s ease-in-out;
+}
+
+.info-explore-career:hover {
+    background-color: #009AA6;
+    border: 1px solid #009AA6;
+}
+
+.btn-see-all {
+    text-decoration: none;
+    align-items: center;
+    color: #002C44;
+    border: 2px solid #002C44;
+    border-radius: 30px;
+    display: flex;
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding-inline: 50px;
+    height: 48px;
+    justify-content: center;
+    text-align: center;
+    max-width: 285px;
+    min-width: 150px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-see-all:hover{
+    background-color: #002C44;
+    color: #fff;
+}
+
+/*MAIN - CARRERAS -FINAL*/
+/*CAROUSEL -INICIO*/
+.carousel-container{
+    width: 80%;
+    margin-inline: auto;
+}
+.carousel-container .card-career{
+    width: 100%;
+    margin-inline: 5px;
+    border-radius: 20px;
+}
+.carousel-container .card-career .info-career{
+    border-radius: 20px;
+}
+
+
+
+/*CAROUSEL -FIN*/
+/*MAIN- REASOSNS -INICIO*/
+.title-reasons{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.125;
+    text-transform: uppercase;
+    text-align: center;
+}
+.title-reasons::after{
+    content: '';
+    background-color: #69BE28;
+    border: solid #69BE28 1px;
+    border-radius: 7px;
+    display: block;
+    height: 14px;
+    margin: 30px auto 0;
+    width: 40px;
+}
+.cont-reasons{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reason-card { 
+    height: 100%;
+    width: 33.3%;
+
+}
+.reason-card h3{
+    margin-top: 20px;
+    color : #fff;
+}
+.image-reason{
+    display: flex;
+    justify-content: center;
+}
+.image-reason img{
+    height: 130px;
+}
+
+/*MAIN- REASOSNS -FIN*/
+
+.slide {
+    display: flex;
+    justify-content: center;
+}
+
+.slick-track{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/*NUESTRO DIRECTOR -INICIO*/
+.columns {
+    display:  grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    text-align: start;
+}
+
+.columns h2{
+    color: #002C44;
+    font-size: 20px;
+    font-weight: 500;
+}
+.columns p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 30px;
+}
+/*NUESTRO DIRECTOR - FIN*/
+
+/*MEDIA QUERYS**/
+
+@media only screen and (max-width: 1200px){
+    .my-container{
+        width: 90%;
+    }
+
+    
+.my-container-carousel{
+    width: 80%;
+}
+}
+
+
+@media only screen and (max-width: 800px){
+    .cont-cards-career{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 50%  50%;
+    }
+
+    .card-career{
+        width: 100%;
+    }
+
+    .main-home-container > div {
+        max-width: 95%;
+    }
+}
+
+
+@media only screen and (max-width: 700px){
+    .section-important .info-career h2 a {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    } 
+}
+@media only screen and (max-width: 550px){
+    .cont-reasons{
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+  
+    .reason-card{
+        width: auto;
+    }
+
+    .reason-card h3{
+        font-size: 15px;
+    }
+
+    .image-reason img {
+        height: 80px;
+    }
+
+    .info-career{
+        padding-block: 10px;
+        padding-inline: 20px;
+
+    }
+
+    .info-career a{
+        font-size: 12px !important;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+    }
+    .info-explore-career {
+        padding-inline: 0;
+        font-size: 12px;
+    }
+
+   
+}

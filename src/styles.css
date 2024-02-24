@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --color--principal--darkblue: #001C2C;
+    --color--white: #ffffff;
+  
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    margin: 0;
+}
+a {
+    text-decoration: none ;
+}
+
+
+html, body { height: 100%; }
+
