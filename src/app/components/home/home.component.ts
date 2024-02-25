@@ -3,6 +3,7 @@ import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { RouterModule } from '@angular/router';
+import { Sedes } from '../../models/Sedes';
 
 @Component({
   selector: 'app-home',
@@ -13,30 +14,32 @@ import { RouterModule } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
+  sedes: any[]  = new Sedes().getSedesList()
+
   careers: any[] = [
     {
       img: '../../../assets/CARD-GESTION-Y-NEGOCIOS-310x310.jpeg',
       title : 'CARRERA DE ADMINISTRACION y NEGOCIOS'
     },
     {
-      img: '../../../assets/CARD-GESTION-Y-NEGOCIOS-310x310.jpeg',
-      title : 'CARRERA DE ADMINISTRACION y NEGOCIOS'
+      img: '../../../assets/CARD-COMUNICACIONES-1-n.jpeg',
+      title : 'CARRERA DE COMUNICACIONES'
     },
     {
-      img: '../../../assets/CARD-GESTION-Y-NEGOCIOS-310x310.jpeg',
-      title : 'CARRERA DE ADMINISTRACION y NEGOCIOS'
+      img: '../../../assets/CARD-TECNOLOGIA-310X310-n.jpeg',
+      title : 'CARRERA DE TECNOLOGIA DE INFORMACION'
     },
     {
-      img: '../../../assets/CARD-GESTION-Y-NEGOCIOS-310x310.jpeg',
-      title : 'CARRERA DE ADMINISTRACION y NEGOCIOS'
+      img: '../../../assets/CARD-INGENIERIA-310X310-n.jpeg',
+      title : 'CARRERA DE INGENIERIA'
     },
     {
-      img: '../../../assets/CARD-GESTION-Y-NEGOCIOS-310x310.jpeg',
-      title : 'CARRERA DE ADMINISTRACION y NEGOCIOS'
+      img: '../../../assets/CARD-DISENO.webp',
+      title : 'CARRERA DE DISEÑO'
     },
     {
-      img: '../../../assets/CARD-GESTION-Y-NEGOCIOS-310x310.jpeg',
-      title : 'CARRERA DE ADMINISTRACION y NEGOCIOS'
+      img: '../../../assets/Banner-principal-CARRERAS-PARA-GENTE-QUE-TRABAJA4.webp',
+      title : 'CARRERA DE MODA'
     }
   ]
 
@@ -44,32 +47,7 @@ export class HomeComponent implements OnInit {
 
 
 
-  carousel_cursos: any[] = [
-    {
-      img: '../../../assets/CARD-GESTION-Y-NEGOCIOS-310x310.jpeg',
-      title : 'CARRERA DE ADMINISTRACION y NEGOCIOS'
-    },
-    {
-      img: '../../../assets/CARD-GESTION-Y-NEGOCIOS-310x310.jpeg',
-      title : 'CARRERA DE ADMINISTRACION y NEGOCIOS'
-    },
-    {
-      img: '../../../assets/CARD-GESTION-Y-NEGOCIOS-310x310.jpeg',
-      title : 'CARRERA DE ADMINISTRACION y NEGOCIOS'
-    },
-    {
-      img: '../../../assets/CARD-GESTION-Y-NEGOCIOS-310x310.jpeg',
-      title : 'CARRERA DE ADMINISTRACION y NEGOCIOS'
-    },
-    {
-      img: '../../../assets/CARD-GESTION-Y-NEGOCIOS-310x310.jpeg',
-      title : 'CARRERA DE ADMINISTRACION y NEGOCIOS'
-    },
-    {
-      img: '../../../assets/CARD-GESTION-Y-NEGOCIOS-310x310.jpeg',
-      title : 'CARRERA DE ADMINISTRACION y NEGOCIOS'
-    }
-  ]
+
 
   slideConfig = {"slidesToShow": 3, "slidesToScroll": 1 ,"variableWigth": true,"autoplay": true,
   "autoplaySpeed": 4000, "dots": true,

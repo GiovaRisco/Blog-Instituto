@@ -47,7 +47,9 @@
     background: #fff;
     color: #002C44;
 }
-
+.carousel-item{
+    height: auto;
+}
 /*CAROUSEL - FIN*/
 
 /*IMPORTANT SECTION - INICIO*/
@@ -267,8 +269,17 @@
 .columns {
     display:  grid;
     grid-template-columns: 50% 50%;
-    align-items: center;
+    align-items: start;
+    gap: 3rem;
     text-align: start;
+}
+
+.column{
+    text-align: justify;
+}
+
+.column img{
+    border-radius: 10px;
 }
 
 .columns h2{
@@ -294,6 +305,8 @@
 .my-container-carousel{
     width: 80%;
 }
+
+
 }
 
 
@@ -311,6 +324,17 @@
     .main-home-container > div {
         max-width: 95%;
     }
+
+    
+    .columns{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column{
+        text-align: justify;
+    }
+
 }
 
 
@@ -357,5 +381,4 @@
         font-size: 12px;
     }
 
-   
 }

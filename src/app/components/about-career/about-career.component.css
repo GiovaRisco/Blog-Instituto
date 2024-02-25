@@ -128,7 +128,8 @@
     width: 25px;
 }
 .columns{
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .bg-blue{
@@ -211,13 +212,17 @@
         flex-direction: column;
     }
 
+    .courses {
+        align-items: center;
+    }
+
 }
 
 
 @media only screen and (max-width: 600px){
 
     .wrapper-items h1 {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 700;
         letter-spacing: 2px;
         color: #fff;
@@ -231,6 +236,11 @@
         margin-bottom: 30px;
         float: right;
         border-radius: 10px;
+    }
+
+    .courses img.img-courses {
+        width: 497px;
+        height: auto;
     }
 }
 
