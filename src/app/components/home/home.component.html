@@ -5,7 +5,7 @@
         <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
             <div class="carousel-inner  ">
                 <div class="carousel-item active ">
-                    <img class="w-full " src="../../../assets/banner1.webp" height="820px" alt="banner_1">
+                    <img class="w-full " src="../../../assets/banner1.webp"  alt="banner_1">
                <!--                    <div class="btn-info">
                         <h1></h1>
                         <p></p>
@@ -13,7 +13,7 @@
                     </div>-->
                 </div>
                 <div class="carousel-item ">
-                    <img class="w-full  " src="../../../assets/banner2.webp"  height="820px" alt="banner_2">
+                    <img class="w-full  " src="../../../assets/banner2.webp"   alt="banner_2">
                     <!--                    <div class="btn-info">
                         <h1></h1>
                         <p></p>
@@ -21,7 +21,7 @@
                     </div>-->
                 </div>
                 <div class="carousel-item ">
-                    <img class="w-full  " src="../../../assets/banner3.webp"  height="820px" alt="banner_3">
+                    <img class="w-full  " src="../../../assets/banner3.webp"   alt="banner_3">
                     <!--                    <div class="btn-info">
                         <h1></h1>
                         <p></p>
@@ -55,7 +55,7 @@
                 <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
                     <div ngxSlickItem class="slide">
                         <div class="card-career"
-                            style="background-image: url('../../../assets/CARD-GESTION-Y-NEGOCIOS-310x310.jpeg'); background-size: cover; background-repeat: no-repeat;">
+                            style="background-image: url('../../../assets/transparencia.png'); background-size: cover; background-repeat: no-repeat;background-position: center;">
                             <div class="info-career">
                                 <h2 class="info-title-career"><a><img src="../../../assets/pencil.svg"
                                             alt="transparencia icono"><span>Transparencia</span></a></h2>
@@ -79,7 +79,7 @@
                     </div>
                     <div ngxSlickItem class="slide">
                         <div class="card-career"
-                            style="background-image: url('../../../assets/CARD-GESTION-Y-NEGOCIOS-310x310.jpeg'); background-size: cover; background-repeat: no-repeat;">
+                            style="background-image: url('../../../assets/Repositorios-institucionales.webp'); background-size: cover; background-repeat: no-repeat;background-position: center;">
                             <div class="info-career">
                                 <h2 class="info-title-career"><a href=""><img src="../../../assets/book.svg"
                                             alt="repositorio icono"><span>Repositorio</span></a></h2>
@@ -127,7 +127,7 @@
         </section>
     </div>
 </div>
-<div class=" max-w-[100%] bg-[#009AA6] ">
+<div id="director" class=" max-w-[100%] bg-[#002C44] ">
     <div class="my-container mr-auto ml-auto py-[3rem] ">
         <section class="flex flex-col">
             <div class="flex justify-center mb-[30px]">
@@ -185,7 +185,7 @@
     </div>
 </div>
 
-<div class=" max-w-[100%] bg-[#009AA6] ">
+<div id="carousel-sedes" class=" max-w-[100%] bg-[#002C44] ">
     <div class="my-container-carousel mr-auto ml-auto pt-[3rem] ">
         <section class="flex flex-col">
             <div class="flex justify-center mb-[70px]">
@@ -198,7 +198,7 @@
                     @for (sede of sedes; track $index) {
                     <div ngxSlickItem class="slide">
                         <div class="card-career"
-                            style="background-image: url(../../../assets/CARD-INGENIERIA-310X310-n.jpeg); background-size: cover; background-repeat: no-repeat;">
+                            style="background-image: url({{sede.img}}); background-size: cover;background-position: center ; background-repeat: no-repeat;">
                             <div class="info-career">
                                 <h2 class="info-title-career"><a href="">{{sede.location}}</a></h2>
                                 <a class="info-explore-career" [routerLink]="['/sede', sede.location]"><span>DESCUBRIR</span></a>

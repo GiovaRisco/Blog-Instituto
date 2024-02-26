@@ -5,6 +5,7 @@ import { InstitutionalTransparencyComponent } from './components/institutional-t
 import { CareersComponent } from './components/careers/careers.component';
 import { AboutCareerComponent } from './components/about-career/about-career.component';
 import { UbicationComponent } from './components/ubication/ubication.component';
+import { CustomerServiceComponent } from './components/customer-service/customer-service.component';
 
 export const routes: Routes = [
     {
@@ -24,5 +25,8 @@ export const routes: Routes = [
     },
     {
         path:'sede/:nameSede' , component:UbicationComponent
+    },
+    {
+        path:'contactenos' , component:CustomerServiceComponent
     }
 ];

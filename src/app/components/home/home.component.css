@@ -4,7 +4,7 @@
 }
 
 .my-container-carousel{
-    width: 70%;
+    width: 80%;
 }
 /*CAROUSEL - INICIO*/
 .carrusel-btn-right {
@@ -167,8 +167,8 @@
 .btn-see-all {
     text-decoration: none;
     align-items: center;
-    color: #002C44;
-    border: 2px solid #002C44;
+    color: #fff;
+    border: 2px solid #fff;
     border-radius: 30px;
     display: flex;
     font-size: 0.875rem;
@@ -184,7 +184,7 @@
 }
 
 .btn-see-all:hover{
-    background-color: #002C44;
+    background-color: #009AA6;
     color: #fff;
 }
 
@@ -266,6 +266,9 @@
 }
 
 /*NUESTRO DIRECTOR -INICIO*/
+#director{
+    background-image: url(../../../assets/choosing-bg.jpg);
+}
 .columns {
     display:  grid;
     grid-template-columns: 50% 50%;
@@ -283,7 +286,7 @@
 }
 
 .columns h2{
-    color: #002C44;
+    color: #fff;
     font-size: 20px;
     font-weight: 500;
 }
@@ -293,7 +296,11 @@
     line-height: 30px;
 }
 /*NUESTRO DIRECTOR - FIN*/
-
+/*CAROUSEL SEDES -INICIO*/
+#carousel-sedes{
+    background-image: url(../../../assets/choosing-bg.jpg);
+}
+/*CAROUSEL SEDES - FIN*/
 /*MEDIA QUERYS**/
 
 @media only screen and (max-width: 1200px){
@@ -379,6 +386,17 @@
     .info-explore-career {
         padding-inline: 0;
         font-size: 12px;
+    }
+
+    .title-reasons {
+        color: #002C44;
+        display: flex;
+        flex-direction: column;
+        font-size: 33px;
+        font-weight: 700;
+        line-height: 1.125;
+        text-transform: uppercase;
+        text-align: center;
     }
 
 }

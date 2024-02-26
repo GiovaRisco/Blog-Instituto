@@ -45,30 +45,64 @@ export class HeaderComponent {
   }
 
 
-  links :  any[] = [
+  linksAdministrativa :  any[] = [
     {
-      img : '../../../assets/cine-logo.svg',
-      title : 'Carrera de comunicaciones'
+      img : '../../../assets/icon-1.svg',
+      title : 'DIRECTOR',
+      href : '#director'
     },
     {
-      img : '../../../assets/cine-logo.svg',
-      title : 'Carrera de comunicaciones'
+      img : '../../../assets/icon-2.svg',
+      title : 'HISTORIA',
+      href : '/historia'
     },
     {
-      img : '../../../assets/cine-logo.svg',
-      title : 'Carrera de comunicaciones'
+      img : '../../../assets/icon-3.svg',
+      title : 'TRANSPARENCIA',
+      href : '/transparencia'
     },
     {
-      img : '../../../assets/cine-logo.svg',
-      title : 'Carrera de comunicaciones'
+      img : '../../../assets/icon-4.svg',
+      title : 'AUTORIDADES'
     },
     {
-      img : '../../../assets/cine-logo.svg',
-      title : 'Carrera de comunicaciones'
+      img : '../../../assets/icon-5.svg',
+      title : 'MISION/VISION'
     },
     {
-      img : '../../../assets/cine-logo.svg',
-      title : 'Carrera de comunicaciones'
+      img : '../../../assets/icon-6.svg',
+      title : 'ORGANIGRAMA'
+    },
+    {
+      img : '../../../assets/icon-7.svg',
+      title : 'PERSONAL'
+    },
+    {
+      img : '../../../assets/icon-8.svg',
+      title : 'DOCUMENTOS DE GESTION'
+    }
+  ]
+  
+
+  linksAcademica :  any[] = [
+    {
+      img : '../../../assets/icon-1.svg',
+      title : 'ACADEMICA',
+      href : '#director'
+    },
+    {
+      img : '../../../assets/icon-2.svg',
+      title : 'ADMISION',
+      href : 'contactenos'
+    },
+    {
+      img : '../../../assets/icon-3.svg',
+      title : 'MATRICULA',
+      href : '/transparencia'
+    },
+    {
+      img : '../../../assets/icon-4.svg',
+      title : 'REPOSITORIO'
     }
   ]
   

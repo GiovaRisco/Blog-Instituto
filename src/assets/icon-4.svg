@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>menu - icono curso corto - office</title>
+    <desc>Created with Sketch.</desc>
+    <g id="menu---icono-curso-corto---office" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icono-curso/office" transform="translate(9.000000, 5.000000)">
+            <circle id="Oval" fill="#009AA6" cx="3" cy="4" r="1"></circle>
+            <path d="M21.37146,38 C18.4222114,38 12.826142,38 3.75,38 C1.67893219,38 0,36.3434536 0,34.3 L0,4.7 C0,2.65654643 1.67893219,1 3.75,1 L24.5610809,1 L25.4294248,1 C25.9552081,1 26.4598436,1.20704572 26.8341153,1.57632713 L29.4046906,4.11262802 C29.7855841,4.48844298 30,5.00121512 30,5.53630089 L30,6.6242981 L30,34.3 C30,36.3434536 28.3210678,38 26.25,38 C25.3421224,38 25.2014974,38 24.7475586,38" id="Path" stroke="#004165" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M24.9766846,0.651123047 L24.9766846,3.96826172 C24.9766846,5.07283122 25.8721151,5.96826172 26.9766846,5.96826172 L30.4200439,5.96826172" id="Path-18" stroke="#004165" stroke-width="1.4"></path>
+            <rect id="Rectangle" stroke="#009AA6" stroke-width="1.4" x="7.7" y="20.7" width="14.6" height="6.6" rx="2"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>menu - icono curso corto - diseño</title>
+    <desc>Created with Sketch.</desc>
+    <g id="menu---icono-curso-corto---diseño" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icono-curso/diseño" transform="translate(5.000000, 6.000000)">
+            <circle id="Oval" fill="#009AA6" cx="6" cy="3.04785156" r="1"></circle>
+            <circle id="Oval-Copy" fill="#009AA6" cx="9" cy="3.01708984" r="1"></circle>
+            <circle id="Oval-Copy-2" fill="#009AA6" cx="12" cy="3.03417969" r="1"></circle>
+            <path d="M26.7727273,16.5908203 L28.5863259,16.5908203" id="Path-30" stroke="#009AA6" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M26.7727273,11.0706787 L28.7727273,11.0706787" id="Path-33" stroke="#009AA6" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M26.7727273,14 L28.4952615,14" id="Path-32" stroke="#009AA6" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <polyline id="Path-23" stroke="#004165" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" points="23.8777077 22.6379395 23.8777077 8 28.7727273 8 28.7727273 22.6379395"></polyline>
+            <path d="M18.5,22.6379395 L18.5,15.5" id="Path-29" stroke="#009AA6" stroke-width="1.4"></path>
+            <path d="M28.6212479,28 L5.54736842,28 C3.03592619,28 1,25.9250714 1,23.3655172 L1,4.63448276 C1,2.07492861 3.03592619,0 5.54736842,0 L32.4526316,0 C34.9640738,0 37,2.07492861 37,4.63448276 L37,23.3655172 C37,25.9250714 34.9640738,28 32.4526316,28 L31.6456106,28" id="Path" stroke="#004165" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <rect id="Rectangle" stroke="#004165" stroke-width="1.4" x="8.7" y="32.7" width="20.6" height="2.6" rx="1.3"></rect>
+            <path d="M12.5,27.4648438 C11.7330729,31.0218099 11.3496094,32.800293 11.3496094,32.800293" id="Path-16" stroke="#004165" stroke-width="1.4"></path>
+            <path d="M26.1503906,27.4648438 C25.3834635,31.0218099 25,32.800293 25,32.800293" id="Path-16-Copy" stroke="#004165" stroke-width="1.4" transform="translate(25.575195, 30.132568) scale(-1, 1) translate(-25.575195, -30.132568) "></path>
+            <path d="M1,6 L37.5,6" id="Path-27" stroke="#004165" stroke-width="1.4"></path>
+            <path d="M0.58203125,23 L37.0820312,23" id="Path-27-Copy" stroke="#004165" stroke-width="1.4"></path>
+            <g id="lapiz" transform="translate(16.000000, 8.000000)" stroke="#004165" stroke-width="1.4">
+                <path d="M-6.61692923e-13,7 L5.45454545,7" id="Path-15"></path>
+                <path d="M0.0713778408,14.6379395 L0.0713778408,6.35497458 C0.0713778408,5.86301351 0.822113109,4.06878595 2.32358365,0.972291906 L2.32362654,0.972312704 C2.45084479,0.709949548 2.76666292,0.600392954 3.02902607,0.727611202 C3.13576863,0.77937 3.22196882,0.865570204 3.27372761,0.972312771 C4.7751914,4.06879401 5.5259233,5.86301461 5.5259233,6.35497458 L5.4281509,14.6379395" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <g id="Pincel" transform="translate(11.000000, 15.500000) rotate(-360.000000) translate(-11.000000, -15.500000) translate(8.000000, 8.000000)" stroke-width="1.4">
+                <path d="M-6.61692923e-13,10.6589969 L5.45454545,10.6589969" id="Path-15" stroke="#009AA6"></path>
+                <path d="M2.72727273,7.01737928 C4.23350386,7.01737928 5.45454545,5.81161918 5.45454545,4.32423871 C5.45454545,3.40590717 4.67481466,2.10175818 3.11535306,0.411791756 L3.1154028,0.411745856 C2.91762141,0.19741297 2.58353678,0.183995329 2.36920389,0.381776718 C2.35881748,0.391361057 2.34882002,0.401358496 2.33923565,0.411744885 C0.779745217,2.10173407 -6.61692923e-13,3.40589868 -6.61692923e-13,4.32423871 C-6.61692923e-13,5.81161918 1.22104159,7.01737928 2.72727273,7.01737928 Z" id="Oval" stroke="#004165" stroke-linejoin="round"></path>
+                <path d="M-1.32160949e-12,14.6379395 L-1.32160949e-12,9.03723471 C-1.32160949e-12,8.18730301 0.697738052,7.49829724 1.55844156,7.49829724 L3.8961039,7.49829724 C4.7568074,7.49829724 5.45454545,8.18730301 5.45454545,9.03723471 L5.50456806,14.6379395" id="Path" stroke="#004165" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

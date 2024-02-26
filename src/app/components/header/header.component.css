@@ -8,6 +8,7 @@ header{
 }
 a {
     text-decoration: none;
+    color: #004165;
 }
 header .nav-top a {
     color: #fff;
@@ -102,16 +103,15 @@ header li:hover {
 }
 
 .wrapper-hover-menu-submenu{
-    max-width: 1090px;
+    max-width: 70%;
     margin-inline: auto;
     color: #000;
     top: 170px;
     background-color: #ffffff;
     border-radius: 10px;
     display: none;
-    gap: 1rem;
     font-weight: 700;
-    justify-content: space-between;
+    justify-content: space-around;
     position: absolute;
     left: 0;
     right: 0;
@@ -338,7 +338,20 @@ header li:hover {
 @media only screen and (max-width: 1130px){
 
     .wrapper-hover-menu-submenu{
-        margin-inline: 30px;
+       max-width: 100%;
+       margin-inline: 20px;
+        color: #000;
+        top: 170px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        display: none;
+        font-weight: 700;
+        justify-content: space-around;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: all .2s ease-in-out;
     }
+
 
 }

@@ -18,7 +18,7 @@ export class UbicationComponent implements OnInit {
   route = inject(ActivatedRoute)
   sanitizer = inject(DomSanitizer)
   sedes: any[]  = new Sedes().getSedesList()
-
+  
 
   
   ngOnInit(): void {
@@ -32,6 +32,7 @@ export class UbicationComponent implements OnInit {
     else console.log("El ID es nulo")
     console.log("3" , this.objSede.src)
     window.scrollTo(0, 0);
+   
   }
 
 
