@@ -1,0 +1,128 @@
+@if (menu == "administrativa") {
+<div class="header-phone scrolled active-phone ">
+    <div class="container-header-phone ">
+        <a [routerLink]="['']" class="logo-header-phone">
+            <img src="../../../assets/logo-cibertec.svg" width="120" height="30" alt="logo intituto">
+        </a>
+        <div class="iconos-header-phone">
+
+            <div class="nav-header-phone close-nav-phone " (click)="toggleMenuPhone()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container-main-transparency">
+    <main class="main-container-items">
+        <div class="transparency-documents">
+            <ul class="wrapper-card-documents pl-0">
+
+                <li id='doc-reglamento' class="card-document">
+                    <a href="#director">
+                        <h3>DIRECTOR</h3>
+                    </a>
+                </li>
+
+                <li id='doc-reglamento' class="card-document">
+                    <a href="/historia">
+                        <h3>HISTORIA</h3>
+                    </a>
+                </li>
+
+
+                <li id='doc-reglamento' class="card-document">
+                    <a href="/transparencia">
+                        <h3>TRANSPARENCIA</h3>
+                    </a>
+                </li>
+
+
+                <li id='doc-reglamento' class="card-document">
+                    <a href="/historia">
+                        <h3>MISION/VISION</h3>
+                    </a>
+                </li>
+
+
+                <li id='doc-reglamento' class="card-document">
+                    <a>
+                        <h3>ORGANIGRAMA</h3>
+                    </a>
+                </li>
+
+                <li id='doc-reglamento' class="card-document">
+                    <a>
+                        <h3>PERSONAL</h3>
+                    </a>
+                </li>
+
+                <li id='doc-reglamento' class="card-document">
+                    <a href="/gestion">
+                        <h3>DOCUMENTOS DE GESTION</h3>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </main>
+</div>
+}
+@else {
+<div class="header-phone scrolled active-phone ">
+    <div class="container-header-phone ">
+        <a [routerLink]="['']" class="logo-header-phone">
+            <img src="../../../assets/logo-cibertec.svg" width="120" height="30" alt="logo intituto">
+        </a>
+        <div class="iconos-header-phone" >
+
+            <div class="nav-header-phone close-nav-phone " (click)="toggleMenuPhone()" >
+                <span ></span>
+                <span></span>
+                <span ></span>
+            </div>
+            <div class="btn-search">
+                <img src="../../../assets/search.svg" height="24" width="24" alt="">
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container-main-transparency">
+    <main class="main-container-items">
+        <div class="transparency-documents">
+            <ul class="wrapper-card-documents pl-0">
+
+                <li id='doc-reglamento' class="card-document">
+                    <a href="#director">
+                        <h3>ACADEMICA</h3>
+                    </a>
+                </li>
+
+                <li id='doc-reglamento' class="card-document">
+                    <a href="/historia">
+                        <h3>ADMISION</h3>
+                    </a>
+                </li>
+
+
+                <li id='doc-reglamento' class="card-document">
+                    <a href="/transparencia">
+                        <h3>MATRICULA</h3>
+                    </a>
+                </li>
+
+
+                <li id='doc-reglamento' class="card-document">
+                    <a href="/historia">
+                        <h3>REPOSITORIO</h3>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </main>
+</div>
+}

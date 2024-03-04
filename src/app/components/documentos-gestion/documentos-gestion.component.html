@@ -1,0 +1,134 @@
+<app-header />
+
+<section class="container-banner-page">
+    <div class="overlay-container"></div>
+    <div class="container-center-items">
+        <div class="wrapper-items">
+            <h1>DOCUMENTOS DE GESTION</h1>
+            <p>
+                Los documentos de gestión son aquellos que sirven para planificar, organizar, ejecutar y evaluar las
+                actividades de una institución o empresa. Estos documentos pueden tener diferentes formatos, propósitos
+                y alcances, según el tipo de organización y el área de gestión que se trate.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="container-little-title">
+    <div class="container-center flex items-end gap-1">
+        <span>
+            <a [routerLink]="['']">
+                <img src="../../../assets/house-logo.svg" alt="house logo">
+            </a>
+            <i>
+                <img src="../../../assets/arrow-to-right.png" alt="arrow to right">
+            </i>
+        </span>
+        <span>
+            <span class="little-title">Transparencia Institucional</span>
+        </span>
+    </div>
+</section>
+
+<div class="container-main-transparency">
+    <main class="main-container-items">
+        <div class="transparency-documents">
+            <ul class="wrapper-card-documents pl-0">
+                <!-- @for (document of documents_card; track document.id) {
+                    <li id='{{document.id}}' (click)="handleClick('{{document.id}}')" class="card-document">
+                        <a>
+                            <h3>{{document.title}}</h3>
+                        </a>
+                    </li>
+                    <div class="menu-hover-container">
+                        <div class="document-container">
+                            <iframe class="iframe-hover" src='../../../assets/documents/"{{document.doc}}"'
+                                width="100%" height="600px" frameborder="0"></iframe>
+                        </div>
+                    </div>
+    
+                }     -->
+                <li id='doc-reglamento' class="card-document">
+                    <a>
+                        <h3>1. PROYECTO EDUCATIVO INSTITUCIONAL</h3>
+                    </a>
+                </li>
+                <div id='doc-reglamento-hover' class="menu-hover-container">
+                    <div class="document-container">
+                        <iframe class="iframe-hover"
+                            src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
+                            width="100%" height="600" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <li id='doc-reglamento' class="card-document">
+                    <a>
+                        <h3>2. PROYECTO CURRICULAR INSTITUCIONAL</h3>
+                    </a>
+                </li>
+                <div id='doc-reglamento-hover' class="menu-hover-container">
+                    <div class="document-container">
+                        <iframe class="iframe-hover"
+                            src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
+                            width="100%" height="600" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <li id='doc-reglamento' class="card-document">
+                    <a>
+                        <h3>3. PLAN ANUAL DE TRABAJO</h3>
+                    </a>
+                </li>
+                <div id='doc-reglamento-hover' class="menu-hover-container">
+                    <div class="document-container">
+                        <iframe class="iframe-hover"
+                            src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
+                            width="100%" height="600" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <li id='doc-reglamento' class="card-document">
+                    <a>
+                        <h3>4. MANUAL DE PROCESOS ACADÉMICOS</h3>
+                    </a>
+                </li>
+                <div id='doc-reglamento-hover' class="menu-hover-container">
+                    <div class="document-container">
+                        <iframe class="iframe-hover"
+                            src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
+                            width="100%" height="600" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <li id='doc-reglamento' class="card-document">
+                    <a>
+                        <h3>5. REGLAMENTO INTERNO</h3>
+                    </a>
+                </li>
+                <div id='doc-reglamento-hover' class="menu-hover-container">
+                    <div class="document-container">
+                        <iframe class="iframe-hover"
+                            src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
+                            width="100%" height="600" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <li id='doc-reglamento' class="card-document">
+                    <a>
+                        <h3>6. ESTATUTO</h3>
+                    </a>
+                </li>
+                <div id='doc-reglamento-hover' class="menu-hover-container">
+                    <div class="document-container">
+                        <iframe class="iframe-hover"
+                            src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
+                            width="100%" height="600" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </main>
+</div>
+
+
+<app-footer />
+<!--(click)="toggleMenuTransparency($event)"-->

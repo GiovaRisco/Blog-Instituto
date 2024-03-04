@@ -62,12 +62,9 @@ export class HeaderComponent {
       href : '/transparencia'
     },
     {
-      img : '../../../assets/icon-4.svg',
-      title : 'AUTORIDADES'
-    },
-    {
       img : '../../../assets/icon-5.svg',
-      title : 'MISION/VISION'
+      title : 'MISION/VISION',
+      href : '/historia'
     },
     {
       img : '../../../assets/icon-6.svg',
@@ -79,7 +76,8 @@ export class HeaderComponent {
     },
     {
       img : '../../../assets/icon-8.svg',
-      title : 'DOCUMENTOS DE GESTION'
+      title : 'DOCUMENTOS DE GESTION',
+      href : '/gestion'
     }
   ]
   

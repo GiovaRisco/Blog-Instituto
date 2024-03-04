@@ -6,6 +6,9 @@ import { CareersComponent } from './components/careers/careers.component';
 import { AboutCareerComponent } from './components/about-career/about-career.component';
 import { UbicationComponent } from './components/ubication/ubication.component';
 import { CustomerServiceComponent } from './components/customer-service/customer-service.component';
+import { DocumentosGestionComponent } from './components/documentos-gestion/documentos-gestion.component';
+import { MovilNavMenuComponent } from './components/movil-nav-menu/movil-nav-menu.component';
+import { AdmissionComponent } from './components/admission/admission.component';
 
 export const routes: Routes = [
     {
@@ -28,5 +31,14 @@ export const routes: Routes = [
     },
     {
         path:'contactenos' , component:CustomerServiceComponent
+    },
+    {
+        path:'gestion' , component:DocumentosGestionComponent
+    },
+    {
+        path:'menu/:nameMenu' , component:MovilNavMenuComponent
+    },
+    {
+        path:'admision' , component:AdmissionComponent
     }
 ];
