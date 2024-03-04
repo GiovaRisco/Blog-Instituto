@@ -9,6 +9,7 @@ import { CustomerServiceComponent } from './components/customer-service/customer
 import { DocumentosGestionComponent } from './components/documentos-gestion/documentos-gestion.component';
 import { MovilNavMenuComponent } from './components/movil-nav-menu/movil-nav-menu.component';
 import { AdmissionComponent } from './components/admission/admission.component';
+import { TeachersComponent } from './components/teachers/teachers.component';
 
 export const routes: Routes = [
     {
@@ -40,5 +41,8 @@ export const routes: Routes = [
     },
     {
         path:'admision' , component:AdmissionComponent
+    },
+    {
+        path:'personal' , component:TeachersComponent
     }
 ];

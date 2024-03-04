@@ -1,0 +1,77 @@
+<app-header />
+
+<section class="container-banner-page">
+    <div class="overlay-container"></div>
+    <div class="container-center-items">
+        <div class="wrapper-items">
+            <h1>PERSONAL CAPACITADO</h1>
+            <p>
+                Nuestra Visión es ser la institución líder de educación superior técnica en el Perú con alcance a nivel
+                nacional.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="container-little-title">
+    <div class="container-center flex items-end gap-1">
+        <span>
+            <a [routerLink]="['']">
+                <img src="../../../assets/house-logo.svg" alt="house logo">
+            </a>
+            <i>
+                <img src="../../../assets/arrow-to-right.png" alt="arrow to right">
+            </i>
+        </span>
+        <span>
+            <span class="little-title">NUESTRO PERSONAL</span>
+        </span>
+    </div>
+</section>
+
+<div class=" max-w-[100%] main-home-container ">
+    <div class="my-container mr-auto ml-auto py-[3rem] ">
+        <section class="flex flex-col">
+            <div class="flex justify-center">
+                <div>
+                    <h1 class="title-career">NUESTROS PROFESORES</h1>
+                    <h2 class="title-career-little mt-[75px] mb-[65px]"></h2>
+                </div>
+            </div>
+            <div class="cont-cards-career">
+                <div class="card-career" style="background-image: url(../../../assets/personal-default.jpg); background-size: cover; 
+                background-position: center;">
+                    <div class="info-career">
+                        <h2 class="info-title-career"><a >PROF. LUIS SANCHEZ</a></h2>
+                        <a class="info-explore-career" ><span>COMPETENCIAS INTRAPERSONALES</span></a>
+                    </div>
+                </div>
+
+                <div class="card-career" style="background-image: url(../../../assets/personal-default.jpg); background-size: cover;
+                 background-position: center;">
+                    <div class="info-career">
+                        <h2 class="info-title-career"><a >PROF. MIGUEL ARRUINAS</a></h2>
+                        <a class="info-explore-career" ><span>MATEMATICA APLICADA</span></a>
+                    </div>
+                </div>
+
+                <div class="card-career" style="background-image: url(../../../assets/personal-default.jpg); background-size: cover;
+                 background-position: center;">
+                    <div class="info-career">
+                        <h2 class="info-title-career"><a >PROF. PEDRO ARTENAS</a></h2>
+                        <a class="info-explore-career" ><span>DISEÑO DE SISTEMAS AVANZADOS</span></a>
+                    </div>
+                </div>
+            </div>
+            <!--
+                <div class="flex justify-center mt-[20px]">
+                <div>
+                    <a [routerLink]="['/carreras']" class="btn-see-all-careers ">VER TODAS LAS CARRERAS</a>
+                </div>
+            </div>
+            -->
+        </section>
+    </div>
+</div>
+
+<app-footer />

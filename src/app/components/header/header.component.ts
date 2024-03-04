@@ -72,7 +72,8 @@ export class HeaderComponent {
     },
     {
       img : '../../../assets/icon-7.svg',
-      title : 'PERSONAL'
+      title : 'PERSONAL',
+      href : '/personal'
     },
     {
       img : '../../../assets/icon-8.svg',
