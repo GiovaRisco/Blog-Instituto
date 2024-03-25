@@ -4,12 +4,12 @@ import { FooterComponent } from '../footer/footer.component';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-admission',
+  selector: 'app-organigrama',
   standalone: true,
-  imports: [HeaderComponent , FooterComponent , RouterModule],
-  templateUrl: './admission.component.html',
-  styleUrl: './admission.component.css'
+  imports: [HeaderComponent ,FooterComponent , RouterModule],
+  templateUrl: './organigrama.component.html',
+  styleUrl: './organigrama.component.css'
 })
-export class AdmissionComponent {
+export class OrganigramaComponent {
 
 }

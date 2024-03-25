@@ -4,16 +4,18 @@
     <section class="carousel-home mt-[54px]">
         <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
             <div class="carousel-inner  ">
-                <div class="carousel-item active ">
+                <!--
+                    <div class="carousel-item active ">
                     <img class="w-full " src="../../../assets/banner1.webp"  alt="banner_1">
-               <!--                    <div class="btn-info">
+                    <div class="btn-info">
                         <h1></h1>
                         <p></p>
                         <a class="btn-more-info" href="">MÁS INFORMACION</a>
-                    </div>-->
+                    </div>
                 </div>
-                <div class="carousel-item ">
-                    <img class="w-full  " src="../../../assets/banner2.webp"   alt="banner_2">
+                -->
+                <div class="carousel-item active ">
+                    <img class="w-full  " src="../../../assets/banner2.webp" alt="banner_2">
                     <!--                    <div class="btn-info">
                         <h1></h1>
                         <p></p>
@@ -21,7 +23,7 @@
                     </div>-->
                 </div>
                 <div class="carousel-item ">
-                    <img class="w-full  " src="../../../assets/banner3.webp"   alt="banner_3">
+                    <img class="w-full  " src="../../../assets/banner3.webp" alt="banner_3">
                     <!--                    <div class="btn-info">
                         <h1></h1>
                         <p></p>
@@ -103,13 +105,13 @@
         <section class="flex flex-col">
             <div class="flex justify-center">
                 <div>
-                    <h1 class="title-career">INSTITUTO 'NOMBRE'</h1>
-                    <h2 class="title-career-little mt-[75px] mb-[65px]">20 CARRERAS EN:</h2>
+                    <h1 class="title-career">COMMENIUS</h1>
+                    <h2 class="title-career-little mt-[75px] mb-[65px]">CINCO CARRERAS EN:</h2>
                 </div>
             </div>
             <div class="cont-cards-career">
                 @for (career of careers; track $index) {
-                <div class="card-career" style="background-image: url({{career.img}}); background-size: cover;">
+                <div class="card-career" style="background-image: url({{career.img}}); background-size: cover; background-position: center center;">
                     <div class="info-career">
                         <h2 class="info-title-career"><a
                                 [routerLink]="['/sobre-la-carrera', career.title]">{{career.title}}</a></h2>
@@ -132,7 +134,7 @@
         <section class="flex flex-col">
             <div class="flex justify-center mb-[30px]">
                 <div>
-                    <h1 class="title-reasons ">NUESTRO DIRECTOR</h1>
+                    <h1 class="title-reasons text-white ">NUESTRO DIRECTOR</h1>
                 </div>
             </div>
             <div class="cont-reasons">
@@ -159,21 +161,46 @@
 -->
                 <div class="columns">
                     <div class="column">
-                        <h2>Palabras de nuestro director:</h2>
-                        <p>Es un honor darle la bienvenida a este espacio virtual donde compartimos la misión, visión y
-                            valores que guían nuestro compromiso con la formación de educadores en la especialidad de
-                            Educación Inicial Intercultural Bilingüe</p><br>
+                        <h2>PALABRAS DE BIENVENIDA DEL DIRECTOR</h2>
+                        <p>Querida comunidad educativa del Instituto de Educación Superior Tecnológico “COMMENIUS”,
+                            Con inmensa alegría me dirijo a Ustedes para comunicarle que este año comenzamos a escribir
+                            nuestra vida institucional con mucha esperanza y convencidos de que La educación superior
+                            tecnológica forma personas en los campos de la ciencia, la tecnología y las artes, para
+                            contribuir con su desarrollo individual, social inclusivo y su adecuado desenvolvimiento en
+                            el entorno laboral nacional y global. Esto contribuye al desarrollo del país y a la
+                            sostenibilidad de su crecimiento a través del incremento de la productividad y
+                            competitividad (MINEDU).
+                        </p><br>
 
-                        <p> En el Instituto de Educación Superior Pedagógico Público de Ccoyllurqui, tenemos la firme
-                            convicción de que la educación es el pilar fundamental para el desarrollo de nuestras
-                            comunidades y la preservación de nuestras ricas tradiciones culturales. Nuestra especialidad
-                            de Educación Inicial Intercultural Bilingüe está diseñada para preparar a profesionales
-                            comprometidos con la diversidad cultural y lingüística de nuestro país, con un enfoque en la
-                            promoción de la interculturalidad y la enseñanza en múltiples idiomas.</p>
+                        <p> En este devenir que hoy aperturamos, nos encontraremos con una infinida de oportunidades y
+                            desafíos que juntos enfrentaremos con entusiasmo y compromiso; por eso nuestro mensaje de
+                            fortaleza y entusiasmo para todos los estudiantes, profesores, personal administrativo y a
+                            todos aquellos que forman parte de esta gran familia educativa. En especial, quiero
+                            dirigirme a nuestros estudiantes comprometidos con su formación técnica profesional,
+                            aquellos que día a día se esforzaran por adquirir los conocimientos y habilidades necesarias
+                            para dar respuestas a las urgentes necesidades sociales y del mercado laboral. Ustedes son
+                            el motor de nuestro Instituto, la razón por la que trabajaremos incansablemente para
+                            brindarles la mejor educación y las herramientas que les permitirán alcanzar sus metas y
+                            contribuir al desarrollo de nuestra sociedad. </p><br>
+
+                        <p>
+                            Este nuevo año académico nos brinda la oportunidad de seguir creciendo juntos, de aprender,
+                            de innovar y de superar los desafíos que se nos presenten. Estoy seguro de que, con su
+                            dedicación, esfuerzo y pasión por su formación técnica profesional, lograremos grandes cosas
+                            y juntos construiremos un futuro mejor. Les animo a aprovechar al máximo todas las
+                            oportunidades que les ofrece nuestro Instituto, a ser proactivos en su aprendizaje, a
+                            colaborar y apoyarse mutuamente, y a nunca perder de vista sus objetivos y sueños. Recuerden
+                            que el conocimiento es la llave que abre todas las puertas, y ustedes tienen en sus manos el
+                            poder de forjar un futuro brillante y exitoso.
+                        </p><br>
+
+                        <p>
+                            ¡Les deseo a todos un exitoso y enriquecedor año académico! Juntos, ¡vamos por más! 
+                        </p>
                     </div>
-                    <div class="column flex justify-center">
+                        <!-- <div class="column flex justify-center">
                         <img src="../../../assets/personal-doccente_51396056579_o.jpg" alt="">
-                    </div>
+                    </div>-->
                 </div>
             </div>
             <div class="flex justify-center mt-[20px]">
@@ -190,7 +217,7 @@
         <section class="flex flex-col">
             <div class="flex justify-center mb-[70px]">
                 <div>
-                    <h1 class="title-reasons ">ENCUENTRANOS EN :</h1>
+                    <h1 class="title-reasons text-white">ENCUENTRANOS EN :</h1>
                 </div>
             </div>
             <div class="carousel-container mb-[-120px]">
@@ -201,7 +228,8 @@
                             style="background-image: url({{sede.img}}); background-size: cover;background-position: center ; background-repeat: no-repeat;">
                             <div class="info-career">
                                 <h2 class="info-title-career"><a href="">{{sede.location}}</a></h2>
-                                <a class="info-explore-career" [routerLink]="['/sede', sede.location]"><span>DESCUBRIR</span></a>
+                                <a class="info-explore-career"
+                                    [routerLink]="['/sede', sede.location]"><span>DESCUBRIR</span></a>
                             </div>
 
                         </div>
@@ -212,7 +240,7 @@
         </section>
     </div>
     <div class="flex justify-center bg-[#fff] pt-[160px] pb-[20px] ">
-       <!-- <div>
+        <!-- <div>
             <a href="" class="btn-see-all ">VER MÁS</a>
         </div>-->
     </div>

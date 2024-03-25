@@ -181,6 +181,7 @@
 }
 .info-explore-career span {
     font-size: 12px ;
+    text-transform: uppercase;
 }
 .info-explore-career:hover {
     background-color: #009AA6;

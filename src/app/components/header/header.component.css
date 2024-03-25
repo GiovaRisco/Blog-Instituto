@@ -21,6 +21,11 @@ header li:hover {
 .my-container{
     background-color: var(--color--principal--darkblue) ;
 }
+
+.img-header{
+    cursor: pointer;
+}
+
 .material-symbols-outlined {
     color: rgb(116, 226, 32);
 }

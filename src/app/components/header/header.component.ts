@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
 export class HeaderComponent {
 
   menuActivate: boolean = false;
-  
+  router = inject(Router)
 
 
   size : string = ""
@@ -68,7 +68,8 @@ export class HeaderComponent {
     },
     {
       img : '../../../assets/icon-6.svg',
-      title : 'ORGANIGRAMA'
+      title : 'ORGANIGRAMA',
+      href : '/organigrama'
     },
     {
       img : '../../../assets/icon-7.svg',
@@ -87,17 +88,22 @@ export class HeaderComponent {
     {
       img : '../../../assets/icon-1.svg',
       title : 'ACADEMICA',
-      href : '#director'
+      href : '/academica'
+    },
+    {
+      img : '../../../assets/icon-6.svg',
+      title : 'CARRERAS',
+      href : '/carreras'
     },
     {
       img : '../../../assets/icon-2.svg',
       title : 'ADMISION',
-      href : 'contactenos'
+      href : '/admision'
     },
     {
       img : '../../../assets/icon-3.svg',
       title : 'MATRICULA',
-      href : '/transparencia'
+      href : '/admision'
     },
     {
       img : '../../../assets/icon-4.svg',
@@ -128,6 +134,10 @@ export class HeaderComponent {
       phone?.setAttribute("style","display : none;")
     }
 
+  }
+
+  backToHome(){
+    this.router.navigate(['/'])
   }
   
 }

@@ -10,6 +10,7 @@ import { DocumentosGestionComponent } from './components/documentos-gestion/docu
 import { MovilNavMenuComponent } from './components/movil-nav-menu/movil-nav-menu.component';
 import { AdmissionComponent } from './components/admission/admission.component';
 import { TeachersComponent } from './components/teachers/teachers.component';
+import { OrganigramaComponent } from './components/organigrama/organigrama.component';
 
 export const routes: Routes = [
     {
@@ -44,5 +45,8 @@ export const routes: Routes = [
     },
     {
         path:'personal' , component:TeachersComponent
+    },
+    {
+        path:'organigrama' , component:OrganigramaComponent
     }
 ];

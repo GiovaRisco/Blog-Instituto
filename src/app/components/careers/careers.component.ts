@@ -14,30 +14,26 @@ export class CareersComponent implements OnInit {
 
 
   public careers: any[] = [
-    {
-      img: '../../../assets/CARD-GESTION-Y-NEGOCIOS-310x310.jpeg',
-      title : 'CARRERA DE ADMINISTRACION y NEGOCIOS'
-    },
-    {
-      img: '../../../assets/CARD-COMUNICACIONES-1-n.jpeg',
-      title : 'CARRERA DE COMUNICACIONES'
-    },
-    {
-      img: '../../../assets/CARD-TECNOLOGIA-310X310-n.jpeg',
-      title : 'CARRERA DE TECNOLOGIA DE INFORMACION'
-    },
-    {
-      img: '../../../assets/CARD-INGENIERIA-310X310-n.jpeg',
-      title : 'CARRERA DE INGENIERIA'
-    },
-    {
-      img: '../../../assets/CARD-DISENO.webp',
-      title : 'CARRERA DE DISEÑO'
-    },
-    {
-      img: '../../../assets/Banner-principal-CARRERAS-PARA-GENTE-QUE-TRABAJA4.webp',
-      title : 'CARRERA DE MODA'
-    }
+      {
+        img: '../../../assets/arquitectura-de-ti.png',
+        title : 'ARQUITECTURA DE PLATAFORMAS Y SERVICIOS DE TI'
+      },
+      {
+        img: '../../../assets/asistente-admi.png',
+        title : 'ASISTENTE ADMINISTRATIVO DE GERENCIA'
+      },
+      {
+        img: '../../../assets/gestion-comercial.png',
+        title : 'GESTION COMERCIAL DE PRODUCTOS Y SERVICIOS BANCARIOS Y FINANCIEROS'
+      },
+      {
+        img: '../../../assets/guia-turismo.png',
+        title : 'GUIA OFICIAL DE TURISMO'
+      },
+      {
+        img: '../../../assets/farmacia-tecnica.png',
+        title : 'FARMACIA TÉCNICA'
+      }
   ]
 
     ngOnInit(): void {
