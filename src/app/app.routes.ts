@@ -9,7 +9,6 @@ import { CustomerServiceComponent } from './components/customer-service/customer
 import { DocumentosGestionComponent } from './components/documentos-gestion/documentos-gestion.component';
 import { MovilNavMenuComponent } from './components/movil-nav-menu/movil-nav-menu.component';
 import { AdmissionComponent } from './components/admission/admission.component';
-import { TeachersComponent } from './components/teachers/teachers.component';
 import { OrganigramaComponent } from './components/organigrama/organigrama.component';
 
 export const routes: Routes = [
@@ -17,7 +16,7 @@ export const routes: Routes = [
         path:'' , component:HomeComponent
     },
     {
-        path:'historia' , component:HistoryComponent
+        path:'director' , component:HistoryComponent
     },
     {
         path:'transparencia' , component:InstitutionalTransparencyComponent
@@ -25,9 +24,11 @@ export const routes: Routes = [
     {
         path:'carreras' , component:CareersComponent
     },
-    {
+    /**
+     * {
         path:'sobre-la-carrera/:nameCareer' , component:AboutCareerComponent
     },
+     */
     {
         path:'sede/:nameSede' , component:UbicationComponent
     },
@@ -42,9 +43,6 @@ export const routes: Routes = [
     },
     {
         path:'admision' , component:AdmissionComponent
-    },
-    {
-        path:'personal' , component:TeachersComponent
     },
     {
         path:'organigrama' , component:OrganigramaComponent

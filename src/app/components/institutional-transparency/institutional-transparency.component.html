@@ -5,10 +5,11 @@
     <div class="container-center-items">
         <div class="wrapper-items">
             <h1>Transparencia Institucional</h1>
-            <p>
-                Nuestra Visión es ser la institución líder de educación superior técnica en el Perú con alcance a nivel
-                nacional.
+           <!--
+             <p>
+                Nuestra Visión es ser la institución líder de educación superior técnica en el Perú con alcance a nivel nacional.
             </p>
+           -->
         </div>
     </div>
 </section>
@@ -16,7 +17,7 @@
 <section class="container-little-title">
     <div class="container-center flex items-end gap-1">
         <span>
-            <a  [routerLink]="['']">
+            <a [routerLink]="['']">
                 <img src="../../../assets/house-logo.svg" alt="house logo">
             </a>
             <i>
@@ -33,7 +34,7 @@
     <main class="main-container-items">
         <div class="transparency-documents">
             <ul class="wrapper-card-documents pl-0">
-               <!-- @for (document of documents_card; track document.id) {
+                <!-- @for (document of documents_card; track document.id) {
                     <li id='{{document.id}}' (click)="handleClick('{{document.id}}')" class="card-document">
                         <a>
                             <h3>{{document.title}}</h3>
@@ -47,147 +48,94 @@
                     </div>
     
                 }     -->
-                <li  id='doc-reglamento'  class="card-document">
+                <li id='doc-reglamento' class="card-document">
                     <a>
                         <h3>A) Relación y número de becas y créditos educativos otorgados en el año en curso
                         </h3>
                     </a>
                 </li>
-                <div id='doc-reglamento-hover' class="menu-hover-container">
+               <!--
+                 <div id='doc-reglamento-hover' class="menu-hover-container">
                     <div class="document-container">
-                        <iframe class="iframe-hover" src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
+                        <iframe class="iframe-hover"
+                            src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
                             width="100%" height="600" frameborder="0"></iframe>
                     </div>
                 </div>
-                <li  id='doc-reglamento'  class="card-document">
-                    <a>
+               -->
+                <li id='doc-reglamento' class="card-document" >
+                    <a download="" href="../../../assets/documents/PEI IEST C. transformar.docx.pdf" target="_blank">
                         <h3>B) Relación de derechos, tasas, montos de
                             pensiones u otros pagos que deben realizar los
                             estudiantes por toda índole, según corresponda.</h3>
                     </a>
                 </li>
-                <div id='doc-reglamento-hover' class="menu-hover-container">
-                    <div class="document-container">
-                        <iframe class="iframe-hover" src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
-                            width="100%" height="600" frameborder="0"></iframe>
-                    </div>
-                </div>
-
-                <li  id='doc-reglamento'  class="card-document">
+                
+                <li id='doc-reglamento' class="card-document">
                     <a>
                         <h3>C) Proyectos de investigación y los gastos que
                             genere</h3>
                     </a>
                 </li>
-                <div id='doc-reglamento-hover' class="menu-hover-container">
-                    <div class="document-container">
-                        <iframe class="iframe-hover" src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
-                            width="100%" height="600" frameborder="0"></iframe>
-                    </div>
-                </div>
+                
 
-                <li  id='doc-reglamento'  class="card-document">
+                <li id='doc-reglamento' class="card-document">
                     <a>
                         <h3>D) Conformación del cuerpo docente, sus
                             respectivas hojas de vida actualizadas y las
                             materias en las que se desempeña</h3>
                     </a>
                 </li>
-                <div id='doc-reglamento-hover' class="menu-hover-container">
-                    <div class="document-container">
-                        <iframe class="iframe-hover" src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
-                            width="100%" height="600" frameborder="0"></iframe>
-                    </div>
-                </div>
+                
 
-                <li  id='doc-reglamento'  class="card-document">
+                <li id='doc-reglamento' class="card-document">
                     <a>
                         <h3>E) El número de ingresantes, matriculados y
-                  egresados por año y programa formativo</h3>
+                            egresados por año y programa formativo</h3>
                     </a>
                 </li>
-                <div id='doc-reglamento-hover' class="menu-hover-container">
-                    <div class="document-container">
-                        <iframe class="iframe-hover" src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
-                            width="100%" height="600" frameborder="0"></iframe>
-                    </div>
-                </div>
-
-                <li  id='doc-reglamento'  class="card-document">
+                
+                <li id='doc-reglamento' class="card-document">
                     <a>
                         <h3>F) Relación de programas de estudios, sus horarios
                             y procesos de matrícula</h3>
                     </a>
                 </li>
-                <div id='doc-reglamento-hover' class="menu-hover-container">
-                    <div class="document-container">
-                        <iframe class="iframe-hover" src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
-                            width="100%" height="600" frameborder="0"></iframe>
-                    </div>
-                </div>
-
-                <li  id='doc-reglamento'  class="card-document">
+                
+                <li id='doc-reglamento' class="card-document">
                     <a>
                         <h3>G) Periodo de vigencia de su licenciamiento</h3>
                     </a>
                 </li>
-                <div id='doc-reglamento-hover' class="menu-hover-container">
-                    <div class="document-container">
-                        <iframe class="iframe-hover" src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
-                            width="100%" height="600" frameborder="0"></iframe>
-                    </div>
-                </div>
-
-                <li  id='doc-reglamento'  class="card-document">
+               
+                <li id='doc-reglamento' class="card-document">
                     <a>
                         <h3>H) El estatuto o reglamento institucional.</h3>
                     </a>
                 </li>
-                <div id='doc-reglamento-hover' class="menu-hover-container">
-                    <div class="document-container">
-                        <iframe class="iframe-hover" src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
-                            width="100%" height="600" frameborder="0"></iframe>
-                    </div>
-                </div>
-
-                <li  id='doc-reglamento'  class="card-document">
+               
+                <li id='doc-reglamento' class="card-document">
                     <a>
                         <h3>I) Inversiones, reinversiones, donaciones, obras de
                             infraestructura, recursos de diversa fuente, entre
                             otros, para IES y EES públicos.</h3>
                     </a>
                 </li>
-                <div id='doc-reglamento-hover' class="menu-hover-container">
-                    <div class="document-container">
-                        <iframe class="iframe-hover" src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
-                            width="100%" height="600" frameborder="0"></iframe>
-                    </div>
-                </div>
-
-                <li  id='doc-reglamento'  class="card-document">
+               
+                <li id='doc-reglamento' class="card-document">
                     <a>
                         <h3>J) El texto único de procedimientos administrativos
                             para IES y EES públicos</h3>
                     </a>
                 </li>
-                <div id='doc-reglamento-hover' class="menu-hover-container">
-                    <div class="document-container">
-                        <iframe class="iframe-hover" src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
-                            width="100%" height="600" frameborder="0"></iframe>
-                    </div>
-                </div>
+               
 
-                <li  id='doc-reglamento'  class="card-document">
+                <li id='doc-reglamento' class="card-document">
                     <a>
                         <h3>K) Normas Emitidas por la Entidad</h3>
                     </a>
                 </li>
-                <div id='doc-reglamento-hover' class="menu-hover-container">
-                    <div class="document-container">
-                        <iframe class="iframe-hover" src="https://drive.google.com/file/d/1t-Cj8vAp6aFAAlzH0O5kcol95s9MCEgUORaLjMOhDyY/preview"
-                            width="100%" height="600" frameborder="0"></iframe>
-                    </div>
-                </div>
+              
             </ul>
         </div>
     </main>

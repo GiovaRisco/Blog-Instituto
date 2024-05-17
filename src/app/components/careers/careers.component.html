@@ -6,9 +6,11 @@
         <div class="wrapper-items">
             <h1>CARRERAS PROFESIONALES
             </h1>
-            <p>
-                Nuestra visión es ser la institución líder de educación superior técnica, con alcance nacional y con las mejores carreras profesionales en el Perú
+            <!--
+             <p>
+                Nuestra Visión es ser la institución líder de educación superior técnica en el Perú con alcance a nivel nacional.
             </p>
+           -->
         </div>
     </div>
 </section>
@@ -40,10 +42,10 @@
             </div>
             <div class="cont-cards-career">
                  @for (career of careers; track $index) {
-                <div class="card-career" style="background-image: url({{career.img}}); background-size: cover;">
+                <div class="card-career" style="background-image: url({{career.img}}); background-size: cover; background-position: center center;">
                     <div class="info-career">
                         <h2 class="info-title-career"><a href="#">{{career.title}}</a></h2>
-                        <a class="info-explore-career" [routerLink]="['/sobre-la-carrera', career.title]"><span>DESCUBRIR</span></a>
+                        <a download="" class="info-explore-career" href="{{career.courses}}"><span>Malla Curricular(.pdf)</span></a>
                     </div>
                 </div>
                 }

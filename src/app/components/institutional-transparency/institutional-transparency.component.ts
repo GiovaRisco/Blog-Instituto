@@ -16,11 +16,13 @@ export class InstitutionalTransparencyComponent implements OnInit {
 
 
   ngOnInit(): void {
-    for(let i = 0 ; i < this.elementos.length ; i++){
+   /**
+    *  for(let i = 0 ; i < this.elementos.length ; i++){
         this.elementos[i].addEventListener('click', ()=>{
           this.elementos[i].classList.toggle('active')
       })
     }
+    */
     window.scrollTo(0, 0);
   } 
 

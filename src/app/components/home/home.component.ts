@@ -8,34 +8,40 @@ import { Sedes } from '../../models/Sedes';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent,FooterComponent,SlickCarouselModule,RouterModule],
+  imports: [HeaderComponent, FooterComponent, SlickCarouselModule, RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
 
-  sedes: any[]  = new Sedes().getSedesList()
+  sedes: any[] = new Sedes().getSedesList()
 
   careers: any[] = [
     {
       img: '../../../assets/arquitectura-de-ti.png',
-      title : 'ARQUITECTURA DE PLATAFORMAS Y SERVICIOS DE TI'
+      title: 'ARQUITECTURA DE PLATAFORMAS Y SERVICIOS DE TI',
+      courses: '../../../assets/documents/malla-curricular-servicios-ti.pdf',
+
     },
     {
       img: '../../../assets/asistente-admi.png',
-      title : 'ASISTENTE ADMINISTRATIVO DE GERENCIA'
+      title: 'ASISTENTE ADMINISTRATIVO DE GERENCIA',
+      courses: '../../../assets/documents/malla-curricular-asistente.pdf',
     },
     {
       img: '../../../assets/gestion-comercial.png',
-      title : 'GESTION COMERCIAL DE PRODUCTOS Y SERVICIOS BANCARIOS Y FINANCIEROS'
+      title: 'GESTION COMERCIAL DE PRODUCTOS Y SERVICIOS BANCARIOS Y FINANCIEROS',
+      courses: '../../../assets/documents/malla-curricular-gestion-comercial.pdf',
     },
     {
       img: '../../../assets/guia-turismo.png',
-      title : 'GUIA OFICIAL DE TURISMO'
+      title: 'GUIA OFICIAL DE TURISMO',
+      courses: '../../../assets/documents/malla-curricular-servicios-ti.pdf',
     },
     {
       img: '../../../assets/farmacia-tecnica.png',
-      title : 'FARMACIA TÉCNICA'
+      title: 'FARMACIA TÉCNICA',
+      courses: '../../../assets/documents/malla-curricular-farmacia.pdf',
     }
   ]
 
@@ -45,34 +51,35 @@ export class HomeComponent implements OnInit {
 
 
 
-  slideConfig = {"slidesToShow": 3, "slidesToScroll": 1 ,"variableWigth": true,"autoplay": true,
-  "autoplaySpeed": 4000, "dots": true,
-  responsive: [
-    {
-      breakpoint: 1070,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
+  slideConfig = {
+    "slidesToShow": 3, "slidesToScroll": 1, "variableWigth": true, "autoplay": true,
+    "autoplaySpeed": 4000, "dots": true,
+    responsive: [
+      {
+        breakpoint: 1070,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 539,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
       }
-    },
-    {
-      breakpoint: 539,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    }
-  ]
-};
+    ]
+  };
 
-ngOnInit(): void {
-  window.scrollTo(0, 0);
-}
-  
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
+
   /*addSlide() {
     this.slides.push({img: "http://placehold.it/350x150/777777"})
   }

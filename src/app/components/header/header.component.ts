@@ -46,15 +46,17 @@ export class HeaderComponent {
 
 
   linksAdministrativa :  any[] = [
-    {
+    /**
+     * {
       img : '../../../assets/icon-1.svg',
       title : 'DIRECTOR',
       href : '#director'
     },
+     */
     {
-      img : '../../../assets/icon-2.svg',
-      title : 'HISTORIA',
-      href : '/historia'
+      img : '../../../assets/icon-1.svg',
+      title : 'DIRECTOR',
+      href : '/director'
     },
     {
       img : '../../../assets/icon-3.svg',
@@ -62,19 +64,9 @@ export class HeaderComponent {
       href : '/transparencia'
     },
     {
-      img : '../../../assets/icon-5.svg',
-      title : 'MISION/VISION',
-      href : '/historia'
-    },
-    {
       img : '../../../assets/icon-6.svg',
       title : 'ORGANIGRAMA',
       href : '/organigrama'
-    },
-    {
-      img : '../../../assets/icon-7.svg',
-      title : 'PERSONAL',
-      href : '/personal'
     },
     {
       img : '../../../assets/icon-8.svg',
@@ -88,7 +80,7 @@ export class HeaderComponent {
     {
       img : '../../../assets/icon-1.svg',
       title : 'ACADEMICA',
-      href : '/academica'
+      href : '/gestion'
     },
     {
       img : '../../../assets/icon-6.svg',
@@ -98,11 +90,6 @@ export class HeaderComponent {
     {
       img : '../../../assets/icon-2.svg',
       title : 'ADMISION',
-      href : '/admision'
-    },
-    {
-      img : '../../../assets/icon-3.svg',
-      title : 'MATRICULA',
       href : '/admision'
     },
     {
