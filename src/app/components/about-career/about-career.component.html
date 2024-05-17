@@ -18,16 +18,16 @@
     <div class="container-center flex items-end gap-1">
         <span>
             <a  [routerLink]="['']">
-                <img src="../../../assets/house-logo.svg" alt="house logo">
+                <img src="/src/assets/house-logo.svg" alt="house logo">
             </a>
             <i>
-                <img src="../../../assets/arrow-to-right.png" alt="arrow to right">
+                <img src="/src/assets/arrow-to-right.png" alt="arrow to right">
             </i>
         </span>
         <span class="flex items-center">
             <span class="little-title" >Carreras</span>
             <i>
-                <img src="../../../assets/arrow-to-right.png" alt="arrow to right">
+                <img src="/src/assets/arrow-to-right.png" alt="arrow to right">
             </i>
         </span>
         <span class="flex items-center">
@@ -68,7 +68,7 @@
                     <div class="roles-list">
                         <ul>
                             @for ( role of objCareer.content.work.roles ; track $index) {
-                                <li class="flex items-start mb-[4px]"><img src="../../../assets/check.svg" alt=""><span>{{role}}</span></li>
+                                <li class="flex items-start mb-[4px]"><img src="/src/assets/check.svg" alt=""><span>{{role}}</span></li>
                             }
                         </ul>
                     </div>
@@ -86,7 +86,7 @@
                         <p>{{objCareer.content.courses.text}}</p>
                         <div class="container-brochure-btn mb-[30px]">
                             <a href="{{objCareer.content.courses.brochure}}" target="_blank">
-                                <img src="../../../assets/archivo.svg" alt="archivo imagen">DESCARGAR LA LISTA DE CURSOS
+                                <img src="/src/assets/archivo.svg" alt="archivo imagen">DESCARGAR LA LISTA DE CURSOS
                             </a>
                         </div>
                     </div>

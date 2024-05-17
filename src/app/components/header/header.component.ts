@@ -54,22 +54,22 @@ export class HeaderComponent {
     },
      */
     {
-      img : '../../../assets/icon-1.svg',
+      img : '/src/assets/icon-1.svg',
       title : 'DIRECTOR',
       href : '/director'
     },
     {
-      img : '../../../assets/icon-3.svg',
+      img : '/src/assets/icon-3.svg',
       title : 'TRANSPARENCIA',
       href : '/transparencia'
     },
     {
-      img : '../../../assets/icon-6.svg',
+      img : '/src/assets/icon-6.svg',
       title : 'ORGANIGRAMA',
       href : '/organigrama'
     },
     {
-      img : '../../../assets/icon-8.svg',
+      img : '/src/assets/icon-8.svg',
       title : 'DOCUMENTOS DE GESTION',
       href : '/gestion'
     }
@@ -78,17 +78,17 @@ export class HeaderComponent {
 
   linksAcademica :  any[] = [
     {
-      img : '../../../assets/icon-6.svg',
+      img : '/src/assets/icon-6.svg',
       title : 'CARRERAS',
-      href : '/carreras'
+      href : 'carreras'
     },
     {
-      img : '../../../assets/icon-2.svg',
+      img : '/src/assets/icon-2.svg',
       title : 'ADMISION',
-      href : '/admision'
+      href : 'admision'
     },
     {
-      img : '../../../assets/icon-4.svg',
+      img : '/src/assets/icon-4.svg',
       title : 'REPOSITORIO'
     }
   ]

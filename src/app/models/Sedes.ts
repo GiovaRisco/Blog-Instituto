@@ -5,7 +5,7 @@ export class Sedes {
         this.sedes = [
             {
                 location : "SAN ISIDRO",
-                img : "../../../assets/edificiosede.jpg" ,
+                img : "/src/assets/edificiosede.jpg" ,
                 address : "Calle Manuel Fuentes 420",
                 numberPhone : "633-5555"
             }

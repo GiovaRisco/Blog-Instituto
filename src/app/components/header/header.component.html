@@ -2,7 +2,7 @@
 <div class="header-phone scrolled ">
     <div class="container-header-phone ">
         <a  class="logo-header-phone">
-            <img class="img-header" (click)="backToHome()" src="../../../assets/logo-comenius.png" width="120" height="30" alt="logo intituto">
+            <img class="img-header" (click)="backToHome()" src="/src/assets/logo-comenius.png" width="120" height="30" alt="logo intituto">
         </a>
         <div class="iconos-header-phone">
 
@@ -78,17 +78,17 @@
                 <ul>
                     <li>
                         <a href="https://www.facebook.com/profile.php?id=61558487376373" target="_blank">
-                            <img src="../../../assets/logo-face-with-bg.png"  alt="imagen logo facebook">
+                            <img src="/src/assets/logo-face-with-bg.png"  alt="imagen logo facebook">
                         </a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/" target="_blank">
-                            <img src="../../../assets/logo-ig-with-bg.png" alt="logo instagram">
+                            <img src="/src/assets/logo-ig-with-bg.png" alt="logo instagram">
                         </a>
                     </li>
                     <li>
                         <a href="https://www.youtube.com/@TECNOLOGICOCOMENIUS" target="_blank">
-                            <img src="../../../assets/logo-yt-with-bg.png" alt="logo youtube">
+                            <img src="/src/assets/logo-yt-with-bg.png" alt="logo youtube">
                         </a>
                     </li>
                 </ul>
@@ -130,7 +130,7 @@
     <div class="h-[100px]">
         <div class="flex justify-between items-center max-w-[1090px]  submenu-wrapper">
             <a [routerLink]="['']" class="flex justify-start">
-                <img src="../../../assets/logo-comenius.png" width="200" height="50" alt="logo-instituto">
+                <img src="/src/assets/logo-comenius.png" width="200" height="50" alt="logo-instituto">
             </a>
             <div class="max-w-[800px] h-[100%]">
                 <ul class="flex gap-[60px] h-[100%] mb-0">
@@ -156,7 +156,8 @@
                         <div class="wrapper-hover-menu"></div>
                         <ul class="wrapper-hover-menu-submenu  pl-0 ">
                             @for (link of linksAdministrativa; track $index) {
-                            <a href="{{link.href}}" class="item-submenu">
+                            <a [routerLink]='["{{link.href}}"]' class="item-submenu">
+                                
                                 <div class="submenu-header">
                                     <img src="{{link.img}}" alt="">
                                     <p>{{link.title}}</p>
@@ -166,12 +167,13 @@
                             }
                         </ul>
                     </div>
+                    
                     <div class="flex items-center text-center btn-menu-hover p-[12px]">Gestion Academica <span
                             class="material-symbols-outlined ">expand_more</span>
                         <div class="wrapper-hover-menu"></div>
                         <ul class="wrapper-hover-menu-submenu  pl-0 ">
                             @for (link of linksAcademica; track $index) {
-                            <a href="{{link.href}}"  class="item-submenu">
+                            <a [routerLink]="['/{{link.href}}']"  class="item-submenu">
                                 <div class="submenu-header">
                                     <img src="{{link.img}}" alt="">
                                     <p>{{link.title}}</p>
