@@ -297,14 +297,15 @@
 }
 .columns {
     display:  grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 60%;
+    justify-content: center;
     align-items: start;
     gap: 3rem;
     text-align: start;
 }
 
 .column{
-    text-align: center;
+    text-align: justify;
 }
 
 .column img{

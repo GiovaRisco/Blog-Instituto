@@ -104,10 +104,13 @@
     width: 80%;
     margin:  auto;
 }
+.blockHistoria p {
+    text-align: justify;
+}
 
 .columns {
     display:  grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%; /*Antes 50% 50%*/
     gap: 2rem;
 }
 
@@ -161,6 +164,10 @@
         text-transform: uppercase;
         line-height: 45px;
         margin-right: 20px;
+    }
+    .blockHistoria{
+        width: 95%;
+        margin:  auto;
     }
 
 }

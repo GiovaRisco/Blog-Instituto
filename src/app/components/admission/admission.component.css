@@ -84,6 +84,54 @@
 }
 
 
+/*ADMIISON - INICIO*/
+.container {
+    width: 100%;
+}
+
+.section {
+    padding-left: 2%;
+    padding-right: 5%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.columns {
+    display:  grid;
+    grid-template-columns: 50% 50%; /*Antes 50% 50%*/
+    gap: 2rem;
+}
+
+.block{
+    width: 80%;
+    margin:  auto;
+}
+.block p {
+    text-align: justify;
+}
+
+.block p , .block h2 {
+    color: #fff;
+}
+
+.card {
+    height: 100%;
+    padding: 20px;
+    background-color:#002C44 ;
+    z-index: -100;
+}
+
+/*ADMIISON - FIN*/
+/*LISTA -INICIO*/
+.lista li{
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.lista-carrers li{
+    list-style:circle;
+}
+/*LISTA -FIN*/
+
 
 
 /*MEDIA QUERY*/
@@ -97,4 +145,17 @@
         line-height: 45px;
         margin-right: 20px;
     }
+}
+
+
+@media only screen and (max-width: 1020px){
+
+    .columns {
+        display:  flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+
 }

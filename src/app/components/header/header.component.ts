@@ -78,11 +78,6 @@ export class HeaderComponent {
 
   linksAcademica :  any[] = [
     {
-      img : '../../../assets/icon-1.svg',
-      title : 'ACADEMICA',
-      href : '/gestion'
-    },
-    {
       img : '../../../assets/icon-6.svg',
       title : 'CARRERAS',
       href : '/carreras'
