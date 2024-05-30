@@ -1,47 +1,48 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { RouterModule } from '@angular/router';
 import { Sedes } from '../../models/Sedes';
-
+import * as AOS from 'aos';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, SlickCarouselModule, RouterModule],
+  imports: [HeaderComponent, FooterComponent, SlickCarouselModule, RouterModule ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
 
+
   sedes: any[] = new Sedes().getSedesList()
 
   careers: any[] = [
     {
-      img: '/src/assets/arquitectura-de-ti.png',
+      img: 'assets/arquitectura-de-ti.png',
       title: 'ARQUITECTURA DE PLATAFORMAS Y SERVICIOS DE TI',
-      courses: '/src/assets/documents/malla-curricular-servicios-ti.pdf',
+      courses: 'assets/documents/malla-curricular-servicios-ti.pdf',
 
     },
     {
-      img: '/src/assets/asistente-admi.png',
+      img: 'assets/asistente-admi.png',
       title: 'ASISTENTE ADMINISTRATIVO DE GERENCIA',
-      courses: '/src/assets/documents/malla-curricular-asistente.pdf',
+      courses: 'assets/documents/malla-curricular-asistente.pdf',
     },
     {
-      img: '/src/assets/gestion-comercial.png',
+      img: 'assets/gestion-comercial.png',
       title: 'GESTION COMERCIAL DE PRODUCTOS Y SERVICIOS BANCARIOS Y FINANCIEROS',
-      courses: '/src/assets/documents/malla-curricular-gestion-comercial.pdf',
+      courses: 'assets/documents/malla-curricular-gestion-comercial.pdf',
     },
     {
-      img: '/src/assets/guia-turismo.png',
+      img: 'assets/guia-turismo.png',
       title: 'GUIA OFICIAL DE TURISMO',
-      courses: '/src/assets/documents/malla-curricular-servicios-ti.pdf',
+      courses: 'assets/documents/malla-curricular-servicios-ti.pdf',
     },
     {
-      img: '/src/assets/farmacia-tecnica.png',
+      img: 'assets/farmacia-tecnica.png',
       title: 'FARMACIA TÉCNICA',
-      courses: '/src/assets/documents/malla-curricular-farmacia.pdf',
+      courses: 'assets/documents/malla-curricular-farmacia.pdf',
     }
   ]
 
@@ -77,6 +78,8 @@ export class HomeComponent implements OnInit {
   };
 
   ngOnInit(): void {
+    AOS.init()
+    window.addEventListener('load' ,AOS.refresh)
     window.scrollTo(0, 0);
   }
 

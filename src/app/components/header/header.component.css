@@ -42,7 +42,7 @@ header li:hover {
    margin: 0 auto;
 }
 .header-wrapper{
-    background-color: rgba(0, 0, 0, 0.45)
+    background-color: rgba(0, 0, 0, 0.50)
 }
 
 .submenu-wrapper{
@@ -92,7 +92,11 @@ header li:hover {
 
 .item-submenu:hover{
     background-color: #eef9ff;
-    border-radius: 10px;
+   
+    border-bottom: 5px solid #009AA6;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition:  .3s ease-in-out all;
 }
 .wrapper-hover-menu{
     
@@ -116,11 +120,15 @@ header li:hover {
     border-radius: 10px;
     display: none;
     font-weight: 700;
-    justify-content: space-around;
+    justify-content: center;
     position: absolute;
     left: 0;
     right: 0;
     transition: all .2s ease-in-out;
+}
+
+.wrapper-hover-menu-submenu a {
+    flex-grow: 1;
 }
 
 .submenu-header{

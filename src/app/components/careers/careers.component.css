@@ -1,7 +1,7 @@
 .container-banner-page {
     height: 490px;
-    background: url(https://www.cibertec.edu.pe/wp-content/uploads/2019/07/faq.jpg);
-    background-position: center top;
+    background: url("/assets/banner-carreras.jpg");
+    background-position: center bottom;
     background-size: cover;
     position: relative;
 }
@@ -130,7 +130,6 @@
 .cont-cards-career {
     width: 100%;
     margin: 0 auto;
-    justify-content: space-around;
     display: flex;
     gap: .5rem;
     flex-wrap: wrap;

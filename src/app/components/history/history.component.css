@@ -1,6 +1,6 @@
 .container-banner-page {
     height: 490px;
-    background: url(https://www.cibertec.edu.pe/wp-content/uploads/2019/07/faq.jpg);
+    background: url("/assets/banner-director.jpg");
     background-position: center top;
     background-size: cover;
     position: relative;

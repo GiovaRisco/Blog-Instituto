@@ -54,7 +54,7 @@
 
 /*IMPORTANT SECTION - INICIO*/
 #transparencia {
-    padding-top: 150px;
+    padding-top: -10px;
 }
 .section-important .info-career h2 a {
     display: flex;
@@ -106,7 +106,6 @@
 .cont-cards-career {
     width: 100%;
     margin: 0 auto;
-    justify-content: space-around;
     display: flex;
     gap: .5rem;
     flex-wrap: wrap;
