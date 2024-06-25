@@ -10,6 +10,12 @@ import { DocumentosGestionComponent } from './components/documentos-gestion/docu
 import { MovilNavMenuComponent } from './components/movil-nav-menu/movil-nav-menu.component';
 import { AdmissionComponent } from './components/admission/admission.component';
 import { OrganigramaComponent } from './components/organigrama/organigrama.component';
+import { ArquitecturaComponent } from './carrers/arquitectura/arquitectura.component';
+import { TuristicasComponent } from './carrers/turisticas/turisticas.component';
+import { MarketingComponent } from './carrers/marketing/marketing.component';
+import { ContabilidadComponent } from './carrers/contabilidad/contabilidad.component';
+import { ComercialComponent } from './carrers/comercial/comercial.component';
+import { AdministrativaComponent } from './carrers/administrativa/administrativa.component';
 
 export const routes: Routes = [
     {
@@ -24,11 +30,6 @@ export const routes: Routes = [
     {
         path:'carreras' , component:CareersComponent
     },
-    /**
-     * {
-        path:'sobre-la-carrera/:nameCareer' , component:AboutCareerComponent
-    },
-     */
     {
         path:'sede/:nameSede' , component:UbicationComponent
     },
@@ -46,5 +47,23 @@ export const routes: Routes = [
     },
     {
         path:'organigrama' , component:OrganigramaComponent
+    },
+    {
+        path:'carreras/arquitectura' , component:ArquitecturaComponent
+    },
+    {
+        path:'carreras/administrativa' , component:AdministrativaComponent
+    },
+    {
+        path:'carreras/comercial' , component:ComercialComponent
+    },
+    {
+        path:'carreras/contabilidad' , component:ContabilidadComponent
+    },
+    {
+        path:'carreras/marketing' , component:MarketingComponent
+    },
+    {
+        path:'carreras/turisticas' , component:TuristicasComponent
     }
 ];

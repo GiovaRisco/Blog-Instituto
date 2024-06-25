@@ -1,0 +1,558 @@
+
+a{
+    text-decoration: none;
+}
+.container {
+     width: 90%;
+     margin: auto;
+}
+
+/*HEROE - INICIO*/
+.seccion-banner {
+    padding-top: 200px;
+    background-image: url(/assets/banner-movil.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.seccion-banner.interna{
+    padding-bottom: 30px;
+    position: relative;
+}
+.columna-content {
+    width: 70%;
+}
+.titulo-banner h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #8f1433;
+    font-size: 59px;
+    line-height: 1.1;
+    font-weight: 900;
+}
+
+.tex-modalidad h2 {
+    font-size: 22px;
+    font-weight: 600;
+    width: 90%;
+    color: #002C44;
+}
+
+.descargar-brochure {
+    background-color: #1bd742;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 10px 20px;
+    display: inline-block;
+    line-height: 1;
+    border-radius: 10px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.pe-brochure {
+    font-weight: 500;
+}
+
+.descargar-brochure:hover {
+    background-color: #002C44;
+    color: white;
+}
+.descargar-brochure a{
+    color: #fff;
+}
+
+.box-conveniosUnivers{
+    margin-top: 40px;
+}
+
+.box-conveniosUnivers h2{
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.logo-u-banner img{
+    width: 80%;
+    margin-top: 10px;
+}
+.cont-unis {
+    width: 80%;
+    display: flex;
+    gap: 5px;
+}
+.cont-unis div img {
+    flex-grow: 1;
+}
+/*HEROE - FIN*/
+/*BENEFICIOS - INICIO*/
+.beneficios-home-internas.sistemas {
+    background-image: url(https://isam.edu.pe/img/beneficios_fondo_presencial.jpg);
+
+}
+.beneficios-home-internas {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.texto-largo-content{
+    width: 70%;
+}
+
+.icono-img {
+    width: 50px;
+    height: 50px;
+}
+
+.main-height {
+    height: 420px;
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+.main-height>div{
+    vertical-align: middle;
+    height: inherit;
+    display: table-cell;
+}
+
+.main-height.col-h-1>div{
+    vertical-align: bottom;
+}
+
+.img-responsive {
+    height: auto;
+}
+
+.caja-moda {
+    float: left;
+    width: 24%;
+    text-align: center;
+    padding: 0 15px;
+    border: 1px solid white;
+    margin: 0 2px;
+    height: 165px;
+}
+
+.beneficios-home-internas.sistemas h2 {
+    font-size: 25px;
+    text-align: left;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.beneficios-home-internas.sistemas p {
+    text-align: left;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.main-f.modalidad{
+    height: 65px;
+}
+.main-f{
+    display: table;
+    text-align: center;
+    margin: auto;
+}
+.main-f>div{
+    display: table-cell;
+    height: inherit;
+    vertical-align: middle;
+}
+.caja-moda h2{
+    text-align: center !important;
+    font-size: 14px !important;
+    font-weight: 900 !important;
+    margin-bottom: 10px !important;
+}
+.caja-moda p {
+    text-align: center !important;
+    line-height: 1.3 !important;
+}
+.beneficios-home-internas.sistemas p {
+    text-align: left;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+/*BENEFICIOS -FIN*/
+/*COMPETENCIA - INICIO*/
+
+.txt-p-estudios{
+    margin-bottom: 0;
+    font-size: 30px;
+}
+.cont-malla {
+    margin-bottom: 20px !important;
+}
+.competencia {
+    position: relative;
+    padding: 60px 0;
+}
+
+.absolute-img{
+    bottom: 0;
+    right: 400px;
+    position: absolute;
+    height: 600px;
+}
+.backblu-perfil {
+    background-color:#002C44 ;
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+}
+.text-competencias-e {
+    color: #004dac;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.competencia h2 {
+    text-align: center;
+    font-size: 25px;
+}
+.competencia p {
+    line-height: 1.8;
+}
+.caja-competencias {
+    position: relative;
+}
+.main-f.competencias{
+    height: 110px;
+}
+.caja-competencias h2 {
+    text-align: center;
+    font-size: 18px;
+    color: #8d1432;
+    font-weight: 900;
+    line-height: 1.1;
+}
+.back-blue{
+    background: linear-gradient(90deg, #002C44 0%, #002C44 50%, #002C44 50%, #002C44 100%);
+    padding: 40px 60px;
+    color: white;
+    border-radius: 10px;
+}
+.ancho-100{
+    width: 100%;
+    margin: auto;
+}
+.align-items-center{
+    align-items: center !important;
+}
+.text-modulo{
+    font-size: 15px;
+    background-color: #8d1432;
+    color: #fff;
+    border-radius: 10px;
+    width: 90%;
+    display: inline-block;
+    padding: 10px 10px 7px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.plan-estudios p {
+    font-size: 15px;
+    line-height: 1.2;
+    margin-left: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.plan-estudios p:after{
+    content: "";
+    position: absolute;
+    left: -13px;
+    top: 4px;
+    background-color: #000;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+}
+
+/*COMPETENCIA - FIN*/
+/*PODRAS TRABAJAR - INICIO*/
+.en-que-podrasTrabajar {
+    padding: 80px 0;
+}
+.en-que-podrasTrabajar h2 {
+    font-size: 40px;
+    color: #8d1432;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.en-que-podrasTrabajar h3{
+    font-size: 18px;
+    color: #c9ae55;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-top: 0;
+    height: 60px;
+}
+.en-que-podrasTrabajar p{
+    font-size: 14px;
+    line-height: 1.3;
+}
+.icon-trabajar{
+    display: table;
+    height: 160px;
+    margin: auto;
+}
+.icon-trabajar>div{
+    display: table-cell;
+    vertical-align: middle;
+    height: inherit;
+}
+.icon-trabajar img {
+    width: 90%;
+}
+/*PODRAS TRABAJAR - FIN*/
+/*OTORGA -  INICIO*/
+.tec-otorga {
+    margin-top: 50px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-image: url(/assets/otorgamos-banner.png);
+    padding: 70px 0;
+}
+.tec-otorga p {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    line-height: 1.2;
+}
+.img-ray-ver{
+    position: absolute;
+    left: -175px;
+}
+.img-puntos-otr{
+    position: absolute;
+    right: -120px;
+    bottom: -20px;
+}
+.text-otorga{
+    font-size: 30px;
+    color: #ffff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.col-2-otrg{
+    float: left;
+    width: 16.5%;
+    padding: 0 10px;
+}
+.main-f.otorga{
+    height: 110px;
+}
+/*OTORGA - FIN*/
+/*ACORDEON - INICIO*/
+.acordeon{
+    width:90%;
+    color: #000;
+    background-color: #fff;
+    flex-grow: 1;
+    padding-top: 0;
+    padding:1rem;
+    border-radius: 10px;
+}
+
+.acordeon .h2{
+    background-color: #8d1432;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0 0 1rem;
+    padding:1rem;
+    cursor: pointer;
+}
+
+.acordeon .bloque {
+    margin-bottom: 20px
+}
+.acordeon .contenido{
+    height: 0;
+    padding:0rem;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+.acordeon .bloque.activo .contenido{
+    height: 17rem;
+}
+.acordeon .contenido {
+    display: flex;
+}
+.acordeon .contenido div{
+    flex-grow: 1;
+}
+.h2{
+    display: flex;
+    justify-content: space-between;
+} 
+.h2 img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/*ACORDEON - FIN*/
+
+.icon-podras-trabajar p {
+    text-align: center;
+    font-size: 17px;
+}
+/*CAMPO LABORAL - INICIO*/
+.section {
+    padding: 3rem 1.5rem;
+    padding-bottom: 40px;
+}
+.ct-subtitle--blue {
+    color: #002C44;
+}
+.ct-subtitle{
+    font-size: 1.75rem;
+    text-align: left;
+    color: #002C44;
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.125;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.columns{
+    display: flex;
+}
+.tabs2 .column {
+    width: 400px;
+}
+.tabs2 .ct-richText {
+    font-size: 15px;
+    line-height: 18px;
+    margin-left: 55px;
+}
+.ct-richText ul li {
+    background-image: url(/assets/check-icono.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+    background-size: inherit !important;
+    padding: 5px 0 5px 25px !important;
+}
+.column{
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+}
+
+/*CAMPO LABORAL - FIN*/
+/*DISEÑO CURRICULAR - INICIO*/
+.diseño-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #002C44;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0 0 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+.diseño-flex h2{
+    margin: 0;
+}
+
+.parraf-diseño{
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.dise-curr:hover{
+    background-color: #fff;
+    color: #002C44;
+}
+
+.curricular-abso {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 65%;
+}
+
+.flex-curri {
+    display: flex;
+    flex-direction: column;
+}
+.flex-curri p  {
+    width: 70%;
+    margin: auto;
+    font-size: 17px;
+}
+/*DISEÑO CURRICULAR -FIN*/
+
+@media only screen and (max-width: 1550px){
+    .absolute-img{
+        bottom: 0;
+        right: 130px;
+        position: absolute;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 1550px){
+    .absolute-img{
+        bottom: 0;
+        right: 100px;
+        position: absolute;
+        height: 600px;
+    }
+}
+
+
+@media only screen and (max-width: 1090px){
+    .absolute-img{
+       display: none;
+    }
+    .backblu-perfil.col-sm-7{
+        flex: 0 0 auto;
+        width: 80%;
+        margin: auto;
+    }
+
+    .img-benefi{
+        display: none;
+    }
+
+    .txt-benefi.col-sm-8{
+        flex: 0 0 auto;
+        width: 100%;
+        margin: auto;
+    }
+    .en-que-podrasTrabajar h2 {
+        font-size: 30px;
+        color: #8d1432;
+        font-weight: 900;
+        margin-bottom: 30px;
+    }
+}

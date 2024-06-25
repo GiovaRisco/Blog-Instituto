@@ -88,6 +88,10 @@ export class HeaderComponent {
       href : '/admision'
     },
     {
+      img : 'assets/icon-3.svg',
+      title : 'MATRÍCULA',
+    },
+    {
       img : 'assets/icon-4.svg',
       title : 'REPOSITORIO'
     }

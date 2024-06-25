@@ -44,8 +44,8 @@
                  @for (career of careers; track $index) {
                 <div class="card-career" style="background-image: url({{career.img}}); background-size: cover; background-position: center center;">
                     <div class="info-career">
-                        <h2 class="info-title-career"><a href="#">{{career.title}}</a></h2>
-                        <a download="" class="info-explore-career" href="{{career.courses}}"><span>Malla Curricular(.pdf)</span></a>
+                        <h2 class="info-title-career"><a [routerLink]="[career.page]">{{career.title}}</a></h2>
+                        <a  class="info-explore-career" [routerLink]="[career.page]"><span>Más informacion</span></a>
                     </div>
                 </div>
                 }

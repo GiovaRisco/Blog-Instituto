@@ -18,6 +18,7 @@ header li:hover {
 }
 
 
+
 .my-container{
     background-color: var(--color--principal--darkblue) ;
 }
@@ -36,7 +37,7 @@ header li:hover {
 }
 
 .nav-header-wrapper > div{
-    max-width: 1090px;
+    max-width: 90%;
     padding-block: 10px;
     font-size: 12px;
    margin: 0 auto;
@@ -52,11 +53,12 @@ header li:hover {
 }
 
 .joinus-button{
+    height: 60px;
     border-radius: 40px;
     float: right;
     margin-right: -6px;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
     padding-left: 28px;
     padding-right: 28px;
@@ -149,6 +151,23 @@ header li:hover {
     padding: 20px 10px;
 }
 
+
+.menu-header-2 a{
+    color: #fff;
+    flex-grow: 1;
+    font-size: 15px;
+    text-align: center;
+}
+.menu-header-2 a:hover{
+    color: #002C44
+}
+.menu-header-2{
+    gap: 20px;
+}
+
+.item-header-flex{
+    flex-grow: 1;
+}
 
 /**HEADER -PHONE VERSION*/
 .header-phone{
@@ -345,8 +364,12 @@ header li:hover {
 .scrolled{
     position: fixed!important;
 }
-
-
+@media only screen and (max-width: 1550px)
+{
+    .nav-header-wrapper > div{
+        max-width: 100%;
+    }
+}
 
 @media only screen and (max-width: 1130px){
 
@@ -365,6 +388,7 @@ header li:hover {
         right: 0;
         transition: all .2s ease-in-out;
     }
+
 
 
 }

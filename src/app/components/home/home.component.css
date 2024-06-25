@@ -55,7 +55,13 @@
 /*IMPORTANT SECTION - INICIO*/
 #transparencia {
     padding-top: -10px;
+    background-color: #B22929;
 }
+
+#transparencia .title-career {
+    color: #fff ;
+}
+
 .section-important .info-career h2 a {
     display: flex;
     align-items: center;
@@ -139,7 +145,7 @@
 .info-career a {
     color: #fff;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 15px;
 }
 
@@ -162,8 +168,8 @@
 }
 
 .info-explore-career:hover {
-    background-color: #009AA6;
-    border: 1px solid #009AA6;
+    background-color: #002C44;
+    border: 1px solid #002C44;
 }
 
 .btn-see-all {
@@ -188,12 +194,12 @@
 .btn-see-all-careers {
     text-decoration: none;
     align-items: center;
-    color: #002C44;
-    border: 2px solid #002C44;
+    color: #fff;
+    border: 2px solid #fff;
     border-radius: 30px;
     display: flex;
     font-size: 0.875rem;
-    font-weight: 700;
+    font-weight: 500;
     padding-inline: 50px;
     height: 48px;
     justify-content: center;
@@ -204,8 +210,8 @@
     transition: all 0.2s ease-in-out;
 }
 .btn-see-all-careers:hover{
-    border: 2px solid #009AA6;
-    background-color: #009AA6;
+    border: 2px solid #002C44;
+    background-color: #002C44;
     color: #fff;
 }
 .btn-see-all:hover{
@@ -213,11 +219,20 @@
     color: #fff;
 }
 
+#careers{
+    background-image: url(/assets/arriba-fondo.png);
+    background-position: left bottom;
+    background-size: auto;
+}
+
 /*MAIN - CARRERAS -FINAL*/
 /*CAROUSEL -INICIO*/
 .carousel-container{
     width: 80%;
     margin-inline: auto;
+}
+#carousel-sedes .carousel-container {
+    height: 500px;
 }
 .carousel-container .card-career{
     width: 100%;
@@ -324,7 +339,8 @@
 /*NUESTRO DIRECTOR - FIN*/
 /*CAROUSEL SEDES -INICIO*/
 #carousel-sedes{
-    background-image: url(../../../assets/choosing-bg.jpg);
+    background-image: url(/assets/abajo-fondo.png);
+    background-position: right top;
 }
 /*CAROUSEL SEDES - FIN*/
 /*MEDIA QUERYS**/
@@ -431,6 +447,10 @@
         line-height: 1.125;
         text-transform: uppercase;
         text-align: center;
+    }
+
+    #careers {
+        padding-top: 40px;
     }
 
 }

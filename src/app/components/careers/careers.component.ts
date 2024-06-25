@@ -13,34 +13,43 @@ import { RouterModule } from '@angular/router';
 export class CareersComponent implements OnInit {
 
 
-  public careers: any[] = [
+  careers: any[] = [
     {
-      img: 'assets/arquitectura-de-ti.png',
+      img: 'assets/arquitectura-de-ti.jpg',
+      page : 'arquitectura',
       title: 'ARQUITECTURA DE PLATAFORMAS Y SERVICIOS DE TI',
       courses: 'assets/documents/malla-curricular-servicios-ti.pdf',
 
     },
     {
-      img: 'assets/asistente-admi.png',
-      title: 'ASISTENTE ADMINISTRATIVO DE GERENCIA',
+      img: 'assets/administrativa-foto.webp',
+      page : 'administrativa',
+      title: 'GESTION ADMINISTRATIVA',
       courses: 'assets/documents/malla-curricular-asistente.pdf',
     },
     {
-      img: 'assets/gestion-comercial.png',
-      title: 'GESTION COMERCIAL DE PRODUCTOS Y SERVICIOS BANCARIOS Y FINANCIEROS',
+      img: 'assets/comercial-foto.jpg',
+      page : 'comercial',
+      title: 'ADMINISTRACION BANCARIA Y FINANCIERA',
       courses: 'assets/documents/malla-curricular-gestion-comercial.pdf',
     },
     {
-      img: 'assets/guia-turismo.png',
-      title: 'GUIA OFICIAL DE TURISMO',
-      courses: 'assets/documents/malla-curricular-servicios-ti.pdf',
+      img: 'assets/marketero-foto.jpg',
+      page : 'marketing',
+      title: 'MARKETING',
     },
     {
-      img: 'assets/farmacia-tecnica.png',
-      title: 'FARMACIA TÉCNICA',
-      courses: 'assets/documents/malla-curricular-farmacia.pdf',
+      img: 'assets/contador-foto.jpg',
+      page : 'contabilidad',
+      title: 'CONTABILIDAD',
+    },
+    {
+      img: 'assets/administracion-turistica.jpg',
+      page : 'turisticas',
+      title: 'ADMINISTRACION DE OPERACIONES TURISTICAS',
     }
   ]
+
 
     ngOnInit(): void {
       window.scrollTo(0, 0);

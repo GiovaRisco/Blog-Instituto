@@ -186,3 +186,19 @@ h1,h2,h3{
     margin-top: 20px;
     letter-spacing: .5px;
 }
+
+
+@media only screen and (max-width: 1130px){
+
+    .logo-footer{
+        display: block;
+        height: 200px;
+        width: 50%;
+    }
+    
+    .logo-footer img {
+        width: 100%;
+        height: 100%;
+    }
+    
+}
