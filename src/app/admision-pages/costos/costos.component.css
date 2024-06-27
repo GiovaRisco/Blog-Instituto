@@ -1,0 +1,192 @@
+/*HEROE - INICIO*/
+
+a{
+    text-decoration: none;
+}
+.container-banner {
+     width: 90%;
+     margin: auto;
+}
+
+.seccion-banner {
+    padding-top: 200px;
+    background-image: url(/assets/banner-movil.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.seccion-banner.interna{
+    padding-bottom: 30px;
+    position: relative;
+}
+.columna-content {
+    width: 70%;
+    margin: auto;
+}
+.titulo-banner h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #8f1433;
+    font-size: 35px;
+    line-height: 1.1;
+    font-weight: 900;
+    display: block;
+    letter-spacing: .01em;
+}
+
+.tex-modalidad h2 {
+    font-size: 22px;
+    font-weight: 600;
+    width: 90%;
+    color: #002C44;
+}
+
+
+.pe-brochure {
+    font-weight: 500;
+}
+
+.descargar-brochure:hover {
+    background-color: #002C44;
+    color: white;
+}
+.descargar-brochure a{
+    color: #fff;
+}
+
+.box-conveniosUnivers{
+    margin-top: 40px;
+}
+
+.box-conveniosUnivers h2{
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.logo-u-banner img{
+    width: 80%;
+    margin-top: 10px;
+}
+.cont-unis {
+    width: 80%;
+    display: flex;
+    gap: 5px;
+}
+.cont-unis div img {
+    flex-grow: 1;
+}
+/*HEROE - FIN*/
+/**TITULO - INICIO*/
+.container-title{
+    padding-top: 2rem;
+    padding-bottom: 5px;
+    color: #002C44;
+    width: 65%;
+    margin: auto;
+    text-align: start;
+}
+
+.container-title h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+/*TITULO - FIN*/
+.container {
+    background-color: #ffffff;
+    width: 70%;
+    margin: auto;
+    height: 30em;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 200px;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: 1px solid #999;
+}
+h3{
+    height: 33.33%;
+    display: grid;
+    place-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px;
+    margin: 0;
+}
+h3:hover{
+    cursor: pointer;
+}
+
+.tab-content{
+    background-color: #ffffff;
+    padding: 1em 1.5em;
+}
+
+.tab-content .all-tab-wrapper{
+    display: none;
+}
+.tab-content .active{
+    display: block;
+}
+
+.tabs .active {
+    background-color: #eaeaea ;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.content-title {
+    display: flex;
+}
+.content-title .title-lista {
+    color: #000;
+    font-size: 17px;
+    margin-left: 16px;
+}
+.content-title .numero {
+    color: #002C44;
+    font-size: 50px;
+    line-height: 1.3;
+    text-align: center;
+}
+.tab-content-flex {
+    display: flex;
+    align-items: flex-start;
+}
+.bold-text {
+    font-weight: 700;
+}
+
+.requisitos-list li{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.requisitos-list li:nth-child(4){
+    align-items: flex-start;
+}
+
+.requisitos-list li img{
+    width: 28px;
+    height: 28px;
+    display: inline;
+    margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 1200px){
+
+    .container{
+        width: 90%;
+
+    }
+
+}

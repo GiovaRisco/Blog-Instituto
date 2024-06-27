@@ -16,6 +16,14 @@ import { MarketingComponent } from './carrers/marketing/marketing.component';
 import { ContabilidadComponent } from './carrers/contabilidad/contabilidad.component';
 import { ComercialComponent } from './carrers/comercial/comercial.component';
 import { AdministrativaComponent } from './carrers/administrativa/administrativa.component';
+import { TerminarColegioComponent } from './admision-pages/terminar-colegio/terminar-colegio.component';
+import { TrasladarteComponent } from './admision-pages/trasladarte/trasladarte.component';
+import { ExtranjeroComponent } from './admision-pages/extranjero/extranjero.component';
+import { ResultadosComponent } from './admision-pages/resultados/resultados.component';
+import { IngresoComponent } from './admision-pages/ingreso/ingreso.component';
+import { CostosComponent } from './admision-pages/costos/costos.component';
+import { InfoBasicaComponent } from './admision-pages/info-basica/info-basica.component';
+import { PreguntasComponent } from './admision-pages/preguntas/preguntas.component';
 
 export const routes: Routes = [
     {
@@ -65,5 +73,29 @@ export const routes: Routes = [
     },
     {
         path:'carreras/turisticas' , component:TuristicasComponent
+    },
+    {
+        path:'terminaste-el-colegio' , component:TerminarColegioComponent
+    },
+    {
+        path:'trasladate' , component:TrasladarteComponent
+    },
+    {
+        path:'extranjero' , component:ExtranjeroComponent
+    },
+    {
+        path:'resultados' , component:ResultadosComponent
+    },
+    {
+        path:'modalidad-ingreso' , component:IngresoComponent
+    },
+    {
+        path:'requisitos' , component:CostosComponent
+    },
+    {
+        path:'informacion-basica' , component:InfoBasicaComponent
+    },
+    {
+        path:'preguntas' , component:PreguntasComponent
     }
 ];

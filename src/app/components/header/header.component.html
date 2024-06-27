@@ -1,26 +1,27 @@
-
 @if (size == "Small" || size == "XSmall") {
-    <div class="header-phone scrolled ">
-        <div class="container-header-phone " >
-            <a  class="logo-header-phone" (click)="backToHome()">
-                <img class="img-header" src="assets/logo-comenius-blanco-pequeño.svg"alt="logo-instituto">
-            </a>
-            <div class="iconos-header-phone">
-    
-                <div class="nav-header-phone" (click)="toggleMenuPhone()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-    
+<div class="header-phone scrolled">
+  <div class="container-header-phone">
+    <a class="logo-header-phone" (click)="backToHome()">
+      <img
+        class="img-header"
+        src="assets/logo-comenius-blanco-pequeño.svg"
+        alt="logo-instituto"
+      />
+    </a>
+    <div class="iconos-header-phone">
+      <div class="nav-header-phone" (click)="toggleMenuPhone()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-    
-    <div class="phone">
-        <div class="container-nav-movil">
-            <div class="nav-level-1">
-                <!-- <div class="block-1">
+  </div>
+</div>
+
+<div class="phone">
+  <div class="container-nav-movil">
+    <div class="nav-level-1">
+      <!-- <div class="block-1">
                                 <ul>
                                     <li>
                                         <a href="#">
@@ -39,121 +40,188 @@
                                     </li>
                                 </ul>
                             </div>-->
-                <div class="block-2">
-                    <ul>
-                        <li class="li_acordion"><a [routerLink]="['/']" class="btn-header-phone">INICIO</a></li>
-                        <li class="li_acordion"><a [routerLink]="['/']" class="btn-header-phone">NOSOTROS</a></li>
-                        <li class="li_acordion"><a [routerLink]="['/']" class="btn-header-phone">A DISTANCIA</a></li>
-                        <li class="li_acordion"><a [routerLink]="['/carreras']" class="btn-header-phone">CARRERAS</a></li>
-                        <li class="li_acordion"><a [routerLink]="['/menu', 'administrativa']" class="btn-header-phone">GESTION
-                                ADMINISTRATIVA</a></li>
-                        <li class="li_acordion"><a [routerLink]="['/menu', 'academica']" class="btn-header-phone">GESTION
-                                ACADEMICA</a></li>
-                    </ul>
-                </div>
-                <div class="block-3">
-                    <a href="https://api.whatsapp.com/send/?phone=51966949545" target="_blank"
-                        class="btn-phone-suscribe">INSCRÍBETE</a>
-                </div>
-                <div class="block-4">
-                    <div class="list-phone">
-                        <div class="list-menu-phone">
-                            <ul class="nav-menu-phone">
-                                <li class="item-menu-nav-phone">
-                                    <a [routerLink]="['/contactenos']">Servicios al estudiante</a>
-                                </li>
-                                <li class="item-menu-nav-phone">
-                                    <a href="">Para empresas</a>
-                                </li>
-                                <li class="item-menu-nav-phone">
-                                    <a href="">Para colegios</a>
-                                </li>
-                                <li class="item-menu-nav-phone">
-                                    <a href="">Egresados</a>
-                                </li>
-                                <li class="item-menu-nav-phone">
-                                    <a [routerLink]="['/contactenos']">Contactanos</a>
-                                </li>
-                                <li class="item-menu-nav-phone">
-                                    <a [routerLink]="['/transparencia']">Transparencia</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="block-5">
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/profile.php?id=61558487376373" target="_blank">
-                                <img src="assets/logo-face-with-bg.png"  alt="imagen logo facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/" target="_blank">
-                                <img src="assets/logo-ig-with-bg.png" alt="logo instagram">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/@TECNOLOGICOCOMENIUS" target="_blank">
-                                <img src="assets/logo-yt-with-bg.png" alt="logo youtube">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="block-2">
+        <ul>
+          <li class="li_acordion">
+            <a [routerLink]="['/']" class="btn-header-phone">INICIO</a>
+          </li>
+          <li class="li_acordion">
+            <a [routerLink]="['/']" class="btn-header-phone">NOSOTROS</a>
+          </li>
+          <li class="li_acordion">
+            <a [routerLink]="['/']" class="btn-header-phone">A DISTANCIA</a>
+          </li>
+          <li class="li_acordion">
+            <a [routerLink]="['/carreras']" class="btn-header-phone"
+              >CARRERAS</a
+            >
+          </li>
+          <li class="li_acordion">
+            <a
+              [routerLink]="['/menu', 'administrativa']"
+              class="btn-header-phone"
+              >GESTION ADMINISTRATIVA</a
+            >
+          </li>
+          <li class="li_acordion">
+            <a [routerLink]="['/menu', 'academica']" class="btn-header-phone"
+              >GESTION ACADEMICA</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="block-3">
+        <a
+          href="https://api.whatsapp.com/send/?phone=51966949545"
+          target="_blank"
+          class="btn-phone-suscribe"
+          >INSCRÍBETE</a
+        >
+      </div>
+      <div class="block-4">
+        <div class="list-phone">
+          <div class="list-menu-phone">
+            <ul class="nav-menu-phone">
+              <li class="item-menu-nav-phone">
+                <a [routerLink]="['/contactenos']">Servicios al estudiante</a>
+              </li>
+              <li class="item-menu-nav-phone">
+                <a href="">Para empresas</a>
+              </li>
+              <li class="item-menu-nav-phone">
+                <a href="">Para colegios</a>
+              </li>
+              <li class="item-menu-nav-phone">
+                <a href="">Egresados</a>
+              </li>
+              <li class="item-menu-nav-phone">
+                <a [routerLink]="['/contactenos']">Contactanos</a>
+              </li>
+              <li class="item-menu-nav-phone">
+                <a [routerLink]="['/transparencia']">Transparencia</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="block-5">
+        <ul>
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=61558487376373"
+              target="_blank"
+            >
+              <img
+                src="assets/logo-face-with-bg.png"
+                alt="imagen logo facebook"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="assets/logo-ig-with-bg.png" alt="logo instagram" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/@TECNOLOGICOCOMENIUS"
+              target="_blank"
+            >
+              <img src="assets/logo-yt-with-bg.png" alt="logo youtube" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    
-    
-    }@else {
-    <header class=" max-w-[100%] header-wrapper ">
-        <div class="my-container">
-            <nav class=" nav-header-wrapper nav-top">
-                <div class="flex justify-between items-center ">
-                    <div>
-                        <ul class="flex gap-[1.4rem] ">
-                            <li><a [routerLink]="['/contactenos']">Servicios al Estudiante</a></li>
-                           <li class="item-menu-nav-phone">
-                                    <a href="">Para empresas</a>
-                                </li>
-                                <li class="item-menu-nav-phone">
-                                    <a href="">Para colegios</a>
-                                </li>
-                                <li class="item-menu-nav-phone">
-                                    <a href="">Egresados</a>
-                                </li>
-                            <li>
-                                <a [routerLink]="['/contactenos']">Contactanos</a>
-                            </li>
-                            <li>
-                                <a [routerLink]="['/transparencia']">Transparencia</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="flex gap-[.5rem]">
-                            <li><a href="https://www.facebook.com/profile.php?id=61558487376373" target="_blank">Intranet</a></li> |
-                            <li><a href="https://www.youtube.com/@TECNOLOGICOCOMENIUS" target="_blank">Portal laboral</a></li> |
-                            <li><a href="https://www.youtube.com/@TECNOLOGICOCOMENIUS" target="_blank">Área Virtual</a></li>  |
-                            <li><a href="https://www.youtube.com/@TECNOLOGICOCOMENIUS" target="_blank">Directorio Institucional</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+  </div>
+</div>
+
+}@else {
+<header class="max-w-[100%] header-wrapper">
+  <div class="my-container">
+    <nav class="nav-header-wrapper nav-top">
+      <div class="flex justify-between items-center">
+        <div>
+          <ul class="flex gap-[1.4rem]">
+            <li>
+              <a [routerLink]="['/contactenos']">Servicios al Estudiante</a>
+            </li>
+            <li class="item-menu-nav-phone">
+              <a href="">Para empresas</a>
+            </li>
+            <li class="item-menu-nav-phone">
+              <a href="">Para colegios</a>
+            </li>
+            <li class="item-menu-nav-phone">
+              <a href="">Egresados</a>
+            </li>
+            <li>
+              <a [routerLink]="['/contactenos']">Contactanos</a>
+            </li>
+            <li>
+              <a [routerLink]="['/transparencia']">Transparencia</a>
+            </li>
+          </ul>
         </div>
-        <div class="h-[100px]">
-            <div class="flex  items-center max-w-[1090px]  submenu-wrapper">
-                <a [routerLink]="['']" class="flex justify-start w-[20%] item-header-flex">
-                    <img src="assets/logo-comenius-blanco.svg" width="100%" height="50" alt="logo-instituto">
-                </a>
-                <div class="flex items-center menu-header-2 item-header-flex">
-                    <a href="#">Inicio</a>
-                    <a href="#">Sobre Nosotros</a>
-                    <a href="#">A distancia</a>
-                </div>
-                <div class="max-w-[800px] h-[100%] item-header-flex">
-                    <ul class="flex gap-[60px] h-[100%] mb-0">
-                        <!--
+        <div>
+          <ul class="flex gap-[.5rem]">
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=61558487376373"
+                target="_blank"
+                >Intranet</a
+              >
+            </li>
+            |
+            <li>
+              <a
+                href="https://www.youtube.com/@TECNOLOGICOCOMENIUS"
+                target="_blank"
+                >Portal laboral</a
+              >
+            </li>
+            |
+            <li>
+              <a
+                href="https://www.youtube.com/@TECNOLOGICOCOMENIUS"
+                target="_blank"
+                >Área Virtual</a
+              >
+            </li>
+            |
+            <li>
+              <a
+                href="https://www.youtube.com/@TECNOLOGICOCOMENIUS"
+                target="_blank"
+                >Directorio Institucional</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="h-[100px]">
+    <div class="flex items-center max-w-[1090px] submenu-wrapper">
+      <a
+        [routerLink]="['']"
+        class="flex justify-start w-[20%] item-header-flex"
+      >
+        <img
+          src="assets/logo-comenius-blanco.svg"
+          width="100%"
+          height="50"
+          alt="logo-instituto"
+        />
+      </a>
+      <div class="flex items-center menu-header-2 item-header-flex">
+        <a href="#">Inicio</a>
+        <a href="#">Sobre Nosotros</a>
+        <a href="#">A distancia</a>
+      </div>
+      <div class="max-w-[800px] h-[100%] item-header-flex">
+        <ul class="flex gap-[60px] h-[100%] mb-0">
+          <!--
                             <div class="flex items-center text-center btn-menu-hover p-[12px]">
                             Carreras<span class="material-symbols-outlined">expand_more</span>
                             <div class="wrapper-hover-menu"></div>
@@ -170,48 +238,169 @@
                             </ul>
                         </div>
                         -->
-                        <div class="flex items-center text-center btn-menu-hover p-[12px]">Gestion Administrativa <span
-                                class="material-symbols-outlined">expand_more</span>
-                            <div class="wrapper-hover-menu"></div>
-                            <ul class="wrapper-hover-menu-submenu  pl-0 ">
-                                @for (link of linksAdministrativa; track $index) {
-                                <a [routerLink]='link.href' class="item-submenu">
-                                    
-                                    <div class="submenu-header">
-                                        <img src="{{link.img}}" alt="">
-                                        <p>{{link.title}}</p>
-                                    </div>
-                                    <ul></ul>
-                                </a>
-                                }
-                            </ul>
-                        </div>
-                        
-                        <div class="flex items-center text-center btn-menu-hover p-[12px]">Gestion Academica <span
-                                class="material-symbols-outlined ">expand_more</span>
-                            <div class="wrapper-hover-menu"></div>
-                            <ul class="wrapper-hover-menu-submenu  pl-0 ">
-                                @for (link of linksAcademica; track $index) {
-                                <a [routerLink]="link.href"  class="item-submenu">
-                                    <div class="submenu-header">
-                                        <img src="{{link.img}}" alt="">
-                                        <p>{{link.title}}</p>
-                                    </div>
-                                    <ul></ul>
-                                </a>
-                                }
-                            </ul>
-                        </div>
-                        <div class="flex items-center hover:cursor-pointer">
-                            <a href="https://api.whatsapp.com/send/?phone=51966721408" target="_blank"
-                                class="joinus-button">
-                                INSCRÍBETE
-                            </a>
-                        </div>
-                    </ul>
+          <div class="flex items-center text-center btn-menu-hover p-[12px]">
+            Gestion Administrativa
+            <span class="material-symbols-outlined">expand_more</span>
+            <div class="wrapper-hover-menu"></div>
+            <ul class="wrapper-hover-menu-submenu pl-0">
+              @for (link of linksAdministrativa; track $index) {
+              <a [routerLink]="link.href" class="item-submenu">
+                <div class="submenu-header">
+                  <img src="{{ link.img }}" alt="" />
+                  <p>{{ link.title }}</p>
                 </div>
-            </div>
-        </div>
-    </header>
-    }
-    
+                <ul></ul>
+              </a>
+              }
+            </ul>
+          </div>
+
+          <div
+            class="flex items-center text-center btn-menu-hover p-[12px] academica-wrapper"
+          >
+            Gestion Academica
+            <span class="material-symbols-outlined">expand_more</span>
+            <div class="wrapper-hover-menu"></div>
+            <ul id="academica-wrapper" class="wrapper-hover-menu-submenu pl-0">
+              @for (link of linksAcademica; track $index) { @if(link.title ==
+              'ADMISION'){
+
+              <a
+                id="admision-menu"
+                [routerLink]="link.href"
+                class="item-submenu"
+              >
+                <div class="submenu-header">
+                  <img src="{{ link.img }}" alt="" />
+                  <p>{{ link.title }}</p>
+                </div>
+              </a>
+              <ul class="admision-submenu-wrapper">
+                <div class="row-section pt-md-3 pb-md-2">
+                  <div class="column2 three-columns">
+                    <a class="text-center" [routerLink]="['/terminaste-el-colegio']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/hat-2.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>¿Estás por terminar o ya terminaste el colegio?</p>
+                    </a>
+                  </div>
+                  <div class="column2 three-columns">
+                    <a class="text-center" [routerLink]="['/trasladate']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/building.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>¿Quieres trasladarte de Instituto?</p>
+                    </a>
+                  </div>
+                  <div class="column2 three-columns">
+                    <a class="text-center" [routerLink]="['/extranjero']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/foreang-student.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>¿Eres postulantes extranjero?</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="row-section pt-md-3 pb-md-2">
+                  <div class="column2 four-columns">
+                    <a class="text-center" [routerLink]="['/informacion-basica']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/basic-info.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>INFORMACIÓN BASICA</p>
+                    </a>
+                  </div>
+                  <div class="column2 four-columns">
+                    <a class="text-center" [routerLink]="['/modalidad-ingreso']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/admision.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>MODALIDAD DE INGRESO</p>
+                    </a>
+                  </div>
+                  <div class="column2 four-columns">
+                    <a class="text-center" [routerLink]="['/requisitos']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/cost.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>REQUISITOS Y COSTOS</p>
+                    </a>
+                  </div>
+                  <div class="column2 four-columns">
+                    <a class="text-center" [routerLink]="['/resultados']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/results.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>RESULTADOS DE EXÁMEN</p>
+                    </a>
+                  </div>
+                  <div class="column2 four-columns">
+                    <a class="text-center" [routerLink]="['/preguntas']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/questions.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>PREGUNTAS FRECUENTES DE ADMSIÓN</p>
+                    </a>
+                  </div>
+                </div>
+              </ul>
+
+              }@else {
+              <a [routerLink]="link.href" class="item-submenu">
+                <div class="submenu-header">
+                  <img src="{{ link.img }}" alt="" />
+                  <p>{{ link.title }}</p>
+                </div>
+                <ul></ul>
+              </a>
+              } }
+            </ul>
+          </div>
+          <div class="flex items-center hover:cursor-pointer">
+            <a
+              href="https://api.whatsapp.com/send/?phone=51966721408"
+              target="_blank"
+              class="joinus-button"
+            >
+              INSCRÍBETE
+            </a>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+}

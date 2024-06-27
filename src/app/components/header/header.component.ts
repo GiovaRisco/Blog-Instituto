@@ -1,6 +1,7 @@
-import { Component, inject } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 import { Router, RouterModule } from '@angular/router';
+import { count } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -9,10 +10,11 @@ import { Router, RouterModule } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
+export class HeaderComponent  {
 
   menuActivate: boolean = false;
   router = inject(Router)
+
 
 
   size : string = ""
@@ -42,7 +44,9 @@ export class HeaderComponent {
           }
         }
       });
+
   }
+
 
 
   linksAdministrativa :  any[] = [
@@ -84,8 +88,7 @@ export class HeaderComponent {
     },
     {
       img : 'assets/icon-2.svg',
-      title : 'ADMISION',
-      href : '/admision'
+      title : 'ADMISION'
     },
     {
       img : 'assets/icon-3.svg',
@@ -125,5 +128,7 @@ export class HeaderComponent {
   backToHome(){
     this.router.navigate(['/'])
   }
+
+
   
 }
