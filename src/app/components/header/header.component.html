@@ -262,8 +262,8 @@
             <span class="material-symbols-outlined">expand_more</span>
             <div class="wrapper-hover-menu"></div>
             <ul id="academica-wrapper" class="wrapper-hover-menu-submenu pl-0">
-              @for (link of linksAcademica; track $index) { @if(link.title ==
-              'ADMISION'){
+              @for (link of linksAcademica; track $index) { @if(link.title
+              =='ADMISION'){
 
               <a
                 id="admision-menu"
@@ -278,7 +278,10 @@
               <ul class="admision-submenu-wrapper">
                 <div class="row-section pt-md-3 pb-md-2">
                   <div class="column2 three-columns">
-                    <a class="text-center" [routerLink]="['/terminaste-el-colegio']">
+                    <a
+                      class="text-center"
+                      [routerLink]="['/terminaste-el-colegio']"
+                    >
                       <img
                         class="m-auto"
                         width="40"
@@ -316,7 +319,10 @@
                 </div>
                 <div class="row-section pt-md-3 pb-md-2">
                   <div class="column2 four-columns">
-                    <a class="text-center" [routerLink]="['/informacion-basica']">
+                    <a
+                      class="text-center"
+                      [routerLink]="['/informacion-basica']"
+                    >
                       <img
                         class="m-auto"
                         width="40"
@@ -328,7 +334,10 @@
                     </a>
                   </div>
                   <div class="column2 four-columns">
-                    <a class="text-center" [routerLink]="['/modalidad-ingreso']">
+                    <a
+                      class="text-center"
+                      [routerLink]="['/modalidad-ingreso']"
+                    >
                       <img
                         class="m-auto"
                         width="40"
@@ -357,7 +366,7 @@
                         class="m-auto"
                         width="40"
                         height="40"
-                        src="/assets/results.svg"
+                        src="/assets/admision.svg"
                         alt="imagen submenu"
                       />
                       <p>RESULTADOS DE EXÁMEN</p>
@@ -378,15 +387,70 @@
                 </div>
               </ul>
 
-              }@else {
+              } @if(link.title == 'MATRÍCULA'){
+              <a
+                id="matricula-menu"
+                [routerLink]="link.href"
+                class="item-submenu"
+              >
+                <div class="submenu-header">
+                  <img src="{{ link.img }}" alt="" />
+                  <p>{{ link.title }}</p>
+                </div>
+              </a>
+              <ul class="matricula-submenu-wrapper">
+                <div class="row-section pt-md-3 pb-md-2">
+                  <div class="column2 three-columns">
+                    <a
+                      class="text-center"
+                      [routerLink]="['/informacion-matricula']"
+                    >
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/basic-info.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>Información Básica</p>
+                    </a>
+                  </div>
+                  <div class="column2 three-columns">
+                    <a class="text-center" [routerLink]="['/costos-matricula']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/cost.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>Requisitos y Costos</p>
+                    </a>
+                  </div>
+                  <div class="column2 three-columns">
+                    <a class="text-center" [routerLink]="['/organigrama-matricula']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/admision.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>Cronograma</p>
+                    </a>
+                  </div>
+                </div>
+              </ul>
+
+              } @else { @if (link.title == 'ADMISION' || link.title ==
+              'MATRÍCULA') {} @else {
               <a [routerLink]="link.href" class="item-submenu">
                 <div class="submenu-header">
                   <img src="{{ link.img }}" alt="" />
                   <p>{{ link.title }}</p>
                 </div>
-                <ul></ul>
-              </a>
-              } }
+                <ul></ul> </a
+              >} } }
             </ul>
           </div>
           <div class="flex items-center hover:cursor-pointer">

@@ -21,7 +21,7 @@ a{
     position: relative;
 }
 .columna-content {
-    width: 50%;
+    width: 70%;
     margin: auto;
 }
 .titulo-banner h1 {
@@ -79,8 +79,7 @@ a{
     flex-grow: 1;
 }
 /*HEROE - FIN*/
-/*
-
+/**TITULO - INICIO*/
 .container-title{
     padding-top: 2rem;
     padding-bottom: 5px;
@@ -95,16 +94,17 @@ a{
     font-size: 30px;
     font-weight: 600;
 }
-
+/*TITULO - FIN*/
 .container {
     background-color: #ffffff;
     width: 70%;
-    margin: auto;
+    margin-inline: auto;
     height: 30em;
     display: grid;
     grid-template-columns: 40% 60%;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 .tabs {
@@ -165,112 +165,12 @@ h3:hover{
     font-weight: 700;
 }
 
-*/
-.container-all{
-    width: 40%;
-    margin: auto;
-}
-/*ACORDEON - INICIO*/
-.acordeon{
-    width:60%;
-    color: #000;
-    background-color: #fff;
-    flex-grow: 1;
-    padding-top: 0;
-    padding:1rem;
-    border-radius: 10px;
-}
-
-.acordeon .h2{
-    background-color: #002C44;
-    color: #fff;
-    margin: 0 0 1rem;
-    padding:1rem;
-    cursor: pointer;
-}
-
-.acordeon .bloque {
-    margin-bottom: 20px
-}
-.acordeon .contenido{
-    height: 0;
-    padding:0rem;
-    overflow: hidden;
-    transition: all .5s ease;
-}
-.acordeon .bloque.activo .contenido{
-    height: 19rem;
-}
-
-.acordeon .bloque.activo .contenido.grande{
-    height: 33rem;
-}
-.acordeon .bloque.activo .contenido.pequeño{
-    height: 5rem;
-}
-.acordeon .contenido {
-    display: flex;
-}
-.acordeon .contenido div{
-    flex-grow: 1;
-}
-.h2{
-    display: flex;
-    justify-content: space-between;
-} 
-.h2 img {
-    width: 30px;
-    height: 30px;
-}
-
-
-/*ACORDEON - FIN*/
-
-.contenido {
-    width: 90%;
-    margin: auto;
-    text-align: justify;
-}
-.tab-content p{
-    margin-bottom: 20px;
-}
-
-.requisitos-list li{
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-}
-.requisitos-list li:first-child{
-    align-items: flex-start;
-}
-
-.requisitos-list li img{
-    width: 28px;
-    height: 28px;
-    display: inline;
-    margin-right: 10px;
-}
-
 
 @media only screen and (max-width: 1200px){
 
-    .container-all{
+    .container{
         width: 90%;
 
-    }
-
-}
-@media only screen and (max-width: 1100px){
-
-    .acordeon .bloque.activo .contenido{
-        height: 21rem;
-    }
-    
-    .acordeon .bloque.activo .contenido.grande{
-        height: 35rem;
-    }
-    .acordeon .bloque.activo .contenido.pequeño{
-        height: 5rem;
     }
 
 }

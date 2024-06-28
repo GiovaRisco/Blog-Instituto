@@ -24,6 +24,9 @@ import { IngresoComponent } from './admision-pages/ingreso/ingreso.component';
 import { CostosComponent } from './admision-pages/costos/costos.component';
 import { InfoBasicaComponent } from './admision-pages/info-basica/info-basica.component';
 import { PreguntasComponent } from './admision-pages/preguntas/preguntas.component';
+import { OrganigramaMatriculaComponent } from './matricula-pages/organigrama-matricula/organigrama-matricula.component';
+import { CostosMatriculaComponent } from './matricula-pages/costos-matricula/costos-matricula.component';
+import { InfoBasicaMatriculaComponent } from './matricula-pages/info-basica-matricula/info-basica-matricula.component';
 
 export const routes: Routes = [
     {
@@ -97,5 +100,14 @@ export const routes: Routes = [
     },
     {
         path:'preguntas' , component:PreguntasComponent
+    },
+    {
+        path:'informacion-matricula' , component:InfoBasicaMatriculaComponent
+    },
+    {
+        path:'costos-matricula' , component:CostosMatriculaComponent
+    },
+    {
+        path:'organigrama-matricula' , component:OrganigramaMatriculaComponent
     }
 ];
