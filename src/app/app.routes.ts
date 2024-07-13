@@ -27,6 +27,15 @@ import { PreguntasComponent } from './admision-pages/preguntas/preguntas.compone
 import { OrganigramaMatriculaComponent } from './matricula-pages/organigrama-matricula/organigrama-matricula.component';
 import { CostosMatriculaComponent } from './matricula-pages/costos-matricula/costos-matricula.component';
 import { InfoBasicaMatriculaComponent } from './matricula-pages/info-basica-matricula/info-basica-matricula.component';
+import { EvaluacionComponent } from './tramite-pages/evaluacion/evaluacion.component';
+import { BachillerComponent } from './tramite-pages/bachiller/bachiller.component';
+import { PeriodoComponent } from './tramite-pages/periodo/periodo.component';
+import { RetificacionComponent } from './tramite-pages/retificacion/retificacion.component';
+import { TitulacionComponent } from './tramite-pages/titulacion/titulacion.component';
+import { ExperienciasComponent } from './tramite-pages/experiencias/experiencias.component';
+import { ConvalidacionComponent } from './tramite-pages/convalidacion/convalidacion.component';
+import { AbandonoComponent } from './tramite-pages/abandono/abandono.component';
+import { CertificacionComponent } from './tramite-pages/certificacion/certificacion.component';
 
 export const routes: Routes = [
     {
@@ -109,5 +118,32 @@ export const routes: Routes = [
     },
     {
         path:'organigrama-matricula' , component:OrganigramaMatriculaComponent
+    },
+    {
+        path:'evaluacion' , component:EvaluacionComponent
+    },
+    {
+        path:'bachiller' , component:BachillerComponent
+    },
+    {
+        path:'periodo' , component:PeriodoComponent
+    },
+    {
+        path:'retificacion' , component:RetificacionComponent
+    },
+    {
+        path:'titulacion' , component:TitulacionComponent
+    },
+    {
+        path:'experiencias' , component:ExperienciasComponent
+    },
+    {
+        path:'convalidacion' , component:ConvalidacionComponent
+    },
+    {
+        path:'abandono' , component:AbandonoComponent
+    },
+    {
+        path: 'certificacion' , component: CertificacionComponent
     }
 ];

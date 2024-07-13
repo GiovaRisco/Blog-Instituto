@@ -214,13 +214,16 @@
           alt="logo-instituto"
         />
       </a>
-      <div class="flex items-center menu-header-2 item-header-flex">
+      <!-- <div class="flex items-center menu-header-2 item-header-flex">
         <a href="#">Inicio</a>
         <a href="#">Sobre Nosotros</a>
         <a href="#">A distancia</a>
-      </div>
+      </div>-->
       <div class="max-w-[800px] h-[100%] item-header-flex">
-        <ul class="flex gap-[60px] h-[100%] mb-0">
+        <ul class="flex gap-[20px]  h-[100%] mb-0">
+          <div class="flex items-center text-center "><a href="#" class="text-white">Inicio</a></div>
+          <div class="flex items-center text-center "><a href="#" class="text-white">Sobre Nosotros</a></div>
+          <div class="flex items-center text-center "><a href="#" class="text-white">A distancia</a></div>
           <!--
                             <div class="flex items-center text-center btn-menu-hover p-[12px]">
                             Carreras<span class="material-symbols-outlined">expand_more</span>
@@ -238,7 +241,7 @@
                             </ul>
                         </div>
                         -->
-          <div class="flex items-center text-center btn-menu-hover p-[12px]">
+          <div class="flex items-center text-center btn-menu-hover ">
             Gestion Administrativa
             <span class="material-symbols-outlined">expand_more</span>
             <div class="wrapper-hover-menu"></div>
@@ -255,9 +258,7 @@
             </ul>
           </div>
 
-          <div
-            class="flex items-center text-center btn-menu-hover p-[12px] academica-wrapper"
-          >
+          <div class="flex items-center text-center btn-menu-hover  academica-wrapper">
             Gestion Academica
             <span class="material-symbols-outlined">expand_more</span>
             <div class="wrapper-hover-menu"></div>
@@ -428,7 +429,10 @@
                     </a>
                   </div>
                   <div class="column2 three-columns">
-                    <a class="text-center" [routerLink]="['/organigrama-matricula']">
+                    <a
+                      class="text-center"
+                      [routerLink]="['/organigrama-matricula']"
+                    >
                       <img
                         class="m-auto"
                         width="40"
@@ -442,8 +446,134 @@
                 </div>
               </ul>
 
+              } @if(link.title == 'TRAMITES'){
+              <a
+                id="tramites-menu"
+                [routerLink]="link.href"
+                class="item-submenu"
+              >
+                <div class="submenu-header">
+                  <img src="{{ link.img }}" alt="" />
+                  <p>{{ link.title }}</p>
+                </div>
+              </a>
+              <ul class="tramites-submenu-wrapper">
+                <div class="row-section pt-md-3 pb-md-2">
+                  <div class="column2 four-columns">
+                    <a class="text-center" [routerLink]="['/evaluacion']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/basic-info.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>EVALUACIÓN</p>
+                    </a>
+                  </div>
+                  <div class="column2 four-columns">
+                    <a class="text-center" [routerLink]="['/certificacion']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/admision.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>CONSTANCIA Y CERTIFICACION</p>
+                    </a>
+                  </div>
+                  <div class="column2 four-columns">
+                    <a class="text-center" [routerLink]="['/periodo']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/cost.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>PROMOCION DE PERIODO ACADEMICO</p>
+                    </a>
+                  </div>
+                  <div class="column2 five-columns">
+                    <a class="text-center" [routerLink]="['/retificacion']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/admision.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>RETIFICACION DE NOMBRE Y APELLIDO</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="row-section pt-md-3 pb-md-2">
+                  <div class="column2 four-columns">
+                    <a class="text-center" [routerLink]="['/bachiller']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/basic-info.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>BACHILLER</p>
+                    </a>
+                  </div>
+                  <div class="column2 four-columns">
+                    <a class="text-center" [routerLink]="['/titulacion']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/admision.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>TITULACION</p>
+                    </a>
+                  </div>
+                  <div class="column2 four-columns">
+                    <a class="text-center" [routerLink]="['/convalidacion']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/cost.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>CONVALIDACIÓN</p>
+                    </a>
+                  </div>
+                  <div class="column2 four-columns">
+                    <a class="text-center" [routerLink]="['/abandono']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/admision.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>LICENCIA DE ABANDONO</p>
+                    </a>
+                  </div>
+                  <div class="column2 four-columns">
+                    <a class="text-center" [routerLink]="['/experiencias']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/questions.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>EXPERIENCIAS FORMATIVAS</p>
+                    </a>
+                  </div>
+                </div>
+              </ul>
+
               } @else { @if (link.title == 'ADMISION' || link.title ==
-              'MATRÍCULA') {} @else {
+              'MATRÍCULA' || link.title == 'TRAMITE') {} @else {
               <a [routerLink]="link.href" class="item-submenu">
                 <div class="submenu-header">
                   <img src="{{ link.img }}" alt="" />

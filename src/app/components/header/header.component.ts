@@ -95,6 +95,10 @@ export class HeaderComponent  {
       title : 'MATRÍCULA',
     },
     {
+      img : 'assets/icon-1.svg',
+      title : 'TRAMITES',
+    },
+    {
       img : 'assets/icon-4.svg',
       title : 'REPOSITORIO'
     }

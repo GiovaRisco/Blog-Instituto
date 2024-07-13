@@ -99,11 +99,11 @@ a{
     background-color: #ffffff;
     width: 70%;
     margin: auto;
-    height: 30em;
+    height: auto;
     display: grid;
     grid-template-columns: 40% 60%;
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .tabs {
@@ -111,6 +111,9 @@ a{
     flex-direction: column;
     justify-content: flex-start;
     border-right: 1px solid #999;
+}
+.title-wrapper{
+    height: 200px;
 }
 h3{
     height: 33.33%;
