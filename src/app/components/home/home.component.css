@@ -1,11 +1,11 @@
-
-.my-container{
+.my-container {
     width: 70%;
 }
 
-.my-container-carousel{
+.my-container-carousel {
     width: 80%;
 }
+
 /*CAROUSEL - INICIO*/
 .carrusel-btn-right {
     justify-content: flex-start;
@@ -43,13 +43,15 @@
     transition: all 0.2s ease-in-out;
 }
 
-.btn-more-info:hover{
+.btn-more-info:hover {
     background: #fff;
     color: #002C44;
 }
-.carousel-item{
+
+.carousel-item {
     height: auto;
 }
+
 /*CAROUSEL - FIN*/
 
 /*IMPORTANT SECTION - INICIO*/
@@ -57,9 +59,14 @@
     padding-top: -10px;
     background-color: #B22929;
 }
-
+.servicios-desc {
+    width: 60%;
+    margin: auto;
+    color: #fff;
+    font-size: 15px;
+}
 #transparencia .title-career {
-    color: #fff ;
+    color: #fff;
 }
 
 .section-important .info-career h2 a {
@@ -67,13 +74,16 @@
     align-items: center;
     gap: 5px;
 }
-.section-important .info-career h2 a img{
+
+.section-important .info-career h2 a img {
     height: 50px;
 }
-.section-important .info-career h2 a span{
+
+.section-important .info-career h2 a span {
     font-size: 18px;
     letter-spacing: 2px;
 }
+
 /*IMPORTANT SECTION - FIN*/
 /*MAIN - CARRERAS -INICIO*/
 .title-career {
@@ -87,7 +97,7 @@
     text-align: center;
 }
 
-.title-career::after{
+.title-career::after {
     content: '';
     background-color: #69BE28;
     border: solid #69BE28 1px;
@@ -158,7 +168,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #fff;
+    background-color: #fff;
+    color: #B22929 !important;
     border-radius: 20px;
     padding-block: 20px;
     padding-inline: 10px;
@@ -169,7 +180,7 @@
 
 .info-explore-career:hover {
     background-color: #002C44;
-    border: 1px solid #002C44;
+    color: #fff !important;
 }
 
 .btn-see-all {
@@ -209,17 +220,19 @@
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
 }
-.btn-see-all-careers:hover{
+
+.btn-see-all-careers:hover {
     border: 2px solid #002C44;
     background-color: #002C44;
     color: #fff;
 }
-.btn-see-all:hover{
+
+.btn-see-all:hover {
     background-color: #009AA6;
     color: #fff;
 }
 
-#careers{
+#careers {
     background-image: url(/assets/arriba-fondo.png);
     background-position: left bottom;
     background-size: auto;
@@ -227,27 +240,34 @@
 
 /*MAIN - CARRERAS -FINAL*/
 /*CAROUSEL -INICIO*/
-.carousel-container{
+.carousel-container {
     width: 80%;
     margin-inline: auto;
 }
+
 #carousel-sedes .carousel-container {
     height: 500px;
 }
-.carousel-container .card-career{
+
+.carousel-container .card-career {
     width: 100%;
     margin-inline: 5px;
     border-radius: 20px;
 }
-.carousel-container .card-career .info-career{
+
+.carousel-container .card-career .info-career {
     border-radius: 20px;
 }
 
-
+.sede-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
 /*CAROUSEL -FIN*/
 /*MAIN- REASOSNS -INICIO*/
-.title-reasons{
+.title-reasons {
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -257,7 +277,8 @@
     text-transform: uppercase;
     text-align: center;
 }
-.title-reasons::after{
+
+.title-reasons::after {
     content: '';
     background-color: #69BE28;
     border: solid #69BE28 1px;
@@ -267,7 +288,8 @@
     margin: 30px auto 0;
     width: 40px;
 }
-.cont-reasons{
+
+.cont-reasons {
     display: flex;
     width: 90%;
     margin: 0 auto;
@@ -275,20 +297,23 @@
     margin-bottom: 30px;
 }
 
-.reason-card { 
+.reason-card {
     height: 100%;
     width: 33.3%;
 
 }
-.reason-card h3{
+
+.reason-card h3 {
     margin-top: 20px;
-    color : #fff;
+    color: #fff;
 }
-.image-reason{
+
+.image-reason {
     display: flex;
     justify-content: center;
 }
-.image-reason img{
+
+.image-reason img {
     height: 130px;
 }
 
@@ -299,18 +324,24 @@
     justify-content: center;
 }
 
-.slick-track{
+.slick-track {
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
 }
 
 /*NUESTRO DIRECTOR -INICIO*/
-#director{
-    background-image: url(../../../assets/choosing-bg.jpg);
+#director {
+    background-image: url(/assets/fondo-directora.webp);
+}
+.director-titulo {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 60px;
 }
 .columns {
-    display:  grid;
+    display: grid;
     grid-template-columns: 60%;
     justify-content: center;
     align-items: start;
@@ -318,103 +349,334 @@
     text-align: start;
 }
 
-.column{
+.column {
     text-align: justify;
 }
 
-.column img{
+.column img {
     border-radius: 10px;
 }
 
-.columns h2{
+.columns h2 {
     color: #fff;
     font-size: 20px;
     font-weight: 500;
 }
+
 .columns p {
     color: #fff;
     font-size: 15px;
     line-height: 30px;
 }
+
 /*NUESTRO DIRECTOR - FIN*/
 /*CAROUSEL SEDES -INICIO*/
-#carousel-sedes{
+#carousel-sedes {
     background-image: url(/assets/abajo-fondo.png);
     background-position: right top;
 }
+
 /*CAROUSEL SEDES - FIN*/
+/*Por que - INICIO*/
+.porque-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.porque-defi h2 {
+    font-size: 50px;
+    color: #002C44;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+.cards-porque-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.cards-porque-container div {
+    width: 20%;
+}
+
+.card-porque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 10px;
+    padding-block: 70px;
+    background: rgb(0, 154, 166);
+    background: linear-gradient(0deg, rgba(0, 154, 166, 1) 0%, rgba(0, 44, 68, 1) 100%);
+    border-radius: 10px;
+}
+
+.card-porque img {
+    width: 80px;
+    height: 80px;
+    color: #009AA6;
+}
+
+.card-porque p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}
+
+.card-porque span {
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+/*Por que - FIN*/
+/*Elige Virtual - INICIO*/
+#elige-modalidad {
+    background-color: #B22929;
+}
+
+.elige-modalidad img {
+    width: 60%;
+}
+
+.elige-modaliad-info {
+    display: grid;
+    margin-top: -40px;
+}
+
+.elige-modaliad-info p {
+    width: 100%;
+    font-size: 17px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.elige-modaliad-info a {
+    padding-block: 15px;
+    padding-inline: 20px;
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.elige-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elige-wrapper div {
+    width: 50%;
+}
+
+.elige-modalidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elige-info-container h2 {
+    font-size: 70px;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.elige-info-container p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+}
+
+/*Elige Virtual - FIN*/
+/*Bachiller - INICIO*/
+#grado-bachiller {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-image: url(/assets/otorgamos-banner.png);
+}
+
+.bachiller-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bachiller-wrapper .bachiller-imagen {
+    width: 40%;
+}
+
+.bachiller-wrapper .bachiller-info-container {
+    width: 60%;
+}
+
+.bachiller-info-container {
+    background-color: #fff;
+    padding: 50px !important;
+    border-radius: 10px;
+}
+
+.bachiller-info-container h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #002C44;
+}
+
+.bachiller-info-container p {
+    color:#002C44;
+    margin-bottom: 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.bachiller-info-container a {
+    padding-block: 15px;
+    padding-inline: 20px;
+    background-color: #B22929;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.bachiller-info-container a:hover {
+    background-color: #000;
+}
+
+/*Bachiller - FIN*/
+/*Noticias - INICIO*/
+.titulo-noticias h2 {
+    font-size: 50px;
+    color: #002C44;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container-noticias {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.noticia-card p {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.noticia-card a {
+    padding-block: 15px;
+    padding-inline: 20px;
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Noticias - FIN*/
+/*Director - INICIO*/
+.director-imagen {
+    width: 50%;display: flex;
+    justify-content: center;
+}
+.director-imagen img {
+    width: 60%;
+}
+.director-info-container p {
+    color: #fff;
+    font-size: 15px;
+}
+.director-info-container {
+    width: 50%;
+    background-color: #c50019;
+    padding: 50px !important;
+    border-radius: 10px;
+}
+
+/*Director - FIN*/
 /*MEDIA QUERYS**/
 
-@media only screen and (max-width: 1200px){
-    .my-container{
+@media only screen and (max-width: 1200px) {
+    .my-container {
         width: 90%;
     }
 
-    
-.my-container-carousel{
-    width: 80%;
-}
+
+    .my-container-carousel {
+        width: 80%;
+    }
 
 
 }
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
     #transparencia {
         padding-top: 50px;
     }
-    .cont-cards-career{
+
+    .cont-cards-career {
         display: grid;
         justify-items: center;
-        grid-template-columns: 50%  50%;
+        grid-template-columns: 50% 50%;
     }
 
-    .card-career{
+    .card-career {
         width: 100%;
     }
 
-    .main-home-container > div {
+    .main-home-container>div {
         max-width: 95%;
     }
 
-    
-    .columns{
+
+    .columns {
         display: flex;
         flex-direction: column;
     }
 
-    .column{
+    .column {
         text-align: justify;
     }
 
 }
 
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
     .section-important .info-career h2 a {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 5px;
-    } 
+    }
 }
-@media only screen and (max-width: 550px){
-    .cont-reasons{
+
+@media only screen and (max-width: 550px) {
+    .cont-reasons {
         width: 90%;
         height: auto;
         flex-direction: column;
     }
-  
+
     #carousel {
         display: none;
     }
 
-   
-    .reason-card{
+
+    .reason-card {
         width: auto;
     }
 
-    .reason-card h3{
+    .reason-card h3 {
         font-size: 15px;
     }
 
@@ -422,17 +684,18 @@
         height: 80px;
     }
 
-    .info-career{
+    .info-career {
         padding-block: 10px;
         padding-inline: 20px;
 
     }
 
-    .info-career a{
+    .info-career a {
         font-size: 12px !important;
         font-weight: 500;
         letter-spacing: 0.4px;
     }
+
     .info-explore-career {
         padding-inline: 0;
         font-size: 11px;

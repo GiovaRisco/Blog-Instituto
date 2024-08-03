@@ -10,7 +10,7 @@ a{
 
 .seccion-banner {
     padding-top: 200px;
-    background-image: url(/assets/banner-movil.png);
+    background-image: url(/assets/banner-movil.webp);
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,7 +27,7 @@ a{
 .titulo-banner h1 {
     margin-top: 30px;
     margin-bottom: 30px;
-    color: #8f1433;
+    color: #fff;
     font-size: 35px;
     line-height: 1.1;
     font-weight: 900;
@@ -190,8 +190,19 @@ h3:hover{
 }
 
 .text-grande {
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-wrapper img {
+    width: 70%;
 }
 
 @media only screen and (max-width: 1200px){

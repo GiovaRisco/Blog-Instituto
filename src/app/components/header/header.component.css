@@ -550,3 +550,21 @@ header li:hover {
 
 
 }
+
+@media only screen and (min-width: 1480px){
+    .logo-instituo{
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1680px){
+    .logo-instituo{
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1880px){
+    .logo-instituo{
+        width: 50%;
+    }
+}

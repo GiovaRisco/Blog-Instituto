@@ -1,0 +1,93 @@
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+#info-egresados {
+    background-image: url(/assets/servicios-egresados-banner.webp);
+    height: 450px;
+    background-size: cover;
+    background-position: center center;
+    -webkit-box-shadow: inset 129px 38px 219px 200px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 129px 38px 219px 200px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 129px 38px 219px 200px rgba(0, 0, 0, 0.75);
+}
+
+.titulo-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;
+}
+
+.titulo-wrapper h2 {
+    padding-top: 60px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.titulo-wrapper p {
+    font-size: 17px;
+    width: 70%;
+    color: #fff;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+/*OPCIONES -INICIO*/
+#opciones-egresados {
+    background-color: #fbfbfb;
+}
+
+.opciones-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-block: 30px;
+}
+
+.card-opcion {
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    width: 670px;
+    padding-block: 5px;
+    padding-inline: 5px;
+    -webkit-box-shadow: 12px -14px 300px -49px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 12px -14px 300px -49px rgba(0, 0, 0, 0.66);
+    box-shadow: 12px -14px 300px -49px rgba(0, 0, 0, 0.66);
+}
+
+.opcion-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+}
+
+.opcion-img,
+.opcion-info {
+    width: 50%;
+}
+
+.opcion-info h2 {
+    margin: 0;
+    width: 60%;
+    color: #002C44;
+}
+
+.opcion-info img {
+    width: 40px;
+    height: 40px;
+}
+
+.opcion-img img {
+    width: 100%;
+    border-radius: 5px;
+    border-bottom-right-radius: 50%;
+    height: 200px;
+}
+
+/*OPCIONES -FIN*/

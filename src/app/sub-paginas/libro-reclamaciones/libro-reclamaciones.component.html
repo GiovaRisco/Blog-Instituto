@@ -1,0 +1,71 @@
+<app-header />
+
+<section id="libro-banner">
+    <div class="container">
+        <div class="titulo-wrapper">
+            <h2>LIBRO DE RECLAMACIONES</h2>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="seccion-wrapper">
+            <div class="formulario-wrapper">
+                <form class="formulario" action="">
+                    <label for="nombre">Nombres</label>
+                    <input type="text" placeholder="Escriba su nombre">
+
+                    <label for="nombre">Apellidos</label>
+                    <input type="text" placeholder="Escriba sus apellidos">
+
+                    <div class="inputs-wrapper">
+                        <div class="input-cont">
+                            <label for="">Tipo de documento</label>
+                            <select>
+                                <option value="dni">DNI</option>
+                                <option value="carnet">Carnet de extranjeria</option>
+                            </select>
+                        </div>
+
+                        <div class="input-cont">
+                            <label for="">N° de Documento</label>
+                            <input type="number" placeholder="N° de documento">
+                        </div>
+
+                        <div class="input-cont">
+                            <label for="">Teléfono</label>
+                            <input type="tel" placeholder="987654321">
+                        </div>
+
+                        <div class="input-cont">
+                            <label for="">Correo Electronico</label>
+                            <input type="email" placeholder="Ingrese su correo">
+                        </div>
+
+                        <div class="input-cont">
+                            <label for="">Direccion</label>
+                            <input type="text" placeholder="Ingrese su direccion">
+
+                        </div>
+
+                        <div class="input-cont">
+                            <label for="">Fecha</label>
+                            <input type="date">
+                        </div>
+                    </div>
+
+                    <label for="">Contenido del Reclamo</label>
+                    <textarea></textarea>
+                    <button>Enviar Reclamo</button>
+                </form>
+            </div>
+            <div class="imagen-wrapper">
+                <h2>TU OPINIÓN ES IMPORTANTE PARA NOSOTROS</h2>
+                <img src="/assets/reclamo-mapa.webp">
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-footer />

@@ -142,18 +142,15 @@
     <nav class="nav-header-wrapper nav-top">
       <div class="flex justify-between items-center">
         <div>
-          <ul class="flex gap-[1.4rem]">
+          <ul class="flex gap-[.7rem] pl-0">
             <li>
               <a [routerLink]="['/contactenos']">Servicios al Estudiante</a>
-            </li>
-            <li class="item-menu-nav-phone">
-              <a href="">Para empresas</a>
             </li>
             <li class="item-menu-nav-phone">
               <a href="">Para colegios</a>
             </li>
             <li class="item-menu-nav-phone">
-              <a href="">Egresados</a>
+              <a [routerLink]="['/egresados']">Egresados</a>
             </li>
             <li>
               <a [routerLink]="['/contactenos']">Contactanos</a>
@@ -161,13 +158,16 @@
             <li>
               <a [routerLink]="['/transparencia']">Transparencia</a>
             </li>
+            <li>
+              <a >Biblioteca</a>
+            </li>
           </ul>
         </div>
         <div>
-          <ul class="flex gap-[.5rem]">
+          <ul class="flex gap-[.5rem] pl-[5px]">
             <li>
               <a
-                href="https://www.facebook.com/profile.php?id=61558487376373"
+                href="#"
                 target="_blank"
                 >Intranet</a
               >
@@ -175,15 +175,15 @@
             |
             <li>
               <a
-                href="https://www.youtube.com/@TECNOLOGICOCOMENIUS"
+              [routerLink]="['/mesa-partes-virtual']"
                 target="_blank"
-                >Portal laboral</a
+                >Mesa de Partes Virtual</a
               >
             </li>
             |
             <li>
               <a
-                href="https://www.youtube.com/@TECNOLOGICOCOMENIUS"
+                href="#"
                 target="_blank"
                 >Área Virtual</a
               >
@@ -191,9 +191,16 @@
             |
             <li>
               <a
-                href="https://www.youtube.com/@TECNOLOGICOCOMENIUS"
+                href="#"
                 target="_blank"
                 >Directorio Institucional</a
+              >
+            </li>
+            |
+            <li>
+              <a
+              [routerLink]="['/libro-reclamaciones']"
+                >Libro de Reclamaciones</a
               >
             </li>
           </ul>
@@ -210,8 +217,8 @@
         <img
           src="assets/logo-comenius-blanco.svg"
           width="100%"
-          height="50"
           alt="logo-instituto"
+          class="logo-instituo"
         />
       </a>
       <!-- <div class="flex items-center menu-header-2 item-header-flex">
@@ -263,7 +270,8 @@
             <span class="material-symbols-outlined">expand_more</span>
             <div class="wrapper-hover-menu"></div>
             <ul id="academica-wrapper" class="wrapper-hover-menu-submenu pl-0">
-              @for (link of linksAcademica; track $index) { @if(link.title
+              @for (link of linksAcademica; track $index) {
+                 @if(link.title
               =='ADMISION'){
 
               <a
@@ -385,6 +393,18 @@
                       <p>PREGUNTAS FRECUENTES DE ADMSIÓN</p>
                     </a>
                   </div>
+                  <div class="column2 four-columns">
+                    <a class="text-center" [routerLink]="['/admision-cronograma']">
+                      <img
+                        class="m-auto"
+                        width="40"
+                        height="40"
+                        src="/assets/cronograma.svg"
+                        alt="imagen submenu"
+                      />
+                      <p>CRONOGRAMA</p>
+                    </a>
+                  </div>
                 </div>
               </ul>
 
@@ -465,7 +485,7 @@
                         class="m-auto"
                         width="40"
                         height="40"
-                        src="/assets/basic-info.svg"
+                        src="/assets/admision.svg"
                         alt="imagen submenu"
                       />
                       <p>EVALUACIÓN</p>
@@ -477,7 +497,7 @@
                         class="m-auto"
                         width="40"
                         height="40"
-                        src="/assets/admision.svg"
+                        src="/assets/certificado.svg"
                         alt="imagen submenu"
                       />
                       <p>CONSTANCIA Y CERTIFICACION</p>
@@ -489,7 +509,7 @@
                         class="m-auto"
                         width="40"
                         height="40"
-                        src="/assets/cost.svg"
+                        src="/assets/hat-2.svg"
                         alt="imagen submenu"
                       />
                       <p>PROMOCION DE PERIODO ACADEMICO</p>
@@ -501,7 +521,7 @@
                         class="m-auto"
                         width="40"
                         height="40"
-                        src="/assets/admision.svg"
+                        src="/assets/basic-info.svg"
                         alt="imagen submenu"
                       />
                       <p>RETIFICACION DE NOMBRE Y APELLIDO</p>
@@ -515,7 +535,7 @@
                         class="m-auto"
                         width="40"
                         height="40"
-                        src="/assets/basic-info.svg"
+                        src="/assets/bachiller.svg"
                         alt="imagen submenu"
                       />
                       <p>BACHILLER</p>
@@ -539,7 +559,7 @@
                         class="m-auto"
                         width="40"
                         height="40"
-                        src="/assets/cost.svg"
+                        src="/assets/convalidacion.svg"
                         alt="imagen submenu"
                       />
                       <p>CONVALIDACIÓN</p>
@@ -551,7 +571,7 @@
                         class="m-auto"
                         width="40"
                         height="40"
-                        src="/assets/admision.svg"
+                        src="/assets/licencia.svg"
                         alt="imagen submenu"
                       />
                       <p>LICENCIA DE ABANDONO</p>
@@ -563,7 +583,7 @@
                         class="m-auto"
                         width="40"
                         height="40"
-                        src="/assets/questions.svg"
+                        src="/assets/formativa.svg"
                         alt="imagen submenu"
                       />
                       <p>EXPERIENCIAS FORMATIVAS</p>

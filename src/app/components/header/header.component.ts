@@ -99,6 +99,10 @@ export class HeaderComponent  {
       title : 'TRAMITES',
     },
     {
+      img : "assets/icon-5.svg",
+      title : 'CONVENIOS'
+    },
+    {
       img : 'assets/icon-4.svg',
       title : 'REPOSITORIO'
     }

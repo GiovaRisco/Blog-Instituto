@@ -1,29 +1,29 @@
 <app-header />
 
 
-    <div id="carousel" class=" max-w-[100%] ">
+<div id="carousel" class=" max-w-[100%] ">
     <section class="carousel-home mt-[54px]">
         <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
             <div class="carousel-inner  ">
-                
-                    <div class="carousel-item active ">
-                    <img class="w-full " src="assets/banner-1.png"  alt="banner_1" width="100%" height="auto">
+
+                <div class="carousel-item active ">
+                    <img class="w-full " src="/assets/banner-1.webp" alt="banner_1" width="100%" height="auto">
                     <div class="btn-info">
                         <h1></h1>
                         <p></p>
-                       <!-- <a class="btn-more-info" href="">MÁS INFORMACION</a>-->
+                        <!-- <a class="btn-more-info" href="">MÁS INFORMACION</a>-->
                     </div>
                 </div>
-                
-             <div class="carousel-item  ">
-                    <img class="w-full  " src="assets/banner-2.png" alt="banner_2" width="100%" height="auto">
-                                      <div class="btn-info">
+
+                <div class="carousel-item  ">
+                    <img class="w-full  " src="/assets/banner-2.webp" alt="banner_2" width="100%" height="auto">
+                    <div class="btn-info">
                         <h1></h1>
                         <p></p>
-                         <!-- <a class="btn-more-info" href="">MÁS INFORMACION</a>-->
+                        <!-- <a class="btn-more-info" href="">MÁS INFORMACION</a>-->
 
                     </div>
-                    </div>
+                </div>
             </div>
             <button class="carousel-control-prev carrusel-btn-left" type="button"
                 data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -40,9 +40,67 @@
 </div>
 
 
-<div id="careers" class=" max-w-[100%] main-home-container " >
-    <div class="my-container mr-auto ml-auto py-[3rem] " >
-        <section class="flex flex-col" >
+<div id="porque" class="max-w-[100%] main-home-container">
+    <div class="my-container mr-auto ml-auto py-[3rem] ">
+        <div class="porque-wrapper">
+            <div class="porque-defi">
+                <h2>¿Por qué Tecnocom?</h2>
+                <p>En Tecnocom, brindamos un servicio de calidad, de fácil acceso a todo nuestro país, manteniendo un
+                    enfoque inclusivo para poder derribar las brechas sociales, tecnológicas, económicas y territoriales
+                    que impiden a la población peruana acceder a una carrera técnico profesional.</p>
+                <p>Ofrecemos esta oportunidad por el compromiso que tenemos de servir a nuestra sociedad y contribuir al
+                    desarrollo de nuestro país.</p>
+            </div>
+            <div class="cards-porque-container">
+                <div class="card-porque">
+                    <img src="/assets/nueve.svg" alt="">
+                    <p><span>Servicio educativo de</span> <br>calidad comprobado</p>
+                </div>
+                <div class="card-porque">
+                    <img src="/assets/manos-saludo.svg" alt="">
+                    <p><span>Horarios</span><br>flexibles</p>
+                </div>
+                <div class="card-porque">
+                    <img src="/assets/tec.svg" alt="">
+                    <p>Puedes conectarte desde cualquier <br><span>parte del pais</span></p>
+                </div>
+                <div class="card-porque">
+                    <img src="/assets/graduado.svg" alt="">
+                    <p>Obtén el grado bachiller</p>
+                </div>
+                <div class="card-porque">
+                    <img src="/assets/cost.svg" alt="">
+                    <p>Costos Accesibles</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="elige-modalidad" class="max-w-[100%] main-home-container">
+    <div class="my-container mr-auto ml-auto py-[3rem] ">
+        <div class="elige-wrapper">
+            <div class="elige-modalidad">
+                <img src="/assets/virtual-img.png" alt="">
+                <div class="elige-modaliad-info">
+                    <p>Estudia 100% virtual con el mejor ecosistema digital.</p>
+                    <a href="">Póstula Aquí</a>
+                </div>
+            </div>
+            <div class="elige-info-container">
+                <h2>ESTUDIA 100% VIRTUAL</h2>
+                <p>Disfruta de poder llevar tu carrera totalmente a distancia</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="careers" class=" max-w-[100%] main-home-container ">
+    <div class="my-container mr-auto ml-auto py-[3rem] ">
+        <section class="flex flex-col">
             <div class="flex justify-center">
                 <div>
                     <h1 class="title-career">TECNOLOGICO COMENIUS</h1>
@@ -52,13 +110,12 @@
             <div class="cont-cards-career">
                 @for (career of careers; track $index) {
                 <div class="card-career"
-                    style="background-image: url({{career.img}}); background-size: cover; background-position: center center;"
-                    >
+                    style="background-image: url({{career.img}}); background-size: cover; background-position: center center;">
                     <div class="info-career">
-                        <h2 class="info-title-career"><a
-                                [routerLink]="['carreras/' + career.page]">{{career.title}}</a></h2>
-                        <a class="info-explore-career" 
-                        [routerLink]="['carreras/' + career.page]"><span>Más informacion</span></a>
+                        <h2 class="info-title-career"><a [routerLink]="['carreras/' + career.page]">{{career.title}}</a>
+                        </h2>
+                        <a class="info-explore-career" [routerLink]="['carreras/' + career.page]"><span>MÁS
+                                INFORMACIÓN</span></a>
                     </div>
                 </div>
                 }
@@ -72,24 +129,70 @@
     </div>
 </div>
 
-<div id="transparencia" class=" max-w-[100%] main-home-container " >
-    <div class="my-container-carousel mr-auto ml-auto py-[3rem] " >
+
+<div id="grado-bachiller" class="max-w-[100%] main-home-container">
+    <div class="my-container mr-auto ml-auto ">
+        <div class="bachiller-wrapper">
+            <div class="bachiller-imagen">
+                <img src="/assets/alumno-bachiller.png" alt="">
+            </div>
+            <div class="bachiller-info-container">
+                <h2>¡ESTUDIA CON NOSOTROS Y GRADUATE CON GRADO DE BACHILLER!</h2>
+                <p>Nuestro programa educativo está diseñado para ofrecerte una formación integral de calidad y puedas
+                    ingresar rápidamente al mundo laboral, además con el grado de Bachiller podrás continuar con tus
+                    estudios a nivel posgrado y darle un plus a tu formación profesional.</p>
+                <a href="">Más información</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="director" class="max-w-[100%] main-home-container">
+    <div class="my-container mr-auto ml-auto py-8">
+        <div class="flex justify-center">
+            <div>
+                <h2 class="director-titulo">PALABRAS DE LA DIRECTORA</h2>
+            </div>
+        </div>
+        <div class="bachiller-wrapper">
+            <div class="director-imagen">
+                <img src="/assets/director.png" alt="">
+            </div>
+            <div class="director-info-container">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sit quam nobis a obcaecati explicabo
+                    nihil eveniet fugit iure quia placeat nemo, quis asperiores aperiam nulla ratione vel repellat quae.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sit quam nobis a obcaecati explicabo
+                    nihil eveniet fugit iure quia placeat nemo, quis asperiores aperiam nulla ratione vel repellat quae.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="transparencia" class=" max-w-[100%] main-home-container ">
+    <div class="my-container-carousel mr-auto ml-auto py-[3rem] ">
         <section class="flex flex-col">
             <div class="flex justify-center mb-[70px]">
                 <div>
-                    <h1 class="title-career">SERVICIOS</h1>
+                    <h1 class="title-career">SERVICIO DE BIENESTAR ESTUDIANTIL</h1>
+                    <p class="servicios-desc">El Servicio de Bienestar Estudiantil de Tecnocom se dedica a apoyar el bienestar integral de
+                        nuestros estudiantes. Nuestro objetivo es crear un ambiente inclusivo y de apoyo, donde cada
+                        estudiante se sienta valorado y empoderado para alcanzar su máximo potencial.</p>
                 </div>
             </div>
-            <div class="carousel-container section-important" >
+            <div class="carousel-container section-important">
                 <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
                     <div ngxSlickItem class="slide">
                         <div class="card-career"
                             style="background-image: url('assets/transparencia.png'); background-size: cover; background-repeat: no-repeat;background-position: center;">
                             <div class="info-career">
                                 <h2 class="info-title-career"><a><img src="assets/pencil.svg"
-                                            alt="transparencia icono"><span>Transparencia</span></a></h2>
+                                            alt="transparencia icono"><span>Psicología</span></a></h2>
                                 <a class="info-explore-career"
-                                    [routerLink]="['/transparencia']"><span>TRANSPARENCIA</span></a>
+                                    [routerLink]="['/transparencia']"><span>PSICOLOGÍA</span></a>
                             </div>
 
                         </div>
@@ -99,9 +202,9 @@
                             style="background-image: url('assets/apps-de-microsoft-office.webp'); background-size: cover; background-repeat: no-repeat; background-position: center;">
                             <div class="info-career">
                                 <h2 class="info-title-career"><a><img src="assets/hat.svg"
-                                            alt="plataforma eva icono"><span>Plataforma EVA</span></a></h2>
+                                            alt="plataforma eva icono"><span>Asistencia Social</span></a></h2>
                                 <a class="info-explore-career" href="https://www.office.com"
-                                    target="_blank"><span>PLATAFORMA</span></a>
+                                    target="_blank"><span>ASISTENCIA SOCIAL</span></a>
                             </div>
 
                         </div>
@@ -111,8 +214,8 @@
                             style="background-image: url('assets/Repositorios-institucionales.webp'); background-size: cover; background-repeat: no-repeat;background-position: center;">
                             <div class="info-career">
                                 <h2 class="info-title-career"><a href=""><img src="assets/book.svg"
-                                            alt="repositorio icono"><span>Repositorio</span></a></h2>
-                                <a class="info-explore-career" href=""><span>REPOSITORIO</span></a>
+                                            alt="repositorio icono"><span>Psicopedagogía</span></a></h2>
+                                <a class="info-explore-career" href=""><span>PSICOPEDAGOGÍA</span></a>
                             </div>
                         </div>
                     </div>
@@ -124,6 +227,46 @@
                 </div>
             </div>-->
         </section>
+    </div>
+</div>
+
+
+<div id="noticias" class="max-w-[100%] main-home-container">
+    <div class="my-container mr-auto ml-auto py-[3rem] ">
+        <div class="noticias-wrapper">
+            <div class="titulo-noticias">
+                <h2>NOTICIAS Y EVENTOS</h2>
+            </div>
+            <div class="container-noticias">
+                <div class="noticia-card">
+                    <img src="/assets/foto-1-noticias.jpg" alt="">
+                    <p>Egresados encontraron en "Olimpiadas deportivas IC 2024"</p>
+                    <a href="">Leer más...</a>
+                </div>
+                <div class="noticia-card">
+                    <img src="/assets/foto-1-noticias.jpg" alt="">
+                    <p>Egresados encontraron en "Olimpiadas deportivas IC 2024"</p>
+                    <a href="">Leer más...</a>
+                </div>
+                <div class="noticia-card">
+                    <img src="/assets/foto-1-noticias.jpg" alt="">
+                    <p>Egresados encontraron en "Olimpiadas deportivas IC 2024"</p>
+                    <a href="">Leer más...</a>
+                </div>
+                <div class="noticia-card">
+                    <img src="/assets/foto-1-noticias.jpg" alt="">
+                    <p>Egresados encontraron en "Olimpiadas deportivas IC 2024"</p>
+                    <a href="">Leer más...</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="ubicacion" class="max-w-[100%] main-home-container">
+    <div class="my-container mr-auto ml-auto py-[3rem] ">
+
     </div>
 </div>
 
@@ -192,28 +335,24 @@
 -->
 <div id="carousel-sedes" class=" max-w-[100%] bg-[#002C44] ">
     <div class="my-container-carousel mr-auto ml-auto pt-[3rem] ">
-        <section class="flex flex-col" >
-            <div class="flex justify-center mb-[40px]">
+        <section class="flex flex-col">
+            <div class="flex justify-center  ">
                 <div>
                     <h1 class="title-reasons text-white">ENCUENTRANOS EN :</h1>
                 </div>
             </div>
-            <div class="carousel-container mb-[-120px]">
-                <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
-                    @for (sede of sedes; track $index) {
-                    <div ngxSlickItem class="slide">
-                        <div class="card-career"
-                            style="background-image: url({{sede.img}}); background-size: cover;background-position: center ; background-repeat: no-repeat;">
-                            <div class="info-career">
-                                <h2 class="info-title-career"><a href="">{{sede.location}}</a></h2>
-                                <a class="info-explore-career"
-                                    [routerLink]="['/sede', sede.location]"><span>DESCUBRIR</span></a>
-                            </div>
+            <div class="sede-container mb-5">
+                <div class="card-career"
+                    style="background-image: url(/assets/sede.png); background-size: cover;background-position: center ; background-repeat: no-repeat;">
 
-                        </div>
+                </div>
+                <div class="card-career"
+                    style="background-image: url(/assets/edificiosede.webp); background-size: cover;background-position: center ; background-repeat: no-repeat;">
+                    <div class="info-career">
+                        <h2 class="info-title-career"><a href="">SAN ISIDRO</a></h2>
+                        <a class="info-explore-career" [routerLink]="['/sede', 'SAN ISIDRO']"><span>DESCUBRIR</span></a>
                     </div>
-                    }
-                </ngx-slick-carousel>
+                </div>
             </div>
         </section>
     </div>

@@ -36,6 +36,12 @@ import { ExperienciasComponent } from './tramite-pages/experiencias/experiencias
 import { ConvalidacionComponent } from './tramite-pages/convalidacion/convalidacion.component';
 import { AbandonoComponent } from './tramite-pages/abandono/abandono.component';
 import { CertificacionComponent } from './tramite-pages/certificacion/certificacion.component';
+import { AdmisionCronogramaComponent } from './admision-pages/admision-cronograma/admision-cronograma.component';
+import { EgresadosComponent } from './sub-paginas/egresados/egresados.component';
+import { InfoEgresadosComponent } from './sub-paginas/egresados/servicios/info-egresados/info-egresados.component';
+import { SeguiEgresadosComponent } from './sub-paginas/egresados/servicios/segui-egresados/segui-egresados.component';
+import { LibroReclamacionesComponent } from './sub-paginas/libro-reclamaciones/libro-reclamaciones.component';
+import { MesaPartesComponent } from './sub-paginas/mesa-partes/mesa-partes.component';
 
 export const routes: Routes = [
     {
@@ -108,6 +114,9 @@ export const routes: Routes = [
         path:'informacion-basica' , component:InfoBasicaComponent
     },
     {
+        path:'admision-cronograma' , component: AdmisionCronogramaComponent
+    },
+    {
         path:'preguntas' , component:PreguntasComponent
     },
     {
@@ -145,5 +154,20 @@ export const routes: Routes = [
     },
     {
         path: 'certificacion' , component: CertificacionComponent
+    },
+    {
+        path: 'egresados' , component: EgresadosComponent
+    },
+    {
+        path: 'informacion-egresados' , component: InfoEgresadosComponent
+    },
+    {
+        path: 'seguimiento-egresados' , component: SeguiEgresadosComponent
+    },
+    {
+        path: 'libro-reclamaciones' , component: LibroReclamacionesComponent
+    },
+    {
+        path: 'mesa-partes-virtual' , component: MesaPartesComponent
     }
 ];

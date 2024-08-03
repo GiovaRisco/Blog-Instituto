@@ -1,0 +1,52 @@
+<app-header />
+
+<section id="egresados-banner">
+    <div class="contenedor">
+        <div class="banner-flex">
+            <div class="columna">
+
+            </div>
+            <div class="columna">
+                <div class="banner-info-wrapper">
+                    <h2>
+                        SOMOS EGRESADOS
+                    </h2>
+                    <p>Únete a la comunidad de egresados y mantén tus datos actualizados.</p>
+                    <a href="">
+                        Únete
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="servicios-egresados">
+    <div class="contenedor">
+        <div class="egresados-paginas-wrapper">
+            <div class="descripcion-egresados">
+                <p>Al finalizar tus estudios en el instituto, te enfrentarás a grandes historias y desafíos como
+                    profesional. ¡Queremos acompañarte en ese camino! Por eso, fortalecemos y mantenemos nuestra
+                    conexión contigo a través de una variedad de servicios, áreas y actividades diseñadas especialmente
+                    para ti.</p>
+            </div>
+            <div class="cards-egresados-wrapper">
+                <div class="card-egresados info-egresados">
+                    <a [routerLink]="['/informacion-egresados']" >INFORMACIÓN PARA LOS EGRESADOS</a>
+                </div>
+                <div class="card-egresados segui-egresados">
+                    <a [routerLink]="['/seguimiento-egresados']">SEGUIMIENTO A LOS EGRESADOS</a>
+                </div>
+                <div class="card-egresados feria-laboral">
+                    <a href="#">FERIA LABORAL</a>
+                </div>
+                <div class="card-egresados bolsa-laboral">
+                    <a href="#">BOLSA DE TRABAJO</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-footer />

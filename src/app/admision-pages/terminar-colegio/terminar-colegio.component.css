@@ -10,7 +10,7 @@ a{
 
 .seccion-banner {
     padding-top: 200px;
-    background-image: url(/assets/banner-movil.png);
+    background-image: url(/assets/banner-movil.webp);
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,7 +27,7 @@ a{
 .titulo-banner h1 {
     margin-top: 30px;
     margin-bottom: 30px;
-    color: #8f1433;
+    color: #fff;
     font-size: 35px;
     line-height: 1.1;
     font-weight: 900;
@@ -97,9 +97,9 @@ a{
 /*TITULO - FIN*/
 .container {
     background-color: #ffffff;
-    width: 70%;
+    width: 85%;
     margin: auto;
-    height: 30em;
+    height: auto;
     display: grid;
     grid-template-columns: 40% 60%;
     padding-top: 10px;
@@ -111,6 +111,11 @@ a{
     flex-direction: column;
     justify-content: flex-start;
     border-right: 1px solid #999;
+}
+
+.title-wrapper{
+    height: 300px;
+    margin-bottom: 20px;
 }
 h3{
     height: 33.33%;
@@ -164,6 +169,21 @@ h3:hover{
     font-weight: 700;
 }
 
+.requisitos-list li{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.requisitos-list li:first-child{
+    align-items: flex-start;
+}
+
+.requisitos-list li img{
+    width: 28px;
+    height: 28px;
+    display: inline;
+    margin-right: 10px;
+}
 
 
 
