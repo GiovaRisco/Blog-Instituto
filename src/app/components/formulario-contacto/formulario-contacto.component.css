@@ -80,3 +80,42 @@ input , textarea , select {
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 800px){
+    .input-group input ,.input-group select  {
+        width: 100%;
+    }
+    form h2 {
+        font-size: 25px;
+    }
+
+    .form-txt {
+        flex-direction: column;
+    }
+
+    form {
+        padding-inline: 10px;
+        padding-bottom: 10px;
+    }
+    .btn {
+        font-size: 20px;
+        width: 50% !important;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    select option {
+        font-size: 9.5px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 300px){
+   .btn {
+    width: 100% !important;
+   }
+
+}

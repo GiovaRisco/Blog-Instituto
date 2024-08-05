@@ -585,7 +585,8 @@
 /*Noticias - FIN*/
 /*Director - INICIO*/
 .director-imagen {
-    width: 50%;display: flex;
+    width: 50%;
+    display: flex;
     justify-content: center;
 }
 .director-imagen img {
@@ -617,6 +618,97 @@
 
 
 }
+
+
+@media only screen and (max-width: 860px) {
+    .cards-porque-container {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+    }
+    .cards-porque-container div {
+        width: 100%;
+    } 
+    .card-porque {
+        padding-block: 30px;
+    }
+
+
+    .elige-wrapper{
+        flex-direction: column;
+    }
+    .elige-wrapper div {
+        width: 100%;
+    }
+    .elige-modalidad {
+        flex-direction: row;
+    }
+
+    .elige-info-container h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .bachiller-wrapper{
+        flex-direction: column;
+        padding-block: 20px;
+    }
+
+    .bachiller-wrapper .bachiller-info-container {
+        width: 90%;
+        padding-block: 30px !important;
+        padding-inline: 17px !important;
+    }
+    .bachiller-info-container h2 {
+        font-size: 30px;
+    }
+    .bachiller-info-container p {
+        font-size: 16px;
+    }
+
+    .director-info-container {
+        width: 90%;
+        padding-block: 25px !important;
+        padding-inline: 15px !important;
+    }
+
+    .director-imagen img {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .director-titulo{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .title-career{
+        font-size: 40px;
+    }
+    .servicios-desc{
+        width: 90%;
+        text-align: center;
+    }
+
+    .container-noticias {
+       display: flex;
+       flex-direction: column;
+    }
+
+    .titulo-noticias h2 {
+        font-size: 35px;
+    }
+
+    .sede-container{
+        flex-direction: column-reverse;
+    }
+
+    .porque-defi h2 {
+        margin-top: 50px;
+        font-size: 35px;
+        line-height: 1.3;
+    }
+}
+
+
 
 
 @media only screen and (max-width: 800px) {
@@ -714,6 +806,12 @@
 
     #careers {
         padding-top: 40px;
+    }
+
+    
+    .card-career {
+        width: 100%;
+        height: 220px;
     }
 
 }
