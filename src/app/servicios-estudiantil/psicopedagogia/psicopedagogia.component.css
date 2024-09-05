@@ -1,0 +1,100 @@
+.container {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+#pedagogia {
+    background-image: url(/assets/psico-banner.webp);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-shadow: inset -9px -145px 154px 14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset -9px -145px 154px 14px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -9px -145px 154px 14px rgba(0, 0, 0, 0.75);
+}
+
+.banner-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+}
+.banner-wrapper h2 {
+    padding-top:100px;
+    color:  #fff;
+    font-weight: 600;
+    font-size: 60px;
+
+}
+.banner-wrapper p {
+    margin-top: 10px;
+    color:  #fff;
+    font-size: 17px;
+    width: 60%;
+    font-weight: 300;
+}
+
+
+.recomendaciones-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 20px;
+    padding-bottom: 20px;
+}
+
+#recomendaciones {
+    background-color: #d7d7d7;
+}
+
+
+#recomendaciones h2 {
+    color: #002C44;
+    font-weight: 600;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    padding-block: 20px;
+}
+
+
+
+.recomendaciones-wrapper .card-img {
+    display: flex;
+    align-items: center;
+}
+
+.recomendaciones-wrapper .card-img:first-child{
+    justify-content: flex-end;
+}
+.recomendaciones-wrapper .card-img:last-child{
+    justify-content: flex-start;
+}
+
+.recomendaciones-wrapper .card-img img {
+    width: 60%;
+    height: 436px;
+}
+
+.protocolo-wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3 ,1fr);
+    padding-bottom: 50px;
+}
+
+#protocolo h2 {
+    text-align: center;
+    padding-block: 20px;
+    font-size:40px ;
+    font-weight: 600;
+}
+
+#protocolo{
+    background-image: url(/assets/banner-protocolo.webp);
+}

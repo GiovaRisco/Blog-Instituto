@@ -42,6 +42,10 @@ import { InfoEgresadosComponent } from './sub-paginas/egresados/servicios/info-e
 import { SeguiEgresadosComponent } from './sub-paginas/egresados/servicios/segui-egresados/segui-egresados.component';
 import { LibroReclamacionesComponent } from './sub-paginas/libro-reclamaciones/libro-reclamaciones.component';
 import { MesaPartesComponent } from './sub-paginas/mesa-partes/mesa-partes.component';
+import { PsicopedagogiaComponent } from './servicios-estudiantil/psicopedagogia/psicopedagogia.component';
+import { AistenciaSocialComponent } from './servicios-estudiantil/aistencia-social/aistencia-social.component';
+import { PsicologiaComponent } from './servicios-estudiantil/psicologia/psicologia.component';
+import { ComunidadComponent } from './sub-paginas/comunidad/comunidad.component';
 
 export const routes: Routes = [
     {
@@ -169,5 +173,20 @@ export const routes: Routes = [
     },
     {
         path: 'mesa-partes-virtual' , component: MesaPartesComponent
+    },
+    {
+        path: 'psicopedagogia' , component: PsicopedagogiaComponent
+    },
+    {
+        path: 'psicologia' , component: PsicologiaComponent
+    },
+    {
+        path: 'asistencia-social' , component: AistenciaSocialComponent
+    },
+    {
+        path: 'comunidad' , component: ComunidadComponent
+    },
+    {
+        path: 'colegios' , component: TrasladarteComponent
     }
 ];

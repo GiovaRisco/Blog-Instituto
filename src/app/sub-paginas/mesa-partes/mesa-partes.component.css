@@ -1,38 +1,51 @@
 /*HEROE - INICIO*/
 
-a{
+a {
     text-decoration: none;
 }
+
 .container-banner {
-     width: 90%;
-     margin: auto;
+    width: 90%;
+    margin: auto;
 }
 
 .seccion-banner {
     padding-top: 200px;
-    background-image: url(/assets/banner-movil.webp);
+    background-image: url(/assets/banner-mesa.webp);
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
+    -webkit-box-shadow: inset -33px -200px 230px 23px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset -33px -200px 230px 23px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -33px -200px 230px 23px rgba(0, 0, 0, 0.75);
 }
 
-.seccion-banner.interna{
+.seccion-banner.interna {
     padding-bottom: 30px;
     position: relative;
 }
+
 .columna-content {
     width: 70%;
     margin: auto;
 }
+
 .titulo-banner h1 {
     margin-top: 30px;
     margin-bottom: 30px;
     color: #fff;
-    font-size: 35px;
+    font-size: 45px;
     line-height: 1.1;
     font-weight: 900;
     display: block;
     letter-spacing: .01em;
+}
+
+.titulo-banner P {
+    font-size: 17px;
+    color: #fff;
+    width: 60%;
+    font-weight: 300;
 }
 
 .tex-modalidad h2 {
@@ -51,30 +64,33 @@ a{
     background-color: #002C44;
     color: white;
 }
-.descargar-brochure a{
+
+.descargar-brochure a {
     color: #fff;
 }
 
-.box-conveniosUnivers{
+.box-conveniosUnivers {
     margin-top: 40px;
 }
 
-.box-conveniosUnivers h2{
+.box-conveniosUnivers h2 {
     font-size: 18px;
     color: #000;
     margin-bottom: 12px;
     font-weight: 700;
 }
 
-.logo-u-banner img{
+.logo-u-banner img {
     width: 80%;
     margin-top: 10px;
 }
+
 .cont-unis {
     width: 80%;
     display: flex;
     gap: 5px;
 }
+
 .cont-unis div img {
     flex-grow: 1;
 }
@@ -87,7 +103,8 @@ a{
     width: 90%;
     margin: auto;
 }
-.container-opciones{
+
+.container-opciones {
     background-color: #ffffff;
     margin: auto;
     height: auto;
@@ -96,22 +113,26 @@ a{
     padding-top: 10px;
     padding-bottom: 30px;
 }
+
 .titulo-mesa {
     font-size: 40px;
     text-align: center;
     font-weight: 600;
     color: #002C44;
 }
+
 .tabs {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     border-right: 1px solid #999;
 }
-.title-wrapper{
+
+.title-wrapper {
     height: 400px;
 }
-h3{
+
+h3 {
     height: 33.33%;
     display: grid;
     place-items: center;
@@ -120,59 +141,67 @@ h3{
     padding: 10px;
     margin: 0;
 }
-h3:hover{
+
+h3:hover {
     cursor: pointer;
 }
 
-.tab-content{
+.tab-content {
     background-color: #ffffff;
     padding: 1em 1.5em;
 }
 
-.tab-content .all-tab-wrapper{
+.tab-content .all-tab-wrapper {
     display: none;
 }
-.tab-content .active{
+
+.tab-content .active {
     display: block;
 }
 
 .tabs .active {
-    background-color: #eaeaea ;
+    background-color: #eaeaea;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+
 .content-title {
     display: flex;
 }
+
 .content-title .title-lista {
     color: #000;
     font-size: 17px;
     margin-left: 16px;
 }
+
 .content-title .numero {
     color: #002C44;
     font-size: 50px;
     line-height: 1.3;
     text-align: center;
 }
+
 .tab-content-flex {
     display: flex;
     align-items: flex-start;
 }
+
 .bold-text {
     font-weight: 700;
 }
 
-.requisitos-list li{
+.requisitos-list li {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
 }
-.requisitos-list li:nth-child(4){
+
+.requisitos-list li:nth-child(4) {
     align-items: flex-start;
 }
 
-.requisitos-list li img{
+.requisitos-list li img {
     width: 28px;
     height: 28px;
     display: inline;
@@ -180,9 +209,97 @@ h3:hover{
 }
 
 
-@media only screen and (max-width: 1200px){
+.ingresa-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
 
-    .container{
+.ingresa-cont {
+    background-color: #002C44;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.ingresa-cont h2 {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+.ingresa-cont a {
+    background-color: #fff;
+    display: block;
+    padding-block: 10px;
+    text-decoration: none;
+    color: #B22929;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.ingresa-cont a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.escribe-cont {
+    height: 100%;
+    width: 100%;
+    background-image: url(/assets/escribenos-fondo.webp);
+    background-size: cover;
+    background-position: right;
+    position: relative;
+}
+
+.general-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.general-cont {
+    padding-inline: 10px;
+}
+
+.general-cont p {
+    color: #000;
+    font-size: 17px;
+}
+
+.general-cont h2 {
+    background-color: #002C44;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.ingresa-conte{
+    height: 100%;
+    width: 100%;
+    background-image: url(/assets/comunidad-banner.webp);
+    background-size: cover;
+    background-position: right;
+   
+}
+
+.ingresa-todo{
+    display: flex ;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .container {
         width: 90%;
 
     }

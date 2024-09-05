@@ -14,6 +14,9 @@ a{
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
+    -webkit-box-shadow: inset 1px -176px 300px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 1px -176px 300px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 1px -176px 300px 0px rgba(0, 0, 0, 0.75);
 }
 
 .seccion-banner.interna{

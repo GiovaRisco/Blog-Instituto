@@ -10,10 +10,13 @@ a{
 
 .seccion-banner {
     padding-top: 200px;
-    background-image: url(/assets/tramite-banner.webp);
-    background-position: top center;
+    background-image: url(/assets/tramite/tramite-6.jpeg);
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    -webkit-box-shadow: inset -22px -169px 152px 51px rgba(0,0,0,0.75);
+-moz-box-shadow: inset -22px -169px 152px 51px rgba(0,0,0,0.75);
+box-shadow: inset -22px -169px 152px 51px rgba(0,0,0,0.75);
 }
 
 .seccion-banner.interna{

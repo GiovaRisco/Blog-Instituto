@@ -1,5 +1,5 @@
 .container-banner-page {
-    height: 490px;
+    height: 430px;
     background: url(https://www.cibertec.edu.pe/wp-content/uploads/2019/07/faq.jpg);
     background-position: center top;
     background-size: cover;
@@ -158,6 +158,14 @@
     height: 600px;
     /* Ajusta la altura según tu necesidad */
     border: 1px solid #ccc;
+}
+
+
+.wrapper-card-documents{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,150px);
+    gap: 10px;
 }
 
 /*MEDIA QUERY*/

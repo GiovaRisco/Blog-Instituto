@@ -1,63 +1,73 @@
 <app-header />
 <div class="main-content">
-    <section class="seccion-banner interna sistemas">
-      <div class="container-banner">
-        <div class="row">
-          <div class="column columna-content">
-            <div class="mian-f banner-internas">
-              <div>
-                <div class="titulo-banner interna sistemas">
-                  <h1>MESA DE PARTES VIRTUAL</h1>
+  <section class="seccion-banner interna sistemas">
+    <div class="container-banner">
+      <div class="row">
+        <div class="column columna-content">
+          <div class="mian-f banner-internas">
+            <div>
+              <div class="titulo-banner interna sistemas">
+                <h1>MESA DE PARTES VIRTUAL</h1>
+                <p>El Sistema de Mesa de Partes Virtual, está diseñada para facilitar la
+                  presentación de documentos, registrando información desde la página web de la
+                  entidad, lo que permite automatizar y optimizar el tiempo en el proceso de
+                  presentación de documentos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+<section id="mesa-opciones">
+  <div class="container">
+    <div>
+      <div class="container-opciones">
+        <div class="tabs title-wrapper">
+          <h3 class="active content-title">
+            <div class="numero">1</div>
+            <div class="title-lista">PÚBLICO GENERAL</div>
+          </h3>
+          <h3 class="content-title">
+            <div class="numero">2</div>
+            <div class="title-lista">COMUNIDAD TECNOCOM</div>
+          </h3>
+        </div>
+        <div class="tab-content ingresa-wrapper">
+          <div class="active all-tab-wrapper escribe-cont">
+            <div class="tab-content-flex mb-4">
+              <div class="ml-3">
+                <div class="general-wrapper">
+
+                  <div class="general-cont">
+                    <p>Puedes escribirnos al siguiente correo</p>
+                    <h2>comenius.tecnologico&#64;gmail.com</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="all-tab-wrapper ingresa-conte">
+            <div class="tab-content-flex mb-4 ingresa-todo ">
+              <div class="ml-3">
+                <div class="">
+                  <div class="ingresa-cont">
+                    <h2>
+                      COMUNIDAD TECNOCOM
+                    </h2>
+                    <a [routerLink]="['/comunidad']" target="_blank">INGRESA AQUÍ</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </div>
-  
-<section id="mesa-opciones">
-    <div class="container">
-        <div>
-            <div class="container-opciones">
-                <div class="tabs title-wrapper">
-                    <h3 class="active content-title">
-                        <div class="numero">1</div>
-                        <div class="title-lista">PÚBLICO GENERAL</div>
-                    </h3>
-                    <h3 class="content-title">
-                        <div class="numero">2</div>
-                        <div class="title-lista">COMUNIDAD TECNOCOM</div>
-                    </h3>
-                </div>
-                <div class="tab-content">
-                    <!--first-->
-                    <div class="active all-tab-wrapper">
-                        <div class="tab-content-flex mb-4">
-                            <div class="ml-3">
-
-                            </div>
-                        </div>
-                    </div>
-                    <!--second-->
-                    <div class="all-tab-wrapper">
-                        <div class="tab-content-flex mb-4">
-                            <div class="ml-3">
-                                <div class="general-wrapper">
-                                    <p>El Sistema de Mesa de Partes Virtual, está diseñada para facilitar la
-                                        presentación de documentos, registrando información desde la página web de la
-                                        entidad, lo que permite automatizar y optimizar el tiempo en el proceso de
-                                        presentación de documentos.</p>
-                                    <p>Puedes escribirnos al siguiente correo</p>
-                                    <h2>comenius.tecnologico&#64;gmail.com</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
+  </div>
 </section>
 <app-footer />

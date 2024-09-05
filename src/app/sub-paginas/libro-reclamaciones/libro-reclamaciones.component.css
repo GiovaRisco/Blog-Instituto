@@ -8,7 +8,7 @@
     background-image: url(/assets/egresados-banner.webp);
     background-repeat: no-repeat;
     background-position: center center;
-    height: 320px;
+    height: 420px;
     background-size: cover;
     -webkit-box-shadow: inset -12px -200px 142px -10px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset -12px -200px 142px -10px rgba(0, 0, 0, 0.75);
@@ -17,16 +17,21 @@
 
 .titulo-wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    height: 400px;
+    height: 420px;
+}
+.titulo-wrapper  img {
+    width: 20%;
 }
 
 .titulo-wrapper h2 {
-    padding-top: 60px;
+    padding-top: 30px;
     color: #fff;
     font-weight: 600;
     font-size: 50px;
+    padding-bottom: 50px;
 }
 
 /*BANNER - FIN*/

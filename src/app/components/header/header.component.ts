@@ -46,7 +46,23 @@ export class HeaderComponent  {
       });
 
   }
-
+  linksNosotros :  any[] = [
+    {
+      img : 'assets/icon-1.svg',
+      title : 'NOSOTROS',
+      href : '/nosotros'
+    },
+    {
+      img : 'assets/icon-3.svg',
+      title : 'MISIÓN',
+      href : '/mision'
+    },
+    {
+      img : 'assets/icon-6.svg',
+      title : 'HISTORIS',
+      href : '/valores-historia'
+    },
+  ]
 
 
   linksAdministrativa :  any[] = [

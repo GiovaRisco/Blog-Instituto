@@ -1,6 +1,6 @@
 .container-banner-page {
-    height: 490px;
-    background: url(https://www.cibertec.edu.pe/wp-content/uploads/2019/07/faq.jpg);
+    height: 420px;
+    background: url(/assets/contactenos-fondo.webp);
     background-position: center top;
     background-size: cover;
     position: relative;
@@ -28,12 +28,13 @@
 }
 
 .wrapper-items h1 {
-    font-size: 45px;
+    font-size: 60px;
     font-weight: 700;
     letter-spacing: 2px;
     color: #fff;
     text-transform: uppercase;
     line-height: 45px;
+    padding-top: 100px;
     margin-right: 20px;
 }
 
@@ -90,52 +91,49 @@
 
 /*MAIN  -INICIO*/
 
-.container_contacto {
-    padding-top: 60px;
-    padding-bottom: 0;
-}
-.section {
-    padding: 3rem 1.5rem;
-}
-
 .centerContent {
     width: 70%;
     margin: 0 auto;
     position: relative;
 }
-.subtitle {
-    color: #002C44;
-    font-size: 26px;
-    text-align: left;
+.contactanos-wrapper{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-block: 30px;
 }
-.subtitle::after{
-    content: '';
-    background-color: #002C44;
-    border: solid #002C44 1px;
-    border-radius: 7px;
-    display: block;
-    margin: 0;
-    height: 6px;
-    width: 25px;
-}
-.columns{
+
+.info-wrapper{
     display: flex;
+    flex-direction: column;
 }
-.columns.is-multiline{
-    flex-wrap: wrap;
+.info-wrapper h2 {
+    font-size: 30px;
+    color: #000;
+    font-weight: 600;
 }
-.column{
-    width: 33%;
-    margin-right: 7%;
-    display: block;
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
-    padding: 0.75rem;
-}
-.card-title{
-    margin-bottom: 5px;
+.info-wrapper p{
     font-size: 15px;
+}
+.redes-wrapper {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.social-card{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.social-card img {
+    width: 40px;
+    height: 40px;
+    padding-right: 5px;
+    justify-self: flex-end;
+}
+.social-info h3 , .social-info p{
+    margin: 0;
 }
 
 /*MAIN - FIN */

@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from '../../components/header/header.component';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-mesa-partes',
   standalone: true,
-  imports: [HeaderComponent , FooterComponent],
+  imports: [HeaderComponent , FooterComponent , RouterModule],
   templateUrl: './mesa-partes.component.html',
   styleUrl: './mesa-partes.component.css'
 })

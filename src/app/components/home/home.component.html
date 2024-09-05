@@ -1,13 +1,17 @@
 <app-header />
 
+<div class="bloque">
+
+</div>
+
 
 <div id="carousel" class=" max-w-[100%] ">
-    <section class="carousel-home mt-[54px]">
+    <section class="carousel-home ">
         <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
             <div class="carousel-inner  ">
 
                 <div class="carousel-item active ">
-                    <img class="w-full " src="/assets/banner-1.webp" alt="banner_1" width="100%" height="auto">
+                    <img class="w-full " src="/assets/fondo-1.webp" alt="banner_1" width="100%" height="auto">
                     <div class="btn-info">
                         <h1></h1>
                         <p></p>
@@ -15,7 +19,15 @@
                 </div>
 
                 <div class="carousel-item  ">
-                    <img class="w-full  " src="/assets/banner-2.webp" alt="banner_2" width="100%" height="auto">
+                    <img class="w-full  " src="/assets/fondo-2.webp" alt="banner_2" width="100%" height="auto">
+                    <div class="btn-info">
+                        <h1></h1>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="carousel-item  ">
+                    <img class="w-full  " src="/assets/fondo-3.webp" alt="banner_2" width="100%" height="auto">
                     <div class="btn-info">
                         <h1></h1>
                         <p></p>
@@ -79,7 +91,7 @@
     <div class="my-container mr-auto ml-auto py-[3rem] ">
         <div class="elige-wrapper">
             <div class="elige-modalidad">
-                <img src="/assets/virtual-img.png" alt="">
+                <img src="/assets/alumnos.png" alt="">
                 <div class="elige-modaliad-info">
                     <p>Estudia 100% virtual con el mejor ecosistema digital.</p>
                     <a href="">Póstula Aquí</a>
@@ -154,28 +166,87 @@
         </div>
         <div class="bachiller-wrapper">
             <div class="director-imagen">
-                <img src="/assets/director.png" alt="">
+                <img src="/assets/directora.webp" alt="">
             </div>
             <div class="director-info-container">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sit quam nobis a obcaecati explicabo
-                    nihil eveniet fugit iure quia placeat nemo, quis asperiores aperiam nulla ratione vel repellat quae.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sit quam nobis a obcaecati explicabo
-                    nihil eveniet fugit iure quia placeat nemo, quis asperiores aperiam nulla ratione vel repellat quae.
+                <p>"Es un honor para mí darles la bienvenida a Tecnocom, una institución comprometida con la excelencia
+                    educativa y la innovación tecnológica. En nombre de todo nuestro equipo docente y administrativo,
+                    quiero expresar nuestra más sincera alegría por su interés en formar parte de nuestra comunidad
+                    académica.
                 </p>
+                <P>Tecnocom se distingue por su enfoque en la formación integral, combinando conocimientos teóricos con
+                    experiencias prácticas, para preparar a nuestros estudiantes para los desafíos del mundo laboral
+                    moderno. Nuestro objetivo es proporcionarles las herramientas necesarias para desarrollar sus
+                    habilidades, potenciar sus talentos y alcanzar sus metas profesionales.
+                </P>
+                <P>Les invito a explorar todo lo que Tecnocom tiene para ofrecer y a unirse a nosotros en esta
+                    emocionante travesía educativa. Estamos aquí para ayudarles a alcanzar sus sueños y convertir sus
+                    aspiraciones en realidades".</P>
+
+                <h2 class="nom-directora">Dasy Nina Granados</h2>
+
             </div>
         </div>
     </div>
 </div>
 
 
+<section id="informacion" class="max-w-[100%] main-home-container">
+    <div class="my-container mr-auto ml-auto py-[3rem] ">
+        <div class="solicita-wrapper">
+            <div class="titulo-soli-wrapper">
+                <h2>Te acompañamos en esta importante decisión <span>sobre tu futuro.</span></h2>
+                <img src="/assets/alumnos-2.png" alt="">
+            </div>
+            <div class="formulario-wrapper">
+                <h2>Solicita información</h2>
+                <form class="formulario">
+                    <div class="inputs-grupo">
+                        <div class="input-grupo">
+                            <input type="text" placeholder="Nombre*">
+                            <input type="text" placeholder="Apellido materno*">
+                        </div>
+                        <div class="input-grupo">
+                            <input type="text" placeholder="Apellido paterno*">
+                            <input type="tel" placeholder="Telefono*">
+                        </div>
+                    </div>
+                    <input type="email" placeholder="Email*">
+                    <input type="date" placeholder="Fecha de nacimiento">
+                    <select>
+                        <option value="" selected>Carrera de Interés</option>
+                        <option value="">Contabilidad</option>
+                    </select>
 
-<div id="transparencia" class=" max-w-[100%] main-home-container ">
+                    <select>
+                        <option value="" selected>Como te gustaría que te contactáramos?</option>
+                        <option value="">Whatsapp</option>
+                        <option value="">Correo Electronico</option>
+                    </select>
+
+                    <div class="datos-wrapper">
+                        <input type="checkbox" name="" id="">
+                        <p>Otorgo expresamente mi consentimiento para que mis datos personales sean tratados de acuerdo
+                            con la política de tratamientos de datos</p>
+                    </div>
+
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<div id="estudiante" class="transparencia max-w-[100%] main-home-container ">
     <div class="my-container-carousel mr-auto ml-auto py-[3rem] ">
         <section class="flex flex-col">
             <div class="flex justify-center mb-[70px]">
                 <div>
                     <h1 class="title-career">SERVICIO DE BIENESTAR ESTUDIANTIL</h1>
-                    <p class="servicios-desc">El Servicio de Bienestar Estudiantil de Tecnocom se dedica a apoyar el bienestar integral de
+                    <p class="servicios-desc">El Servicio de Bienestar Estudiantil de Tecnocom se dedica a apoyar el
+                        bienestar integral de
                         nuestros estudiantes. Nuestro objetivo es crear un ambiente inclusivo y de apoyo, donde cada
                         estudiante se sienta valorado y empoderado para alcanzar su máximo potencial.</p>
                 </div>
@@ -184,35 +255,39 @@
                 <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
                     <div ngxSlickItem class="slide">
                         <div class="card-career"
-                            style="background-image: url('assets/transparencia.png'); background-size: cover; background-repeat: no-repeat;background-position: center;">
+                            style="background-image: url('assets/psico-fondo.webp'); background-size: cover; background-repeat: no-repeat;background-position: center;">
                             <div class="info-career">
-                                <h2 class="info-title-career"><a><img src="assets/pencil.svg"
+                                <h2 class="info-title-career"><a [routerLink]="['/psicologia']"><img
+                                            src="assets/pencil.svg"
                                             alt="transparencia icono"><span>Psicología</span></a></h2>
                                 <a class="info-explore-career"
-                                    [routerLink]="['/transparencia']"><span>PSICOLOGÍA</span></a>
+                                    [routerLink]="['/psicologia']"><span>PSICOLOGÍA</span></a>
                             </div>
 
                         </div>
                     </div>
                     <div ngxSlickItem class="slide">
                         <div class="card-career"
-                            style="background-image: url('assets/apps-de-microsoft-office.webp'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                            style="background-image: url('assets/social-fondo.webp'); background-size: cover; background-repeat: no-repeat; background-position: center;">
                             <div class="info-career">
-                                <h2 class="info-title-career"><a><img src="assets/hat.svg"
-                                            alt="plataforma eva icono"><span>Asistencia Social</span></a></h2>
-                                <a class="info-explore-career" href="https://www.office.com"
-                                    target="_blank"><span>ASISTENCIA SOCIAL</span></a>
+                                <h2 class="info-title-career"><a [routerLink]="['/asistencia-social']"><img
+                                            src="assets/hat.svg" alt="plataforma eva icono"><span>Asistencia
+                                            Social</span></a></h2>
+                                <a class="info-explore-career" href="https://www.office.com" target="_blank"
+                                    [routerLink]="['/asistencia-social']"><span>ASISTENCIA SOCIAL</span></a>
                             </div>
 
                         </div>
                     </div>
                     <div ngxSlickItem class="slide">
                         <div class="card-career"
-                            style="background-image: url('assets/Repositorios-institucionales.webp'); background-size: cover; background-repeat: no-repeat;background-position: center;">
+                            style="background-image: url('assets/gogia-fondo.webp'); background-size: cover; background-repeat: no-repeat;background-position: center;">
                             <div class="info-career">
-                                <h2 class="info-title-career"><a href=""><img src="assets/book.svg"
+                                <h2 class="info-title-career"><a [routerLink]="['/psicopedagogia']"><img
+                                            src="assets/book.svg"
                                             alt="repositorio icono"><span>Psicopedagogía</span></a></h2>
-                                <a class="info-explore-career" href=""><span>PSICOPEDAGOGÍA</span></a>
+                                <a class="info-explore-career"
+                                    [routerLink]="['/psicopedagogia']"><span>PSICOPEDAGOGÍA</span></a>
                             </div>
                         </div>
                     </div>
@@ -255,13 +330,6 @@
         </div>
     </div>
 </div>
-
-<div id="ubicacion" class="max-w-[100%] main-home-container">
-    <div class="my-container mr-auto ml-auto py-[3rem] ">
-
-    </div>
-</div>
-
 
 <div id="carousel-sedes" class=" max-w-[100%] bg-[#002C44] ">
     <div class="my-container-carousel mr-auto ml-auto pt-[3rem] ">

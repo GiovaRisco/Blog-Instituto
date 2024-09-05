@@ -10,10 +10,13 @@ a{
 
 .seccion-banner {
     padding-top: 200px;
-    background-image: url(/assets/banner-movil.webp);
+    background-image: url(/assets/admision/admision-6.jpg);
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
+    -webkit-box-shadow: inset -22px -169px 152px 51px rgba(0,0,0,0.75);
+-moz-box-shadow: inset -22px -169px 152px 51px rgba(0,0,0,0.75);
+box-shadow: inset -22px -169px 152px 51px rgba(0,0,0,0.75);
 }
 
 .seccion-banner.interna{
