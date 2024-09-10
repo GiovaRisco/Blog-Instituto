@@ -59,9 +59,14 @@ export class HeaderComponent  {
     },
     {
       img : 'assets/icon-6.svg',
-      title : 'HISTORIS',
-      href : '/valores-historia'
+      title : 'HISTORIA',
+      href : '/historia'
     },
+    {
+      img : 'assets/icon-4.svg',
+      title : 'PRINCIPIOS Y VALORES',
+      href : '/principios-valores'
+    }
   ]
 
 
