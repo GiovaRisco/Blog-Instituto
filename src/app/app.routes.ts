@@ -46,6 +46,8 @@ import { PsicopedagogiaComponent } from './servicios-estudiantil/psicopedagogia/
 import { AistenciaSocialComponent } from './servicios-estudiantil/aistencia-social/aistencia-social.component';
 import { PsicologiaComponent } from './servicios-estudiantil/psicologia/psicologia.component';
 import { ComunidadComponent } from './sub-paginas/comunidad/comunidad.component';
+import { MisionVisionComponent } from './nosotros-pages/mision-vision/mision-vision.component';
+import { PrincipiosValoresComponent } from './nosotros-pages/principios-valores/principios-valores.component';
 
 export const routes: Routes = [
     {
@@ -188,5 +190,15 @@ export const routes: Routes = [
     },
     {
         path: 'colegios' , component: TrasladarteComponent
+    }
+    ,
+    {
+        path: 'vision' , component: MisionVisionComponent
+    },
+    {
+        path: 'mision' , component: MisionVisionComponent
+    },
+    {
+        path: 'principios-valores' , component: PrincipiosValoresComponent
     }
 ];

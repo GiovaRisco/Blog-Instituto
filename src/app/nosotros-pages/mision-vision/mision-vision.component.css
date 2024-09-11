@@ -1,0 +1,78 @@
+h3{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+img{
+    width: 400px;
+    height: 350px;
+}
+
+.mi-contenedor{
+    width: 70%;
+    margin: auto;
+}
+
+.contenido-wrapper{
+    padding-top: 160px;
+    padding-bottom: 30px;
+}
+
+/*VISION . INICIO*/
+.vision-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.vision-wrapper img,.vision-wrapper div{
+    flex-grow: 1;
+}
+
+
+.vision-texto {
+    background-color: #c15d5d;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding-block: 25px;
+    padding-inline: 15px;
+    width: 500px;
+    margin-left: -50px;
+    height: fit-content;
+}
+/*VISION . FIN*/
+
+/*MISION . INICIO*/
+.mision-wrapper{
+    display: flex;
+    align-items: center;
+  
+}
+
+.mision-wrapper img,.mision-wrapper div{
+    flex-grow: 1;
+}
+
+.mision-texto{
+    background-color: #c15d5d;
+    color: #fff;
+    padding-block: 25px;
+    padding-inline: 15px;
+    width: 500px;
+    margin-right: -50px;
+    z-index: 100;
+    height: fit-content;
+}
+/*MISION . FIN*/
+
+@media only screen and (max-width: 1600px) {
+    .mi-contenedor{
+        width: 80%;
+        margin: auto;
+    }
+}

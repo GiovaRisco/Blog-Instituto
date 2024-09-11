@@ -1,0 +1,56 @@
+h3{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+img{
+    width: 400px;
+    height: 370px;
+}
+
+.mi-contenedor{
+    width: 70%;
+    margin: auto;
+}
+
+.contenido-wrapper{
+    padding-top: 180px;
+    padding-bottom: 30px;
+}
+
+/*PRINCIPIOS . INICIO*/
+.principios-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.principios-wrapper img,.principios-wrapper div{
+    flex-grow: 1;
+}
+
+
+.principios-texto {
+    background-color: #365886;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding-block: 25px;
+    padding-inline: 15px;
+    width: 500px;
+    margin-left: -50px;
+    height: fit-content;
+}
+/*PRINCIPIOS . FIN*/
+
+
+@media only screen and (max-width: 1600px) {
+    .mi-contenedor{
+        width: 80%;
+        margin: auto;
+    }
+}
