@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../../components/header/header.component';
-import { FooterComponent } from '../../components/footer/footer.component';
+import { HeaderComponent } from "../../components/header/header.component";
+import { FooterComponent } from "../../components/footer/footer.component";
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @Component({
-  selector: 'app-principios-valores',
+  selector: 'app-noticia-1',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent , SlickCarouselModule],
-  templateUrl: './principios-valores.component.html',
-  styleUrl: './principios-valores.component.css',
+  imports: [HeaderComponent, FooterComponent, SlickCarouselModule],
+  templateUrl: './noticia-1.component.html',
+  styleUrl: './noticia-1.component.css'
 })
-export class PrincipiosValoresComponent {
+export class Noticia1Component {
   slideConfig = {
     slidesToShow: 4,
     slidesToScroll: 1,

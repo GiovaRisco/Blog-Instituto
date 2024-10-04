@@ -1,4 +1,4 @@
-<app-header/>
+<app-header />
 
 <div class="mi-contenedor">
     <div class="contenido-wrapper">
@@ -7,13 +7,119 @@
             <div class="principios-texto">
                 <h3>PRINCIPIOS Y VALORES</h3>
                 <p>Los principios y valores institucionales son lineamientos de carácter ético axiológico, que
-                    atraviesan la decisión y actuación de cada uno de los actores y de la comunidad educativa de la Escula de Educación
+                    atraviesan la decisión y actuación de cada uno de los actores y de la comunidad educativa de la
+                    Escula de Educación
                     Superior Tecnológica Privada Comenius- "TECNOCOM"
                 </p>
             </div>
         </div>
-        
+
+        <div class="principios-wrapper">
+        </div>
     </div>
 </div>
 
-<app-footer/>
+<section class="mi-contenedor">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+        <div ngxSlickItem class="slide">
+            <div class="principio-card">
+                <div class="info-principio">
+                    <h2 >CALIDAD EDUCATIVA</h2>
+                    <p> Capacidad de la educación superior para adecuarse a las demandas del entorno y a la vez,
+                        trabajar en una previsión de necesidades futuras, tomando en cuenta el entorno laboral, social,
+                        cultural y personal de los beneficiarios de manera inclusiva, asequible y accesible. Valora los
+                        resultados que alcanza la institución con los aprendizajes de los estudiantes y en el
+                        reconocimiento de éstos por parte de su medio social, laboral y cultural.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div ngxSlickItem class="slide">
+            <div class="principio-card">
+                <div class="info-principio">
+                    <h2 >PERTINENCIA</h2>
+                    <p> Relaciona la oferta educativa con la demanda del sector productivo educativo, las necesidades de
+                        desarrollo local y regional, y las necesidades de servicios a nivel local, regional, nacional e
+                        internacional.
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div ngxSlickItem class="slide">
+            <div class="principio-card">
+                <div class="info-principio">
+                    <h2 >FLEXIBILIDAD</h2>
+                    <p> Permite el tránsito entre los diversos niveles de calificación, el mundo educativo y del
+                        trabajo, así como la permeabilidad con los cambios del entorno social.
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div ngxSlickItem class="slide">
+            <div class="principio-card">
+                <div class="info-principio">
+                    <h2 >INCLUSIÓN SOCIAL</h2>
+                    <p> Permite que todas las personas sin discriminación ejerzan sus derechos, aprovechen sus
+                        habilidades, potencien sus identidades y tomen ventaja de las oportunidades que les ofrezca su
+                        medio, accediendo a servicios públicos de calidad, de manera que los factores culturales,
+                        económicos, sociales, étnicos y geográficos se constituyan en facilitadores para el acceso a la
+                        educación superior.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div ngxSlickItem class="slide">
+            <div class="principio-card">
+                <div class="info-principio">
+                    <h2 >TRANSPARENCIA</h2>
+                    <p> La Educación Superior requiere sistemas de información y comunicación accesibles, transparentes,
+                        ágiles y actualizadas que faciliten la toma de decisión en las distintas instancias y que
+                        permitan el desarrollo de actividades de manera informada y orientada a los procesos de mejora
+                        continua, tanto a nivel institucional como a nivel de la oferta.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div ngxSlickItem class="slide">
+            <div class="principio-card">
+                <div class="info-principio">
+                    <h2>EQUIDAD</h2>
+                    <p> Busca que el servicio educativo alcance a todas las personas, evitando situaciones de
+                        discriminación y desigualdad motivo de origen, raza, sexo, idioma, religión, opinión, condición
+                        económica o de cualquier otra índole, asimismo, promueve las políticas de reconocimiento
+                        positivo de la diversidad cultural, para ello garantizan los ajustes razonables que permitan el
+                        desarrollo y permanencia de poblaciones en vulnerabilidad o discapacidad.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div ngxSlickItem class="slide">
+            <div class="principio-card">
+                <div class="info-principio">
+                    <h2 >MÉRITO</h2>
+                    <p> Busca el reconocimiento de los logros mediante mecanismos transparentes que permitan el
+                        desarrollo personal y profesional.</p>
+                </div>
+
+            </div>
+        </div>
+    </ngx-slick-carousel>
+</section>
+
+
+<section class="mi-contenedor">
+    <div class="valores-wrapper">
+        <h2>NUESTROS VALORES</h2>
+        <img src="/assets/tabla-valores.png" alt="">
+    </div>
+</section>
+
+<app-footer />

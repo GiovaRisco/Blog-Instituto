@@ -1,0 +1,20 @@
+.mi-contenedor{
+    width: 80%;
+    margin: auto;
+}
+
+.contenido-wrapper{
+    padding-top: 180px;
+    padding-bottom: 30px;
+}
+
+.titulo-pagina{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.card-career img{
+    width: 500%;
+    height: 300px;
+}

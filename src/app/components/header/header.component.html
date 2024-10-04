@@ -89,9 +89,6 @@
                 <a href="">Para empresas</a>
               </li>
               <li class="item-menu-nav-phone">
-                <a [routerLink]="['/colegios']">Para colegios</a>
-              </li>
-              <li class="item-menu-nav-phone">
                 <a href="">Egresados</a>
               </li>
               <li class="item-menu-nav-phone">
@@ -147,9 +144,6 @@
               <a href="#estudiante">Servicios al Estudiante</a>
             </li>
             <li class="item-menu-nav-phone">
-              <a [routerLink]="['/colegios']">Para colegios</a>
-            </li>
-            <li class="item-menu-nav-phone">
               <a [routerLink]="['/egresados']">Egresados</a>
             </li>
             <li>
@@ -184,8 +178,8 @@
             |
             <li>
               <a
-                href="#"
-                target="_blank"
+              [routerLink]="['/directorio-institucional']"
+                
                 >Directorio Institucional</a
               >
             </li>
@@ -222,25 +216,6 @@
       <div class="max-w-[800px] h-[100%] item-header-flex">
         <ul class="flex gap-[20px]  h-[100%] mb-0">
           <div class="flex items-center text-center "><a href="#" class="text-white">Inicio</a></div>
-          <!--<div class="flex items-center text-center "><a href="#" class="text-white">Sobre Nosotros</a></div>-->
-          <div class="flex items-center text-center "><a href="#" class="text-white">A distancia</a></div>
-          <!--
-                            <div class="flex items-center text-center btn-menu-hover p-[12px]">
-                            Carreras<span class="material-symbols-outlined">expand_more</span>
-                            <div class="wrapper-hover-menu"></div>
-                            <ul class="wrapper-hover-menu-submenu  pl-0 ">
-                                @for (link of links; track $index) {
-                                <a class="item-submenu">
-                                    <div class="submenu-header">
-                                        <img src="{{link.img}}" alt="">
-                                        <p>{{link.title}}</p>
-                                    </div>
-                                    <ul></ul>
-                                </a>
-                                }
-                            </ul>
-                        </div>
-                        -->
                         <div class="flex items-center text-center btn-menu-hover ">
                           Nosotros
                           <span class="material-symbols-outlined">expand_more</span>
@@ -615,8 +590,8 @@
           </div>
           <div class="flex items-center hover:cursor-pointer">
             <a
-              href="https://api.whatsapp.com/send/?phone=51966721408"
-              target="_blank"
+              [routerLink]="['/inscribete']"
+              
               class="joinus-button"
             >
               INSCRÍBETE

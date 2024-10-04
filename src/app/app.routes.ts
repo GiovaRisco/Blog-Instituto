@@ -48,13 +48,17 @@ import { PsicologiaComponent } from './servicios-estudiantil/psicologia/psicolog
 import { ComunidadComponent } from './sub-paginas/comunidad/comunidad.component';
 import { MisionVisionComponent } from './nosotros-pages/mision-vision/mision-vision.component';
 import { PrincipiosValoresComponent } from './nosotros-pages/principios-valores/principios-valores.component';
+import { DirectorioInstitucionalComponent } from './components/directorio-institucional/directorio-institucional.component';
+import { InscribeteComponent } from './components/inscribete/inscribete.component';
+import { Noticia1Component } from './noticias/noticia-1/noticia-1.component';
+import { DirectorComponent } from './components/director/director.component';
 
 export const routes: Routes = [
     {
         path:'' , component:HomeComponent
     },
     {
-        path:'director' , component:HistoryComponent
+        path:'director' , component: DirectorComponent
     },
     {
         path:'transparencia' , component:InstitutionalTransparencyComponent
@@ -193,12 +197,21 @@ export const routes: Routes = [
     }
     ,
     {
-        path: 'vision' , component: MisionVisionComponent
-    },
-    {
-        path: 'mision' , component: MisionVisionComponent
+        path: 'mision-vision' , component: MisionVisionComponent
     },
     {
         path: 'principios-valores' , component: PrincipiosValoresComponent
+    },
+    {
+        path: 'directorio-institucional' , component: DirectorioInstitucionalComponent
+    },
+    {
+        path: 'inscribete' , component: InscribeteComponent
+    },
+    {
+        path: 'trabajo-colaborativo' , component: Noticia1Component
+    },
+    {
+        path: 'historia' , component: HistoryComponent
     }
 ];

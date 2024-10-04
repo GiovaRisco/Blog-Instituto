@@ -1,5 +1,5 @@
 .container-banner-page {
-    height: 490px;
+    height: 400px;
     background: url(https://www.cibertec.edu.pe/wp-content/uploads/2019/07/faq.jpg);
     background-position: center top;
     background-size: cover;
@@ -34,7 +34,7 @@
     color: #fff;
     text-transform: uppercase;
     line-height: 45px;
-    margin-right: 20px;
+    margin:0;
 }
 
 .wrapper-items p {

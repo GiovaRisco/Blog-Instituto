@@ -48,14 +48,9 @@ export class HeaderComponent  {
   }
   linksNosotros :  any[] = [
     {
-      img : 'assets/icon-1.svg',
-      title : 'VISIÓN',
-      href : '/vision'
-    },
-    {
       img : 'assets/icon-3.svg',
-      title : 'MISIÓN',
-      href : '/mision'
+      title : 'MISIÓN Y VISIÓN',
+      href : '/mision-vision'
     },
     {
       img : 'assets/icon-6.svg',
